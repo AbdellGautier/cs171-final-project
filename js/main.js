@@ -27,7 +27,9 @@ let parseDate = d3.timeParse("%m/%d/%Y %H:%I");
 
 
 // Initialize data
-loadData();
+//loadData();
+
+loadData_new();
 
 // FIFA world cup
 let data;
@@ -52,10 +54,12 @@ function loadData() {
 
 		//rollData=d3.group(csv, v=> v.length)
 
+		const start = Date.now();
 		//rollData=d3.flatRollup(csv, v => v.length, d => d.DATE.getFullYear(),d=>d.DATE.getMonth());
+		//console.log('start',Date.now());
 		rollData=d3.rollup(csv, v => v.length, d => d.DATE.getFullYear(),d=>d.DATE.getMonth());
-
-		console.log('rolldata',rollData);
+		//console.log('end',Date.now()); //151
+		console.log('rolldata',rollData);  //151
 				// Store csv data in global variable
 
 		/*map1 = new Map([...rollData.entries()].sort((a, b) => b[0] - a[0]));
@@ -100,12 +104,14 @@ function loadData() {
 					//var d1={month:key,count:value}
 					//series.push(d1);
 				}*/
+
 				console.log(data)
 				//data.push(series1)
 			}
 		}
 		//data = csv;
-		console.log(data);
+		console.log('Data Format ::: ',data);
+		console.log('total time to load',Date.now()-start);
 
 		//console.log(data.forEach(data, d=> console.log(d)))
 		// Draw the visualization for the first time
@@ -113,6 +119,20 @@ function loadData() {
 		//updateVisualization(data);
 		//showEdition(data[0]);
 	});
+}
+
+function loadData_new() {
+	d3.csv("data/intakecount_years.csv" ,row => {
+		row.month = +row['month'];
+		row.year = +row['year'];
+		row.count = +row['count'];
+		if (row.year==2022 || row.year==2021 || row.year==2020 || row.year==2019){
+			return row;
+		}
+	}).then(csv => {
+		console.log(csv)
+		initialize(csv);
+	})
 }
 
 //let maxDate;
@@ -155,7 +175,7 @@ function initialize(data) {
 
 
 	x=d3.scaleLinear()
-		.domain([0,11])
+		.domain([1,12])
 		.range([0, width])
 
 	y = d3.scaleLinear()
@@ -174,7 +194,7 @@ function initialize(data) {
 	let xAxis = d3.axisBottom().scale(x)
 		.tickFormat(function(d) {
 			//console.log(d)
-			return months[d];
+			return months[d-1];
 		});
 
 	let yAxisGroup = svg.append("g")
