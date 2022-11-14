@@ -1,0 +1,14 @@
+/*
+    Global
+*/
+body {
+    padding: 1rem;
+}
+
+/*
+    Charts
+*/
+
+.barlabel {
+    font-size: 0.7em;
+}
