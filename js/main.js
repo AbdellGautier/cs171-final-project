@@ -30,7 +30,7 @@ Promise.all(promises)
 
 		// Draw deaths chart
 		new BarChart(
-			"deaths-barchart",
+			"animal-type-barchart",
 			rawCSV,
 			{
 				"title": "Found Animals in Austin",
