@@ -390,30 +390,30 @@ function showEdition(d){
 }
 
 
-var slider = document.getElementById('slider');
-//let start=+formatDate(data[0].YEAR)
-noUiSlider.create(slider, {
-	start: [1930, 2014],
-	connect: true,
-	margin:30,
-	range: {
-		'min': 1930,
-		'max': 2014
-	}
-});
-slider.noUiSlider.on('slide', function (values, handle) {
-	console.log("start year " + Math.round(values[0]));
-	console.log("end year" + Math.round(values[1]));
-	start=Math.round(values[0]);
-	end=Math.round(values[1]);
+// var slider = document.getElementById('slider');
+// //let start=+formatDate(data[0].YEAR)
+// noUiSlider.create(slider, {
+// 	start: [1930, 2014],
+// 	connect: true,
+// 	margin:30,
+// 	range: {
+// 		'min': 1930,
+// 		'max': 2014
+// 	}
+// });
+// slider.noUiSlider.on('slide', function (values, handle) {
+// 	console.log("start year " + Math.round(values[0]));
+// 	console.log("end year" + Math.round(values[1]));
+// 	start=Math.round(values[0]);
+// 	end=Math.round(values[1]);
 
-	document.getElementById("start").innerHTML=start;
-	document.getElementById("end").innerHTML=end;
+// 	document.getElementById("start").innerHTML=start;
+// 	document.getElementById("end").innerHTML=end;
 
-	dataForYears=getDataForYears(parseDate(start),parseDate(end))
-	console.log(dataForYears);
-	updateVisualization(dataForYears)
-});
+// 	dataForYears=getDataForYears(parseDate(start),parseDate(end))
+// 	console.log(dataForYears);
+// 	updateVisualization(dataForYears)
+// });
 
 function getDataForYears(start,end) {
 	dataSortedYears=[];

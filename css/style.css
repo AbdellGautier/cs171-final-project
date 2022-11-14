@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #ebf5fc;
 }
 
 .a {
@@ -29,9 +29,9 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 3rem !important;
   margin-bottom: 24px;
-  color: #333;
+  color: #fff;
 }
 
 
@@ -55,6 +55,10 @@ h3 {
 /****************/
 /*  LINE CHART  */
 /****************/
+#chart-area {
+  fill: #fff;
+}
+
 
 .axis path,
 .axis line {
@@ -140,7 +144,7 @@ h3 {
 }
 
 #slider {
-  //overflow: hidden;
+  overflow: hidden;
   width: 60%;
 }
 
