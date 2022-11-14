@@ -101,7 +101,7 @@ class BarChart {
             .merge(bars)
             .attr("x", 0)
             .attr("height", vis.y.bandwidth())
-            .attr("fill", "steelblue")
+            .attr("fill", "white")
             .transition()
             .attr("y", d => vis.y(d.key))
             .attr("width", d => vis.x(d.value));

@@ -3,6 +3,38 @@
 */
 body {
     padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebf5fc;
+}
+
+.a {
+  text-indent: 20px;
+}
+
+h1 {
+  font-weight: 100;
+  margin-top: 50px;
+  color: #4B6D4A;
+}
+
+h1 sup {
+  font-size: 11px;
+  top: -18px;
+  font-weight: 400;
+  color: #5b835a;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+  color: #91988B;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 3rem !important;
+  margin-bottom: 24px;
+  color: #fff;
 }
 
 /*

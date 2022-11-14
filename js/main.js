@@ -33,7 +33,7 @@ Promise.all(promises)
 			"deaths-barchart",
 			rawCSV,
 			{
-				"title": "Total Animal Deaths",
+				"title": "Found Animals in Austin",
 				"key": "Animal Type"
 			}
 		)
