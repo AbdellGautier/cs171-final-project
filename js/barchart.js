@@ -1,10 +1,9 @@
 
-
 /*
  * BarChart - Object constructor function
  * @param _parentElement 	-- the HTML element in which to draw the bar charts
- * @param _data						-- the dataset 'household characteristics'
- * @param _config					-- variable from the dataset (e.g. 'electricity') and title for each bar chart
+ * @param _data				-- the dataset
+ * @param _config			-- variable from the dataset and title for each bar chart
  */
 
 class BarChart {
@@ -18,9 +17,7 @@ class BarChart {
         this.initVis();
     }
 
-    /*
-     * Initialize visualization (static content; e.g. SVG area, axes)
-     */
+
     initVis() {
         let vis = this;
 
@@ -72,24 +69,14 @@ class BarChart {
     }
 
 
-
-
-    /*
-     * Data wrangling
-     */
-
     wrangleData() {
         let vis = this;
 
-        console.log("wrange")
-
-        console.log(vis.data);
-
-        // (1) Group data by key variable (e.g. 'electricity') and count leaves
+        // Group data by key variable and count
         let counts = d3.rollup(vis.displayData, v => v.length, d => d[vis.config.key]);
         vis.displayData = Array.from(counts).map(([key, value]) => ({ key, value }));
 
-        // (2) Sort columns descending
+        // Sort columns descending
         vis.displayData.sort((a, b) => a.value - b.value);
 
         // Update the visualization
@@ -97,19 +84,14 @@ class BarChart {
     }
 
 
-
-    /*
-     * The drawing function - should use the D3 update sequence (enter, update, exit)
-     */
-
     updateVis() {
         let vis = this;
 
-        // (1) Update domains
+        // Update domains
         vis.x.domain([0, d3.max(vis.displayData, d => d.value)]);
         vis.y.domain(vis.displayData.map(d => d.key));
 
-        // (2) Draw rectangles
+        // Draw rectangles
         let bars = vis.svg.selectAll(".barchart")
             .data(vis.displayData, d => d.key);
 
@@ -126,7 +108,7 @@ class BarChart {
 
         bars.exit().remove();
 
-        // (2) Draw labels
+        // Draw labels
         let labels = vis.svg.selectAll(".barlabel")
             .data(vis.displayData, d => d.key);
 
