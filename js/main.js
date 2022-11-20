@@ -14,6 +14,10 @@ let promises = [
 		row.DATE = parseDate(row.DateTime);
 		return row
 	}),
+	d3.csv("data/Austin_Animal_Center_Outcomes.csv", row => {
+		row.DATE = parseDate(row.DateTime);
+		return row;
+	}),
 	d3.csv("data/intakecount_years.csv" ,row => {
 		row.month = +row['month'];
 		row.year = +row['year'];
@@ -31,9 +35,10 @@ let promises = [
 // Load data and draw charts
 Promise.all(promises)
 	.then(function (data) {
-		let rawCSV = data[0];
-		let intakeCountCSV = data[1];
-		let rawCSV1 = data[2];
+		let intakeCSV = data[0];
+		let outcomeCSV = data[1];
+		let intakeCountCSV = data[2];
+		let rawCSV1 = data[3];
 
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
@@ -49,17 +54,15 @@ Promise.all(promises)
 				"key": "Animal Type"
 			}
 		)
-		animalColor=new AnimalColorBarChart("detailsColor",
+		animalColor = new AnimalColorBarChart("detailsColor",
 			rawCSV1, {
 				"title": "Top 5 Colors of Animal",
 				"key": "Animal Type"
 			})
+	
+
+		new PanelThree(intakeCSV, outcomeCSV);
 	})
 	.catch(function (err) {
 		console.log(err)
 	});
-
-
-function brushed() {
-
-}
