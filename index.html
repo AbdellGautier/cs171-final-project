@@ -104,7 +104,7 @@
                                 <div id="chart-area"></div>
                             </section>
                             <section class="panel white">
-                                <h3>Main Message</h3>
+                                <h3>Animal Intake Color</h3>
                                 <div class="row">
                                     <div class="col-8">
                                         <div id="intakecount"></div>
@@ -115,8 +115,27 @@
                                     </div>
                                 </div>
                             </section>
-                            <section class="panel turqoise">
-                                <h3>Solution</h3>
+                            <section class="panel">
+                                <div class="row">
+                                    <div class="col">
+                                        <h3>The Life of a Found Animal</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>
+                                            What are the fates of animals that the Austin Animal shelter intakes?
+                                        </p>
+                                        <p>
+                                            Most are adopted, while many are transferred to another shelter.
+                                        </p>
+                                        <p>
+                                            However, a still-too-large portion of animals will die in shelter either by
+                                            euthanasia or natural causes.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="panel3-sankey"></div>
                             </section>
                         </div>
                     </div>
@@ -128,15 +147,20 @@
     <!-- embedding JS libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-array@1"></script>
+    <script src="https://unpkg.com/d3-collection@1"></script>
+    <script src="https://unpkg.com/d3-path@1"></script>
+    <script src="https://unpkg.com/d3-shape@1"></script>
+    <script src="https://unpkg.com/d3-sankey@0"></script>
     <script src="js/scrollevents.js"></script>
     <script src="js/main.js"></script>
     <script src="js/linechart.js"></script>
     <script src="js/barchart.js"></script>
     <script src="js/areachart.js"></script>
+    <script src="js/sankey.js"></script>
     <script src="js/panel-one.js"></script>
     <script src="js/animalintakevisuals.js"></script>
     <script src="js/animalcolor.js"></script>
-
-
+    <script src="js/panel-three.js"></script>
 </body>
 </html>
