@@ -1,7 +1,8 @@
 
 /*
  * PanelThree - Object constructor function
- * @param _data				-- the dataset
+ * @param intakeData	-- the intake dataset
+ * @param outcomeData	-- the outcome dataset
  */
 
 class PanelThree {
@@ -61,6 +62,7 @@ class PanelThree {
             })
         });
 
+        // Define links
         let links = []
         intakeNodes.forEach(source => {
             outcomeNodes.forEach(target => {
@@ -73,22 +75,30 @@ class PanelThree {
             });
         });
 
+        // Update link values
         panel.outcomeData.forEach(d => {
-            let src = nameToIdx[d["Animal Type"]];
+            // Get source node
+            let source = nameToIdx[d["Animal Type"]];
 
+            // Get target node
             let outcomeNode = outcomeNodes.find(node => outcomeConfig[node].outcomeTypes.has(d["Outcome Type"]));
-            let dst = nameToIdx[outcomeNode];
-            let idx = links.findIndex(link => link.source === src && link.target === dst);
+            let target = nameToIdx[outcomeNode];
+
+            // Update link value
+            let idx = links.findIndex(link => link.source === source && link.target === target);
             links[idx].value += 1;
         });
 
+        // Filter out zero-value links
         links = links.filter(link => link.value !== 0);
 
+        // Define data structure for sankey chart
         let data = {
             "nodes": nodes,
             "links": links,
         };
 
+        // Render sankey chart
         new SankeyChart("panel3-sankey", data);
     }
 }

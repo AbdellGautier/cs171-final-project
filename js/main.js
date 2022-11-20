@@ -59,8 +59,8 @@ Promise.all(promises)
 				"title": "Top 5 Colors of Animal",
 				"key": "Animal Type"
 			})
-	
 
+		// Draw panel three
 		new PanelThree(intakeCSV, outcomeCSV);
 	})
 	.catch(function (err) {
