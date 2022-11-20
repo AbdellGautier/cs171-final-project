@@ -48,9 +48,7 @@ class AnimalIntakeVisuals {
 
 
         vis.colorScale = d3.scaleLinear()
-            //vis.colorScale = d3.scaleBand()
-            //.range([vis.colors[0],vis.colors[3]]);
-            .range(vis.colors)
+        .range(vis.colors)
 
         //Legend
         vis.legend = vis.svg.append("g")
@@ -58,9 +56,6 @@ class AnimalIntakeVisuals {
             .attr('transform', `translate(178,220)`)
 
         vis.color = d3.scaleLinear()
-            //vis.color = d3.scaleQuantile()
-            //.range([vis.col_range_low, vis.col_range_high])
-            //.range([vis.colors[0], vis.colors[3]])
             .range(vis.colors)
 
 
@@ -94,8 +89,6 @@ class AnimalIntakeVisuals {
             .attr("x", -vis.margin.left)
             .attr("y", -vis.margin.top / 4)
             .text(vis.config.title)
-
-
 
 
         // (Filter, aggregate, modify data)
@@ -148,7 +141,6 @@ class AnimalIntakeVisuals {
             }
 
         });
-        console.log('for display', vis.displayData);
 
         // Update the visualization
         vis.updateVis();
@@ -225,14 +217,5 @@ class AnimalIntakeVisuals {
                     return assignColor;
                 });
             vis.legendcolor.exit().remove()
-
-
-
-
-
-
-
-
-
     }
 }
