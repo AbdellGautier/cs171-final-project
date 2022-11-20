@@ -28,16 +28,14 @@ Promise.all(promises)
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
 
-		// Draw deaths chart
-		new BarChart(
-			"animal-type-barchart",
-			rawCSV,
-			{
-				"title": "Found Animals in Austin",
-				"key": "Animal Type"
-			}
-		)
+		// Draw panel one
+		new PanelOne(rawCSV);
 	})
 	.catch(function (err) {
 		console.log(err)
 	});
+
+
+function brushed() {
+
+}

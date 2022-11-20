@@ -22,11 +22,11 @@ class BarChart {
         let vis = this;
 
         // Set margin
-        vis.margin = {top: 25, right: 50, bottom: 20, left: 100};
+        vis.margin = {top: 25, right: 50, bottom: 10, left: 125};
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 150 - vis.margin.top - vis.margin.bottom;
+        vis.height = vis.config.height - vis.margin.top - vis.margin.bottom;
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -101,7 +101,7 @@ class BarChart {
             .merge(bars)
             .attr("x", 0)
             .attr("height", vis.y.bandwidth())
-            .attr("fill", "white")
+            .attr("fill", "#6699cc")
             .transition()
             .attr("y", d => vis.y(d.key))
             .attr("width", d => vis.x(d.value));
@@ -125,5 +125,15 @@ class BarChart {
 
         // Update the y-axis
         vis.svg.select(".y-axis").call(vis.yAxis);
+    }
+
+    selectionChanged(brushRegion) {
+        let vis = this;
+
+        // Filter data accordingly without changing the original data
+        vis.displayData = vis.data.filter(d => brushRegion[0] <= d.DATE && d.DATE <= brushRegion[1]);
+
+        // Update the visualization
+        vis.wrangleData();
     }
 }

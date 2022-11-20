@@ -32,9 +32,17 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem !important;
-  margin-bottom: 24px;
-  color: #fff;
+    font-weight: 300;
+    font-size: 40px !important;
+    color: #91988B;
+}
+
+p {
+    margin-bottom: 0.5rem !important;
+}
+
+hr {
+    margin-tom: 0rem !important;
 }
 
 /*
@@ -42,5 +50,9 @@ h3 {
 */
 
 .barlabel {
-    font-size: 0.7em;
+    font-size: 0.6em;
+}
+
+.panel {
+    padding: 1rem;
 }
