@@ -60,3 +60,9 @@ hr {
 .xaxis, .yaxis {
     font-size: .5em;
 }
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
