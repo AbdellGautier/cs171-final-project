@@ -38,24 +38,24 @@ Promise.all(promises)
 		let intakeCSV = data[0];
 		let outcomeCSV = data[1];
 		let intakeCountCSV = data[2];
-		let rawCSV1 = data[3];
+		let animalColorCSV = data[3];
 
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
 
 		// Draw panel one
-		new PanelOne(rawCSV);
+		new PanelOne(intakeCSV);
 
 		new AnimalIntakeVisuals(
 			"intakecount",
-			rawCSV,
+			intakeCSV,
 			{
 				"title": "Animal Intakes Count",
 				"key": "Animal Type"
 			}
 		)
 		animalColor = new AnimalColorBarChart("detailsColor",
-			rawCSV1, {
+			animalColorCSV, {
 				"title": "Top 5 Colors of Animal",
 				"key": "Animal Type"
 			})
