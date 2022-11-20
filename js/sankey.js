@@ -13,7 +13,7 @@ class SankeyChart {
         // set the dimensions and margins of the graph
         vis.margin = {top: 10, right: 10, bottom: 10, left: 80};
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 300 - vis.margin.top - vis.margin.bottom;
+        vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
         // format variables
         vis.formatNumber = d3.format(",.0f"), // zero decimal places
@@ -50,7 +50,10 @@ class SankeyChart {
             .enter().append("path")
             .attr("class", "link")
             .attr("d", d3.sankeyLinkHorizontal())
-            .attr("stroke-width", function(d) { return d.width; });
+            .attr("stroke-width", function(d) { return d.width; })
+            .attr("stroke", d => d.color)
+            .attr("stroke-opacity", 0.5)
+            .attr("fill", "none");
 
         // add the link titles
         vis.link.append("title")

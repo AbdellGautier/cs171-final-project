@@ -16,47 +16,78 @@ class PanelThree {
     initPanel() {
         let panel = this;
 
-        console.log(panel.intakeData);
-
+        // Get animal IDs
         let intakeIDs = panel.intakeData.map(d => d["Animal ID"]);
         let outcomeIDs = panel.outcomeData.map(d => d["Animal ID"]);
-        console.log(intakeIDs)
-        console.log(outcomeIDs);
 
+        // Get intersection of datasets
         let intakeIdSet = new Set(intakeIDs);
-        let count = 0;
-        outcomeIDs.forEach(outcomeID => {
-            if (intakeIdSet.has(outcomeID)) {
-                count += 1;
-            }
-        })
-        console.log("total intakes: " + intakeIDs.length);
-        console.log("total outcomes: " + outcomeIDs.length);
-        console.log(count);
+        let intersection = new Set(outcomeIDs.filter(outcomeID => intakeIdSet.has(outcomeID)));
 
-        let outcomeTypes = new Set(panel.outcomeData.map(d => d["Outcome Type"]))
-        console.log(outcomeTypes);
+        // Filter by intersection
+        panel.intakeData = panel.intakeData.filter(d => intersection.has(d["Animal ID"]));
+        panel.outcomeData = panel.outcomeData.filter(d => intersection.has(d["Animal ID"]));
 
-        let roll = d3.rollup(panel.outcomeData, v => v.length, d => d["Outcome Type"]);
-        console.log(roll);
+        // Define config
+        let outcomeConfig = {
+            "Adopted": {
+                "outcomeTypes": new Set(["Rto-Adopt", "Adoption", "Return to Owner"]),
+                "color": "green",
+            },
+            "Transferred": {
+                "outcomeTypes": new Set(["Transfer", "Relocate"]),
+                "color": "yellow",
+            },
+            "Lost": {
+                "outcomeTypes": new Set(["Missing", "Stolen", "Lost", ""]),
+                "color": "black",
+            },
+            "Dead": {
+                "outcomeTypes": new Set(["Euthanasia", "Died", "Disposal"]),
+                "color": "red",
+            },
+        };
+
+        // Get nodes
+        let intakeNodes = Array.from(new Set(panel.intakeData.map(d => d["Animal Type"])));
+        let outcomeNodes = Object.keys(outcomeConfig); // Array.from(new Set(panel.outcomeData.map(d => d["Outcome Type"])));
+
+        let nameToIdx = {}
+        let nodes = [...intakeNodes, ...outcomeNodes].map((name, idx) => {
+            nameToIdx[name] = idx;
+            return ({
+                "node": idx,
+                "name": name,
+            })
+        });
+
+        let links = []
+        intakeNodes.forEach(source => {
+            outcomeNodes.forEach(target => {
+                links.push({
+                    "source": nameToIdx[source],
+                    "target": nameToIdx[target],
+                    "value": 0,
+                    "color": outcomeConfig[target].color,
+                });
+            });
+        });
+
+        panel.outcomeData.forEach(d => {
+            let src = nameToIdx[d["Animal Type"]];
+
+            let outcomeNode = outcomeNodes.find(node => outcomeConfig[node].outcomeTypes.has(d["Outcome Type"]));
+            let dst = nameToIdx[outcomeNode];
+            let idx = links.findIndex(link => link.source === src && link.target === dst);
+            links[idx].value += 1;
+        });
+
+        links = links.filter(link => link.value !== 0);
 
         let data = {
-            "nodes":[
-                {"node":0,"name":"node0"},
-                {"node":1,"name":"node1"},
-                {"node":2,"name":"node2"},
-                {"node":3,"name":"node3"},
-                {"node":4,"name":"node4"}
-            ],
-            "links":[
-                {"source":0,"target":2,"value":2},
-                {"source":1,"target":2,"value":2},
-                {"source":1,"target":3,"value":2},
-                {"source":0,"target":4,"value":2},
-                {"source":2,"target":3,"value":2},
-                {"source":2,"target":4,"value":2},
-                {"source":3,"target":4,"value":4}
-            ]};
+            "nodes": nodes,
+            "links": links,
+        };
 
         new SankeyChart("panel3-sankey", data);
     }
