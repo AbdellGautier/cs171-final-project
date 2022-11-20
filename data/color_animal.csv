@@ -1,0 +1,935 @@
+Animal Type,Color,Animal ID
+Bird,Black,46
+Bird,Black/Blue,1
+Bird,Black/Brown,7
+Bird,Black/Chocolate,5
+Bird,Black/Cream,5
+Bird,Black/Gold,1
+Bird,Black/Gray,1
+Bird,Black/Green,2
+Bird,Black/Red,16
+Bird,Black/Tan,1
+Bird,Black/Tricolor,1
+Bird,Black/White,24
+Bird,Black/Yellow,3
+Bird,Blue,12
+Bird,Blue/Black,3
+Bird,Blue/Brown,1
+Bird,Blue/Gold,1
+Bird,Blue/Gray,3
+Bird,Blue/Green,3
+Bird,Blue/White,14
+Bird,Blue/Yellow,2
+Bird,Brown,60
+Bird,Brown/Black,14
+Bird,Brown/Gray,4
+Bird,Brown/Green,2
+Bird,Brown/Red,6
+Bird,Brown/Tan,1
+Bird,Brown/Tricolor,1
+Bird,Brown/White,15
+Bird,Brown/Yellow,5
+Bird,Buff,1
+Bird,Buff/Brown,3
+Bird,Cream,2
+Bird,Cream/Black,1
+Bird,Cream/White,1
+Bird,Fawn/Black,1
+Bird,Gold,2
+Bird,Gold/Brown,1
+Bird,Gray,38
+Bird,Gray/Black,4
+Bird,Gray/Blue,2
+Bird,Gray/Brown,3
+Bird,Gray/Gray,2
+Bird,Gray/Green,2
+Bird,Gray/Red,4
+Bird,Gray/Tan,1
+Bird,Gray/White,20
+Bird,Gray/Yellow,8
+Bird,Green,18
+Bird,Green/Black,3
+Bird,Green/Blue,6
+Bird,Green/Gray,5
+Bird,Green/Orange,2
+Bird,Green/Red,5
+Bird,Green/Silver,1
+Bird,Green/Tricolor,1
+Bird,Green/White,2
+Bird,Green/Yellow,13
+Bird,Orange,2
+Bird,Orange/White,1
+Bird,Red,35
+Bird,Red/Black,26
+Bird,Red/Brown,4
+Bird,Red/Green,1
+Bird,Red/White,6
+Bird,Sable,1
+Bird,Silver,1
+Bird,Tan,3
+Bird,Tan/Red,1
+Bird,Tan/White,3
+Bird,Tan/Yellow,1
+Bird,Tricolor,11
+Bird,Tricolor/Brown,1
+Bird,Tricolor/White,8
+Bird,White,59
+Bird,White/Black,12
+Bird,White/Blue,13
+Bird,White/Brown,7
+Bird,White/Buff,1
+Bird,White/Gray,4
+Bird,White/Green,1
+Bird,White/Orange,2
+Bird,White/Red,5
+Bird,White/Tan,2
+Bird,White/Tricolor,3
+Bird,White/White,1
+Bird,White/Yellow,6
+Bird,Yellow,33
+Bird,Yellow/Black,13
+Bird,Yellow/Blue,1
+Bird,Yellow/Brown,1
+Bird,Yellow/Gray,2
+Bird,Yellow/Green,4
+Bird,Yellow/Red,3
+Bird,Yellow/White,3
+Cat,Agouti,16
+Cat,Agouti/Brown Tabby,1
+Cat,Agouti/Cream,1
+Cat,Agouti/White,3
+Cat,Apricot,1
+Cat,Apricot/White,1
+Cat,Black,7206
+Cat,Black Brindle,2
+Cat,Black Smoke,195
+Cat,Black Smoke/Black Tabby,4
+Cat,Black Smoke/Black Tiger,1
+Cat,Black Smoke/Brown Tabby,1
+Cat,Black Smoke/White,41
+Cat,Black Tabby,245
+Cat,Black Tabby/Black,1
+Cat,Black Tabby/Black Smoke,1
+Cat,Black Tabby/Brown,2
+Cat,Black Tabby/Gray,1
+Cat,Black Tabby/Gray Tabby,1
+Cat,Black Tabby/Orange,1
+Cat,Black Tabby/White,80
+Cat,Black Tiger,2
+Cat,Black Tiger/White,1
+Cat,Black/Black,85
+Cat,Black/Black Smoke,4
+Cat,Black/Black Tabby,2
+Cat,Black/Blue,2
+Cat,Black/Brown,10
+Cat,Black/Brown Tabby,3
+Cat,Black/Chocolate,3
+Cat,Black/Gray,11
+Cat,Black/Gray Tabby,3
+Cat,Black/Orange,9
+Cat,Black/Seal Point,1
+Cat,Black/Silver,3
+Cat,Black/Silver Tabby,1
+Cat,Black/Tortie,3
+Cat,Black/Tricolor,1
+Cat,Black/White,5019
+Cat,Black/Yellow,1
+Cat,Blue,2063
+Cat,Blue Cream,76
+Cat,Blue Cream/Blue Tabby,2
+Cat,Blue Cream/Buff,1
+Cat,Blue Cream/Tortie,3
+Cat,Blue Cream/White,5
+Cat,Blue Point,88
+Cat,Blue Point/Cream,1
+Cat,Blue Point/Lynx Point,1
+Cat,Blue Point/White,12
+Cat,Blue Smoke,15
+Cat,Blue Smoke/Gray,1
+Cat,Blue Smoke/White,4
+Cat,Blue Tabby,2195
+Cat,Blue Tabby/Black,1
+Cat,Blue Tabby/Blue Cream,4
+Cat,Blue Tabby/Brown,1
+Cat,Blue Tabby/Buff,1
+Cat,Blue Tabby/Cream,9
+Cat,Blue Tabby/Orange,1
+Cat,Blue Tabby/Tan,1
+Cat,Blue Tabby/Tortie,1
+Cat,Blue Tabby/White,1023
+Cat,Blue/Blue,6
+Cat,Blue/Brown,1
+Cat,Blue/Calico,1
+Cat,Blue/Cream,2
+Cat,Blue/Gray,2
+Cat,Blue/Orange,3
+Cat,Blue/Tortie,6
+Cat,Blue/White,1442
+Cat,Brown,39
+Cat,Brown Brindle,2
+Cat,Brown Merle,1
+Cat,Brown Merle/Brown Tabby,1
+Cat,Brown Tabby,8425
+Cat,Brown Tabby/Agouti,3
+Cat,Brown Tabby/Black,82
+Cat,Brown Tabby/Black Brindle,1
+Cat,Brown Tabby/Black Tabby,1
+Cat,Brown Tabby/Blue,1
+Cat,Brown Tabby/Brown,7
+Cat,Brown Tabby/Brown Tabby,6
+Cat,Brown Tabby/Calico,2
+Cat,Brown Tabby/Cream,2
+Cat,Brown Tabby/Gray,7
+Cat,Brown Tabby/Gray Tabby,1
+Cat,Brown Tabby/Lynx Point,1
+Cat,Brown Tabby/Orange,8
+Cat,Brown Tabby/Orange Tabby,2
+Cat,Brown Tabby/Red,1
+Cat,Brown Tabby/Silver,4
+Cat,Brown Tabby/Tan,1
+Cat,Brown Tabby/Tortie,5
+Cat,Brown Tabby/White,4339
+Cat,Brown Tiger,14
+Cat,Brown Tiger/White,4
+Cat,Brown/Black,17
+Cat,Brown/Black Tabby,1
+Cat,Brown/Brown Brindle,1
+Cat,Brown/Brown Tabby,2
+Cat,Brown/Buff,1
+Cat,Brown/Cream,1
+Cat,Brown/Gray,3
+Cat,Brown/Orange,1
+Cat,Brown/Seal Point,1
+Cat,Brown/White,29
+Cat,Buff,24
+Cat,Buff/White,7
+Cat,Calico,2441
+Cat,Calico Point,60
+Cat,Calico Point/Gray,1
+Cat,Calico Point/Lynx Point,1
+Cat,Calico Point/White,8
+Cat,Calico/Black,16
+Cat,Calico/Blue Cream,3
+Cat,Calico/Blue Tabby,2
+Cat,Calico/Brown,3
+Cat,Calico/Brown Tabby,14
+Cat,Calico/Calico,4
+Cat,Calico/Gray,2
+Cat,Calico/Gray Tabby,1
+Cat,Calico/Orange,2
+Cat,Calico/Orange Tabby,2
+Cat,Calico/Tricolor,5
+Cat,Calico/White,148
+Cat,Chocolate,23
+Cat,Chocolate Point,77
+Cat,Chocolate Point/Cream,1
+Cat,Chocolate Point/White,12
+Cat,Chocolate/Brown Tabby,3
+Cat,Chocolate/Seal Point,2
+Cat,Chocolate/White,7
+Cat,Cream,81
+Cat,Cream Tabby,1011
+Cat,Cream Tabby/Cream Tabby,1
+Cat,Cream Tabby/Orange,1
+Cat,Cream Tabby/Orange Tabby,1
+Cat,Cream Tabby/White,458
+Cat,Cream Tiger,1
+Cat,Cream Tiger/Brown Tabby,1
+Cat,Cream/Black,1
+Cat,Cream/Blue Point,1
+Cat,Cream/Brown,9
+Cat,Cream/Gray,1
+Cat,Cream/Orange,3
+Cat,Cream/Seal Point,3
+Cat,Cream/Tan,1
+Cat,Cream/White,34
+Cat,Fawn,2
+Cat,Fawn/White,1
+Cat,Flame Point,343
+Cat,Flame Point/Cream,2
+Cat,Flame Point/White,9
+Cat,Gray,163
+Cat,Gray Tabby,378
+Cat,Gray Tabby/Black,26
+Cat,Gray Tabby/Brown,1
+Cat,Gray Tabby/Brown Tabby,1
+Cat,Gray Tabby/Gray,2
+Cat,Gray Tabby/Orange,1
+Cat,Gray Tabby/White,180
+Cat,Gray/Black,17
+Cat,Gray/Blue,1
+Cat,Gray/Brown,2
+Cat,Gray/Gray,12
+Cat,Gray/Gray Tabby,2
+Cat,Gray/Orange,1
+Cat,Gray/Tan,1
+Cat,Gray/Tortie,5
+Cat,Gray/White,145
+Cat,Lilac Point,151
+Cat,Lilac Point/Black,1
+Cat,Lilac Point/Cream,2
+Cat,Lilac Point/Gray,1
+Cat,Lilac Point/White,18
+Cat,Lynx Point,751
+Cat,Lynx Point/Blue,1
+Cat,Lynx Point/Brown Tabby,1
+Cat,Lynx Point/Cream,1
+Cat,Lynx Point/Gray,2
+Cat,Lynx Point/Gray Tabby,1
+Cat,Lynx Point/Tan,2
+Cat,Lynx Point/Tortie Point,4
+Cat,Lynx Point/White,83
+Cat,Orange,148
+Cat,Orange Tabby,4100
+Cat,Orange Tabby/Apricot,1
+Cat,Orange Tabby/Black,1
+Cat,Orange Tabby/Brown,6
+Cat,Orange Tabby/Cream,5
+Cat,Orange Tabby/Orange,4
+Cat,Orange Tabby/Orange Tabby,4
+Cat,Orange Tabby/Tortie Point,1
+Cat,Orange Tabby/White,2044
+Cat,Orange Tiger,4
+Cat,Orange/Orange Tabby,2
+Cat,Orange/Tricolor,1
+Cat,Orange/White,167
+Cat,Pink,2
+Cat,Red,2
+Cat,Red Tick,1
+Cat,Red/White,1
+Cat,Sable,1
+Cat,Sable/White,1
+Cat,Seal Point,515
+Cat,Seal Point/Brown,3
+Cat,Seal Point/Buff,1
+Cat,Seal Point/Cream,1
+Cat,Seal Point/Gray,1
+Cat,Seal Point/White,73
+Cat,Silver,14
+Cat,Silver Lynx Point,26
+Cat,Silver Lynx Point/Gray,2
+Cat,Silver Lynx Point/White,1
+Cat,Silver Tabby,108
+Cat,Silver Tabby/Black,1
+Cat,Silver Tabby/White,39
+Cat,Silver/Silver Tabby,1
+Cat,Silver/White,1
+Cat,Tan,5
+Cat,Tan/Black,1
+Cat,Tan/Brown,4
+Cat,Tan/Chocolate Point,1
+Cat,Tan/Cream Tabby,1
+Cat,Tan/White,3
+Cat,Torbie,1697
+Cat,Torbie/Black,2
+Cat,Torbie/Blue Cream,4
+Cat,Torbie/Blue Tabby,2
+Cat,Torbie/Brown,2
+Cat,Torbie/Brown Tabby,4
+Cat,Torbie/Calico,1
+Cat,Torbie/Gray,3
+Cat,Torbie/Silver Tabby,1
+Cat,Torbie/White,352
+Cat,Tortie,2564
+Cat,Tortie Point,146
+Cat,Tortie Point/Blue,1
+Cat,Tortie Point/Cream,1
+Cat,Tortie Point/Lynx Point,2
+Cat,Tortie Point/Seal Point,1
+Cat,Tortie Point/White,11
+Cat,Tortie/Black,28
+Cat,Tortie/Black Smoke,1
+Cat,Tortie/Blue,2
+Cat,Tortie/Blue Cream,15
+Cat,Tortie/Blue Tabby,1
+Cat,Tortie/Brown,2
+Cat,Tortie/Calico,2
+Cat,Tortie/Gold,1
+Cat,Tortie/Gray,3
+Cat,Tortie/Orange,4
+Cat,Tortie/Tortie,4
+Cat,Tortie/White,136
+Cat,Tricolor,3
+Cat,Tricolor/Calico,1
+Cat,Tricolor/Orange,1
+Cat,Tricolor/White,1
+Cat,White,537
+Cat,White/Agouti,1
+Cat,White/Black,963
+Cat,White/Black Smoke,2
+Cat,White/Black Tabby,16
+Cat,White/Blue,358
+Cat,White/Blue Tabby,105
+Cat,White/Brown,49
+Cat,White/Brown Brindle,5
+Cat,White/Brown Tabby,587
+Cat,White/Buff,4
+Cat,White/Calico,26
+Cat,White/Calico Point,1
+Cat,White/Chocolate,2
+Cat,White/Chocolate Point,3
+Cat,White/Cream,28
+Cat,White/Cream Tabby,47
+Cat,White/Flame Point,1
+Cat,White/Gray,144
+Cat,White/Gray Tabby,31
+Cat,White/Lilac Point,1
+Cat,White/Lynx Point,6
+Cat,White/Orange,98
+Cat,White/Orange Tabby,209
+Cat,White/Red,3
+Cat,White/Seal Point,7
+Cat,White/Silver Tabby,3
+Cat,White/Tan,25
+Cat,White/Tortie,2
+Cat,White/Tortie Point,1
+Cat,White/Tricolor,2
+Cat,White/White,13
+Cat,White/Yellow,2
+Cat,Yellow,1
+Cat,Yellow/Cream,2
+Cat,Yellow/Orange,3
+Cat,Yellow/Orange Tabby,2
+Dog,Agouti,4
+Dog,Apricot,82
+Dog,Apricot/Brown,3
+Dog,Apricot/Tricolor,2
+Dog,Apricot/White,11
+Dog,Black,4248
+Dog,Black Brindle,130
+Dog,Black Brindle/Black,11
+Dog,Black Brindle/Blue,1
+Dog,Black Brindle/Blue Tick,1
+Dog,Black Brindle/Brown,20
+Dog,Black Brindle/Brown Brindle,4
+Dog,Black Brindle/Tan,4
+Dog,Black Brindle/White,280
+Dog,Black Smoke,11
+Dog,Black Smoke/Black,1
+Dog,Black Smoke/Blue Tick,1
+Dog,Black Smoke/Brown,2
+Dog,Black Smoke/Gray,2
+Dog,Black Smoke/White,10
+Dog,Black Tiger,4
+Dog,Black Tiger/White,1
+Dog,Black/Black,89
+Dog,Black/Black Brindle,19
+Dog,Black/Black Smoke,2
+Dog,Black/Blue,4
+Dog,Black/Blue Merle,19
+Dog,Black/Blue Tick,46
+Dog,Black/Brown,2922
+Dog,Black/Brown Brindle,184
+Dog,Black/Brown Merle,3
+Dog,Black/Buff,20
+Dog,Black/Chocolate,6
+Dog,Black/Cream,57
+Dog,Black/Fawn,14
+Dog,Black/Gold,1
+Dog,Black/Gray,249
+Dog,Black/Orange,5
+Dog,Black/Red,87
+Dog,Black/Silver,21
+Dog,Black/Tan,3127
+Dog,Black/Tricolor,481
+Dog,Black/White,9628
+Dog,Black/Yellow,3
+Dog,Black/Yellow Brindle,4
+Dog,Blue,482
+Dog,Blue Cream,5
+Dog,Blue Cream/Blue Tiger,1
+Dog,Blue Cream/White,11
+Dog,Blue Merle,282
+Dog,Blue Merle/Black,21
+Dog,Blue Merle/Blue Merle,3
+Dog,Blue Merle/Brown,19
+Dog,Blue Merle/Brown Brindle,1
+Dog,Blue Merle/Cream,1
+Dog,Blue Merle/Gray,2
+Dog,Blue Merle/Red,3
+Dog,Blue Merle/Red Merle,2
+Dog,Blue Merle/Tan,57
+Dog,Blue Merle/Tricolor,9
+Dog,Blue Merle/White,220
+Dog,Blue Smoke,1
+Dog,Blue Smoke/Brown,1
+Dog,Blue Smoke/White,2
+Dog,Blue Tick,124
+Dog,Blue Tick/Black,45
+Dog,Blue Tick/Brown,15
+Dog,Blue Tick/Brown Brindle,1
+Dog,Blue Tick/Red,4
+Dog,Blue Tick/Red Tick,6
+Dog,Blue Tick/Tan,39
+Dog,Blue Tick/Tricolor,17
+Dog,Blue Tick/White,24
+Dog,Blue Tiger,11
+Dog,Blue Tiger/Tan,1
+Dog,Blue Tiger/White,47
+Dog,Blue/Black,13
+Dog,Blue/Black Brindle,2
+Dog,Blue/Blue,2
+Dog,Blue/Blue Merle,1
+Dog,Blue/Blue Tick,1
+Dog,Blue/Brown,13
+Dog,Blue/Brown Brindle,7
+Dog,Blue/Cream,3
+Dog,Blue/Fawn,1
+Dog,Blue/Gray,11
+Dog,Blue/Silver,2
+Dog,Blue/Tan,126
+Dog,Blue/Tricolor,19
+Dog,Blue/White,2507
+Dog,Blue/Yellow Brindle,2
+Dog,Brown,3259
+Dog,Brown Brindle,1244
+Dog,Brown Brindle/Black,72
+Dog,Brown Brindle/Black Brindle,1
+Dog,Brown Brindle/Blue,1
+Dog,Brown Brindle/Blue Cream,1
+Dog,Brown Brindle/Blue Tick,2
+Dog,Brown Brindle/Brown,25
+Dog,Brown Brindle/Brown Brindle,3
+Dog,Brown Brindle/Brown Merle,2
+Dog,Brown Brindle/Fawn,2
+Dog,Brown Brindle/Gray,2
+Dog,Brown Brindle/Liver Tick,1
+Dog,Brown Brindle/Red Tick,3
+Dog,Brown Brindle/Tan,11
+Dog,Brown Brindle/Tricolor,1
+Dog,Brown Brindle/White,2500
+Dog,Brown Merle,145
+Dog,Brown Merle/Black,4
+Dog,Brown Merle/Blue Merle,2
+Dog,Brown Merle/Brown,4
+Dog,Brown Merle/Chocolate,1
+Dog,Brown Merle/Gray,2
+Dog,Brown Merle/Tan,7
+Dog,Brown Merle/White,150
+Dog,Brown Tiger,12
+Dog,Brown Tiger/Brown,1
+Dog,Brown Tiger/White,23
+Dog,Brown/Apricot,1
+Dog,Brown/Black,2258
+Dog,Brown/Black Brindle,3
+Dog,Brown/Black Smoke,1
+Dog,Brown/Blue,1
+Dog,Brown/Blue Merle,2
+Dog,Brown/Brown,49
+Dog,Brown/Brown Brindle,11
+Dog,Brown/Brown Merle,1
+Dog,Brown/Buff,8
+Dog,Brown/Chocolate,6
+Dog,Brown/Cream,33
+Dog,Brown/Fawn,8
+Dog,Brown/Gold,1
+Dog,Brown/Gray,38
+Dog,Brown/Liver,1
+Dog,Brown/Red,27
+Dog,Brown/Red Merle,2
+Dog,Brown/Red Tick,4
+Dog,Brown/Silver,13
+Dog,Brown/Tan,489
+Dog,Brown/Tricolor,171
+Dog,Brown/White,4634
+Dog,Brown/Yellow,2
+Dog,Buff,551
+Dog,Buff/Black,23
+Dog,Buff/Brown,4
+Dog,Buff/Cream,5
+Dog,Buff/Gray,5
+Dog,Buff/Red,2
+Dog,Buff/Red Tick,3
+Dog,Buff/Tan,32
+Dog,Buff/White,158
+Dog,Buff/Yellow,5
+Dog,Calico,2
+Dog,Chocolate,568
+Dog,Chocolate/Black,5
+Dog,Chocolate/Blue Tick,1
+Dog,Chocolate/Brown,14
+Dog,Chocolate/Brown Brindle,5
+Dog,Chocolate/Brown Merle,1
+Dog,Chocolate/Chocolate,3
+Dog,Chocolate/Cream,6
+Dog,Chocolate/Fawn,2
+Dog,Chocolate/Gold,1
+Dog,Chocolate/Gray,3
+Dog,Chocolate/Liver Tick,1
+Dog,Chocolate/Red,4
+Dog,Chocolate/Red Tick,1
+Dog,Chocolate/Tan,306
+Dog,Chocolate/Tricolor,21
+Dog,Chocolate/White,1043
+Dog,Chocolate/Yellow,1
+Dog,Cream,760
+Dog,Cream/Black,74
+Dog,Cream/Blue,1
+Dog,Cream/Brown,20
+Dog,Cream/Brown Merle,1
+Dog,Cream/Cream,1
+Dog,Cream/Gold,2
+Dog,Cream/Gray,5
+Dog,Cream/Red,10
+Dog,Cream/Red Tick,4
+Dog,Cream/Silver,2
+Dog,Cream/Tan,67
+Dog,Cream/Tricolor,2
+Dog,Cream/White,221
+Dog,Cream/Yellow,6
+Dog,Fawn,316
+Dog,Fawn/Black,73
+Dog,Fawn/Blue,6
+Dog,Fawn/Brown,13
+Dog,Fawn/Brown Brindle,2
+Dog,Fawn/Chocolate,1
+Dog,Fawn/Cream,1
+Dog,Fawn/Gray,6
+Dog,Fawn/Tan,12
+Dog,Fawn/Tricolor,9
+Dog,Fawn/White,649
+Dog,Gold,193
+Dog,Gold/Black,7
+Dog,Gold/Brown,6
+Dog,Gold/Buff,1
+Dog,Gold/Cream,3
+Dog,Gold/Gold,6
+Dog,Gold/Gray,1
+Dog,Gold/Silver,1
+Dog,Gold/Tan,4
+Dog,Gold/White,73
+Dog,Gold/Yellow,3
+Dog,Gray,271
+Dog,Gray/Black,118
+Dog,Gray/Blue,3
+Dog,Gray/Blue Merle,1
+Dog,Gray/Brown,29
+Dog,Gray/Brown Brindle,1
+Dog,Gray/Buff,2
+Dog,Gray/Cream,17
+Dog,Gray/Fawn,2
+Dog,Gray/Gold,2
+Dog,Gray/Gray,4
+Dog,Gray/Red,1
+Dog,Gray/Silver,5
+Dog,Gray/Tan,58
+Dog,Gray/Tricolor,6
+Dog,Gray/White,436
+Dog,Liver,2
+Dog,Liver Tick,13
+Dog,Liver Tick/Brown,4
+Dog,Liver Tick/White,1
+Dog,Liver/Blue,2
+Dog,Liver/Buff,1
+Dog,Liver/Chocolate,2
+Dog,Liver/Liver Tick,1
+Dog,Liver/Tan,7
+Dog,Liver/White,30
+Dog,Orange,2
+Dog,Orange/Tan,6
+Dog,Orange/White,5
+Dog,Red,1456
+Dog,Red Merle,75
+Dog,Red Merle/Black,4
+Dog,Red Merle/Brown,1
+Dog,Red Merle/Brown Merle,1
+Dog,Red Merle/Red Merle,1
+Dog,Red Merle/Tan,1
+Dog,Red Merle/Tricolor,1
+Dog,Red Merle/White,58
+Dog,Red Tick,116
+Dog,Red Tick/Black,1
+Dog,Red Tick/Blue,1
+Dog,Red Tick/Blue Tick,2
+Dog,Red Tick/Brown,9
+Dog,Red Tick/Brown Brindle,1
+Dog,Red Tick/Brown Merle,1
+Dog,Red Tick/Orange,2
+Dog,Red Tick/Red,7
+Dog,Red Tick/Tan,6
+Dog,Red Tick/Tricolor,2
+Dog,Red Tick/White,52
+Dog,Red/Black,248
+Dog,Red/Blue,1
+Dog,Red/Brown,55
+Dog,Red/Brown Brindle,1
+Dog,Red/Buff,5
+Dog,Red/Cream,24
+Dog,Red/Gold,2
+Dog,Red/Gray,5
+Dog,Red/Red,4
+Dog,Red/Red Merle,2
+Dog,Red/Red Tick,5
+Dog,Red/Silver,2
+Dog,Red/Tan,99
+Dog,Red/Tricolor,6
+Dog,Red/White,1501
+Dog,Red/Yellow,3
+Dog,Ruddy/Cream,1
+Dog,Sable,620
+Dog,Sable/Black,44
+Dog,Sable/Brown,20
+Dog,Sable/Buff,2
+Dog,Sable/Cream,11
+Dog,Sable/Gray,2
+Dog,Sable/Red,6
+Dog,Sable/Red Merle,1
+Dog,Sable/Tan,41
+Dog,Sable/White,318
+Dog,Silver,48
+Dog,Silver/Black,14
+Dog,Silver/Blue,1
+Dog,Silver/Brown,10
+Dog,Silver/Chocolate,3
+Dog,Silver/Cream,3
+Dog,Silver/Gray,4
+Dog,Silver/Red,5
+Dog,Silver/Tan,48
+Dog,Silver/White,19
+Dog,Tan,3578
+Dog,Tan/Apricot,1
+Dog,Tan/Black,1364
+Dog,Tan/Blue,8
+Dog,Tan/Blue Merle,1
+Dog,Tan/Blue Tick,2
+Dog,Tan/Brown,171
+Dog,Tan/Brown Brindle,3
+Dog,Tan/Brown Merle,1
+Dog,Tan/Buff,22
+Dog,Tan/Cream,68
+Dog,Tan/Fawn,11
+Dog,Tan/Gold,2
+Dog,Tan/Gray,46
+Dog,Tan/Red,19
+Dog,Tan/Red Merle,3
+Dog,Tan/Red Tick,5
+Dog,Tan/Silver,41
+Dog,Tan/Tan,48
+Dog,Tan/Tricolor,41
+Dog,Tan/White,4282
+Dog,Tan/Yellow,5
+Dog,Tan/Yellow Brindle,1
+Dog,Tricolor,3107
+Dog,Tricolor/Black,71
+Dog,Tricolor/Blue,7
+Dog,Tricolor/Blue Merle,11
+Dog,Tricolor/Blue Tick,13
+Dog,Tricolor/Brown,80
+Dog,Tricolor/Brown Brindle,34
+Dog,Tricolor/Brown Merle,3
+Dog,Tricolor/Chocolate,3
+Dog,Tricolor/Cream,1
+Dog,Tricolor/Fawn,2
+Dog,Tricolor/Gray,4
+Dog,Tricolor/Red,6
+Dog,Tricolor/Red Tick,3
+Dog,Tricolor/Silver,2
+Dog,Tricolor/Tan,19
+Dog,Tricolor/Tricolor,1
+Dog,Tricolor/White,109
+Dog,Unknown,1
+Dog,White,4338
+Dog,White/Apricot,5
+Dog,White/Black,2928
+Dog,White/Black Brindle,35
+Dog,White/Black Smoke,3
+Dog,White/Black Tiger,1
+Dog,White/Blue,316
+Dog,White/Blue Cream,4
+Dog,White/Blue Merle,63
+Dog,White/Blue Tick,15
+Dog,White/Blue Tiger,2
+Dog,White/Brown,2687
+Dog,White/Brown Brindle,531
+Dog,White/Brown Merle,25
+Dog,White/Brown Tabby,2
+Dog,White/Brown Tiger,2
+Dog,White/Buff,90
+Dog,White/Chocolate,153
+Dog,White/Cream,139
+Dog,White/Fawn,33
+Dog,White/Gold,5
+Dog,White/Gray,289
+Dog,White/Gray Tiger,2
+Dog,White/Liver,40
+Dog,White/Liver Tick,3
+Dog,White/Orange,31
+Dog,White/Pink,4
+Dog,White/Red,275
+Dog,White/Red Merle,24
+Dog,White/Red Tick,35
+Dog,White/Silver,11
+Dog,White/Tan,2123
+Dog,White/Tortie,1
+Dog,White/Tricolor,315
+Dog,White/White,107
+Dog,White/Yellow,29
+Dog,White/Yellow Brindle,7
+Dog,Yellow,723
+Dog,Yellow Brindle,37
+Dog,Yellow Brindle/Black,1
+Dog,Yellow Brindle/Blue,1
+Dog,Yellow Brindle/Brown,1
+Dog,Yellow Brindle/White,70
+Dog,Yellow/Black,1
+Dog,Yellow/Brown,2
+Dog,Yellow/Cream,2
+Dog,Yellow/Gray,2
+Dog,Yellow/Tan,4
+Dog,Yellow/White,166
+Dog,Yellow/Yellow,1
+Livestock,Black,3
+Livestock,Black/Brown,1
+Livestock,Black/White,7
+Livestock,Brown,1
+Livestock,Gray,1
+Livestock,Gray/Black,1
+Livestock,Pink,5
+Livestock,Tan,1
+Livestock,Tan/Black,1
+Livestock,White,3
+Livestock,White/Black,1
+Other,Agouti,7
+Other,Agouti/Gray,1
+Other,Agouti/White,1
+Other,Apricot,1
+Other,Black,599
+Other,Black Brindle,1
+Other,Black Smoke,2
+Other,Black Smoke/Chocolate,1
+Other,Black Smoke/Gray,1
+Other,Black Smoke/White,1
+Other,Black/Black,12
+Other,Black/Blue,1
+Other,Black/Brown,224
+Other,Black/Chocolate,1
+Other,Black/Cream,1
+Other,Black/Gray,328
+Other,Black/Green,1
+Other,Black/Orange,7
+Other,Black/Pink,2
+Other,Black/Red,4
+Other,Black/Silver,3
+Other,Black/Tan,7
+Other,Black/Tricolor,8
+Other,Black/White,443
+Other,Black/Yellow,2
+Other,Blue,25
+Other,Blue/Brown,1
+Other,Blue/Orange,1
+Other,Blue/White,14
+Other,Brown,2790
+Other,Brown Brindle,4
+Other,Brown/Black,437
+Other,Brown/Brown,145
+Other,Brown/Cream,4
+Other,Brown/Gray,34
+Other,Brown/Green,3
+Other,Brown/Orange,3
+Other,Brown/Pink,1
+Other,Brown/Red,19
+Other,Brown/Tan,22
+Other,Brown/Tricolor,2
+Other,Brown/White,99
+Other,Brown/Yellow,1
+Other,Buff,5
+Other,Buff/Brown,1
+Other,Buff/Red,1
+Other,Calico,41
+Other,Chocolate,14
+Other,Chocolate Point/Cream,1
+Other,Chocolate/Tan,2
+Other,Chocolate/White,13
+Other,Cream,4
+Other,Cream/Black,1
+Other,Cream/Silver,1
+Other,Cream/White,3
+Other,Fawn,2
+Other,Fawn/Black,1
+Other,Fawn/White,4
+Other,Gold,6
+Other,Gold/White,2
+Other,Gray,377
+Other,Gray/Black,381
+Other,Gray/Brown,22
+Other,Gray/Gold,1
+Other,Gray/Gray,21
+Other,Gray/Orange,8
+Other,Gray/Pink,20
+Other,Gray/Red,15
+Other,Gray/Tan,2
+Other,Gray/Tricolor,2
+Other,Gray/White,100
+Other,Green,25
+Other,Green/Brown,4
+Other,Green/Gold,1
+Other,Green/Orange,1
+Other,Green/Red,1
+Other,Green/Yellow,5
+Other,Lilac Point,2
+Other,Liver,1
+Other,Orange,14
+Other,Orange/Black,5
+Other,Orange/Blue,1
+Other,Orange/Brown,2
+Other,Orange/Gray,1
+Other,Orange/Tan,1
+Other,Orange/White,14
+Other,Pink,32
+Other,Red,182
+Other,Red/Black,7
+Other,Red/Brown,15
+Other,Red/Cream,7
+Other,Red/Gray,17
+Other,Red/Red,1
+Other,Red/Silver,4
+Other,Red/Tan,3
+Other,Red/White,11
+Other,Sable,42
+Other,Sable/Black,1
+Other,Sable/Brown,1
+Other,Sable/White,14
+Other,Seal Point,4
+Other,Seal Point/Gray,2
+Other,Seal Point/White,1
+Other,Silver,2
+Other,Silver/Black,1
+Other,Silver/Orange,1
+Other,Silver/Red,1
+Other,Tan,50
+Other,Tan/Black,9
+Other,Tan/Brown,2
+Other,Tan/Gray,1
+Other,Tan/Red,1
+Other,Tan/Tricolor,1
+Other,Tan/White,19
+Other,Tortie,9
+Other,Tortie/Black,1
+Other,Tricolor,165
+Other,Tricolor/Black,3
+Other,Tricolor/Brown,1
+Other,Tricolor/Calico,1
+Other,Tricolor/Gray,1
+Other,Tricolor/White,6
+Other,White,181
+Other,White/Black,182
+Other,White/Blue,12
+Other,White/Brown,98
+Other,White/Brown Tabby,1
+Other,White/Buff,1
+Other,White/Calico,1
+Other,White/Chocolate,7
+Other,White/Cream,1
+Other,White/Fawn,1
+Other,White/Gray,118
+Other,White/Orange,8
+Other,White/Pink,1
+Other,White/Red,3
+Other,White/Seal Point,1
+Other,White/Silver,2
+Other,White/Tan,32
+Other,White/Tricolor,19
+Other,White/White,7
+Other,White/Yellow,1
+Other,Yellow,1
+Other,Yellow/Black,2

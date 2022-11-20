@@ -56,3 +56,8 @@ hr {
 .panel {
     padding: 1rem;
 }
+
+
+.xaxis, .yaxis {
+    font-size: .5em;
+}
