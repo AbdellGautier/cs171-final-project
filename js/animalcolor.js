@@ -1,9 +1,11 @@
 
 class AnimalColorBarChart {
 
-    constructor(_parentElement, _data, _config) {
+    constructor(_parentElement, _data,_data2, _config) {
         this.parentElement = _parentElement;
         this.data = _data;
+        this.outcomedata = _data2;
+        this.backup_outcome = _data2;
         this.displayData = _data;
         this.config = _config;
 
@@ -37,6 +39,12 @@ class AnimalColorBarChart {
 
         vis.svg.append('g')
             .attr('class', 'heading')
+
+
+            /*.append('text')
+            .text('Top 5 Colors of Dog')
+            .attr('transform', `translate(${vis.width / 2}, 10)`)
+            .attr('text-anchor', 'middle');*/
 
         vis.defs = vis.svg.append('svg:defs');
 
@@ -74,22 +82,48 @@ class AnimalColorBarChart {
         // Group data by key variable and count
         //let counts = d3.rollup(vis.displayData, v => v.length, d => d[vis.config.key],d => d['Color']);
         //vis.displayData = Array.from(counts).map(([key, value]) => ({ key, value }));
-
+        selectedCategory =  document.getElementById('categorySelector').value;
+        console.log('In the wrangle method :: ', selectedCategory);
         let dataByDate = Array.from(d3.group(vis.data, d => d['Animal Type']), ([key, value]) => ({key, value}))
         console.log(dataByDate)
         console.log('From event', animalType);
         if(animalType==''){
             animalType="Dog";
         }
-        dataByDate.forEach(function(d){
-            if(animalType==d.key){
-                console.log('Number of Colors ',d.value.length)
-                noOfColors=d.value.length
-                vis.displayData=d.value;
-            }
-        })
+        if (selectedCategory=='animalintake'){
+            dataByDate.forEach(function(d){
+                if(animalType==d.key){
+                    console.log('Number of Colors ',d.value.length)
+                    noOfColors=d.value.length
+                    vis.displayData=d.value;
+                }
+            })
+        }
+        else{
+            let outcomeData = Array.from(d3.group(vis.backup_outcome, d => d['Animal Type']), ([key, value]) => ({key, value}))
+            let animalData;
+            outcomeData.forEach(function(d){
+                if(animalType==d.key){
+                    //console.log('Number of Colors ',d.value.length)
+                    noOfColors=d.value.length
+                    animalData=d.value;
+                }
+            });
+            let finalData = Array.from(d3.group(animalData, d => d['Outcome Type']), ([key, value]) => ({key, value}))
+            let animalData_final;
+            finalData.forEach(function(d){
+                if(selectedCategory==d.key){
+                    console.log('Number of Colors ',d.value.length)
+                    noOfColors=d.value.length
+                    vis.displayData=d.value;
+                }
+            })
+
+        }
         //sort the data
         vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(0,5);
+        // Sort columns descending
+        console.log('FINAL Color Data to chekc ', vis.displayData);
 
         // Update the visualization
         vis.updateVis();
@@ -110,6 +144,7 @@ class AnimalColorBarChart {
             .merge(vis.title)
             .transition()
             .duration(1000)
+            .attr("fill","blue")
             .text(function(d){
                 return "Top 5 Colors of " + d['Animal Type'] + " Out of " + noOfColors
             })
@@ -145,7 +180,8 @@ class AnimalColorBarChart {
             .merge(vis.barchart)
             .transition()
             .duration(1000)
-            .attr("fill", "grey")
+            //.attr("fill","#3C948B")
+            .attr("fill", "steelblue")
             .attr('x', d=>vis.x(d.Color))
             .attr('y', d=>vis.y(d.count))
             .attr('height', (d)=>{

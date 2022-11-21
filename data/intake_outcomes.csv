@@ -1,0 +1,2509 @@
+Animal Type,Outcome Type,Color,Animal ID
+Bird,Adoption,Black,7
+Bird,Adoption,Black/Brown,2
+Bird,Adoption,Black/Chocolate,5
+Bird,Adoption,Black/Cream,3
+Bird,Adoption,Black/Gold,1
+Bird,Adoption,Black/Red,9
+Bird,Adoption,Black/Tan,1
+Bird,Adoption,Black/Tricolor,1
+Bird,Adoption,Black/White,11
+Bird,Adoption,Black/Yellow,1
+Bird,Adoption,Blue,6
+Bird,Adoption,Blue/Black,2
+Bird,Adoption,Blue/Gray,3
+Bird,Adoption,Blue/Green,2
+Bird,Adoption,Blue/White,7
+Bird,Adoption,Blue/Yellow,1
+Bird,Adoption,Brown,9
+Bird,Adoption,Brown/Black,4
+Bird,Adoption,Brown/Green,1
+Bird,Adoption,Brown/Red,2
+Bird,Adoption,Brown/White,4
+Bird,Adoption,Cream/Black,1
+Bird,Adoption,Fawn/Black,1
+Bird,Adoption,Gray,5
+Bird,Adoption,Gray/Black,1
+Bird,Adoption,Gray/Brown,1
+Bird,Adoption,Gray/Green,1
+Bird,Adoption,Gray/Red,1
+Bird,Adoption,Gray/White,5
+Bird,Adoption,Gray/Yellow,4
+Bird,Adoption,Green,4
+Bird,Adoption,Green/Black,2
+Bird,Adoption,Green/Blue,2
+Bird,Adoption,Green/Gray,3
+Bird,Adoption,Green/Red,1
+Bird,Adoption,Green/Silver,1
+Bird,Adoption,Green/White,2
+Bird,Adoption,Green/Yellow,9
+Bird,Adoption,Red,18
+Bird,Adoption,Red/Black,19
+Bird,Adoption,Red/Brown,1
+Bird,Adoption,Red/Green,1
+Bird,Adoption,Red/White,4
+Bird,Adoption,Silver,2
+Bird,Adoption,Tan,1
+Bird,Adoption,Tan/Red,1
+Bird,Adoption,Tan/Yellow,1
+Bird,Adoption,Tricolor,2
+Bird,Adoption,Tricolor/White,7
+Bird,Adoption,White,20
+Bird,Adoption,White/Black,2
+Bird,Adoption,White/Blue,7
+Bird,Adoption,White/Brown,3
+Bird,Adoption,White/Gray,2
+Bird,Adoption,White/Red,1
+Bird,Adoption,White/Tan,1
+Bird,Adoption,White/Tricolor,1
+Bird,Adoption,White/Yellow,4
+Bird,Adoption,Yellow,16
+Bird,Adoption,Yellow/Black,2
+Bird,Adoption,Yellow/Brown,1
+Bird,Adoption,Yellow/Gray,1
+Bird,Adoption,Yellow/Green,2
+Bird,Adoption,Yellow/Red,3
+Bird,Adoption,Yellow/White,2
+Bird,Died,Black,2
+Bird,Died,Blue,1
+Bird,Died,Blue/White,2
+Bird,Died,Blue/Yellow,1
+Bird,Died,Brown,1
+Bird,Died,Brown/Black,2
+Bird,Died,Gray,2
+Bird,Died,Gray/Gray,1
+Bird,Died,Gray/White,2
+Bird,Died,Gray/Yellow,1
+Bird,Died,Green,2
+Bird,Died,Red/Black,2
+Bird,Died,White,2
+Bird,Died,Yellow,3
+Bird,Died,Yellow/Gray,1
+Bird,Died,Yellow/Green,1
+Bird,Disposal,Black,3
+Bird,Disposal,Blue/Black,1
+Bird,Disposal,Blue/White,1
+Bird,Disposal,Brown/Black,1
+Bird,Disposal,Gray,2
+Bird,Disposal,Gray/White,3
+Bird,Disposal,Green,2
+Bird,Disposal,Tricolor,1
+Bird,Disposal,White,16
+Bird,Disposal,Yellow,1
+Bird,Euthanasia,Black,19
+Bird,Euthanasia,Black/Blue,1
+Bird,Euthanasia,Black/Cream,2
+Bird,Euthanasia,Black/Red,1
+Bird,Euthanasia,Black/White,3
+Bird,Euthanasia,Blue,3
+Bird,Euthanasia,Blue/Brown,1
+Bird,Euthanasia,Blue/White,1
+Bird,Euthanasia,Brown,17
+Bird,Euthanasia,Brown/Black,4
+Bird,Euthanasia,Brown/Gray,3
+Bird,Euthanasia,Brown/Green,1
+Bird,Euthanasia,Brown/Red,3
+Bird,Euthanasia,Brown/White,4
+Bird,Euthanasia,Brown/Yellow,1
+Bird,Euthanasia,Buff,1
+Bird,Euthanasia,Gray,18
+Bird,Euthanasia,Gray/Black,1
+Bird,Euthanasia,Gray/Brown,1
+Bird,Euthanasia,Gray/Tan,1
+Bird,Euthanasia,Gray/White,9
+Bird,Euthanasia,Green,3
+Bird,Euthanasia,Green/Black,1
+Bird,Euthanasia,Green/Yellow,1
+Bird,Euthanasia,Orange,1
+Bird,Euthanasia,Orange/White,1
+Bird,Euthanasia,Red,11
+Bird,Euthanasia,Red/Black,2
+Bird,Euthanasia,Red/Brown,1
+Bird,Euthanasia,Red/White,1
+Bird,Euthanasia,Tan/White,2
+Bird,Euthanasia,Tricolor,2
+Bird,Euthanasia,Tricolor/Brown,1
+Bird,Euthanasia,White,4
+Bird,Euthanasia,White/Brown,2
+Bird,Euthanasia,White/Red,1
+Bird,Euthanasia,White/Tan,1
+Bird,Euthanasia,White/Tricolor,2
+Bird,Euthanasia,Yellow/Black,2
+Bird,Missing,Black,1
+Bird,Relocate,Black,2
+Bird,Relocate,Blue/White,1
+Bird,Relocate,Brown,2
+Bird,Relocate,Brown/Tan,1
+Bird,Relocate,Gray,1
+Bird,Relocate,Gray/Black,1
+Bird,Relocate,Gray/White,1
+Bird,Relocate,White/Gray,1
+Bird,Return to Owner,Black/Brown,1
+Bird,Return to Owner,Black/Red,2
+Bird,Return to Owner,Blue,1
+Bird,Return to Owner,Blue/White,1
+Bird,Return to Owner,Brown,1
+Bird,Return to Owner,Brown/White,1
+Bird,Return to Owner,Buff/Brown,3
+Bird,Return to Owner,Gray,1
+Bird,Return to Owner,Gray/Red,3
+Bird,Return to Owner,Gray/Yellow,3
+Bird,Return to Owner,Green,2
+Bird,Return to Owner,Green/Blue,1
+Bird,Return to Owner,Green/Orange,2
+Bird,Return to Owner,Green/Red,4
+Bird,Return to Owner,Green/Tricolor,1
+Bird,Return to Owner,Green/Yellow,2
+Bird,Return to Owner,Red,2
+Bird,Return to Owner,Red/Black,1
+Bird,Return to Owner,Tricolor,1
+Bird,Return to Owner,White,2
+Bird,Return to Owner,White/Black,4
+Bird,Return to Owner,White/Blue,1
+Bird,Return to Owner,White/Red,1
+Bird,Return to Owner,White/Yellow,1
+Bird,Return to Owner,Yellow,4
+Bird,Return to Owner,Yellow/Blue,1
+Bird,Transfer,Black,14
+Bird,Transfer,Black/Brown,4
+Bird,Transfer,Black/Gray,1
+Bird,Transfer,Black/Green,2
+Bird,Transfer,Black/Red,4
+Bird,Transfer,Black/White,10
+Bird,Transfer,Black/Yellow,2
+Bird,Transfer,Blue,2
+Bird,Transfer,Blue/Gold,1
+Bird,Transfer,Blue/Green,1
+Bird,Transfer,Blue/White,1
+Bird,Transfer,Brown,30
+Bird,Transfer,Brown/Black,3
+Bird,Transfer,Brown/Gray,1
+Bird,Transfer,Brown/Red,1
+Bird,Transfer,Brown/Tricolor,1
+Bird,Transfer,Brown/White,6
+Bird,Transfer,Brown/Yellow,4
+Bird,Transfer,Cream,2
+Bird,Transfer,Cream/White,1
+Bird,Transfer,Gold,2
+Bird,Transfer,Gold/Brown,1
+Bird,Transfer,Gray,8
+Bird,Transfer,Gray/Black,1
+Bird,Transfer,Gray/Blue,2
+Bird,Transfer,Gray/Brown,1
+Bird,Transfer,Gray/Gray,1
+Bird,Transfer,Gray/Green,1
+Bird,Transfer,Gray/Yellow,1
+Bird,Transfer,Green,5
+Bird,Transfer,Green/Blue,3
+Bird,Transfer,Green/Gray,2
+Bird,Transfer,Green/Yellow,1
+Bird,Transfer,Orange,1
+Bird,Transfer,Red,10
+Bird,Transfer,Red/Black,2
+Bird,Transfer,Red/Brown,2
+Bird,Transfer,Red/White,1
+Bird,Transfer,Sable,1
+Bird,Transfer,Silver,1
+Bird,Transfer,Tan,2
+Bird,Transfer,Tan/White,1
+Bird,Transfer,Tricolor,5
+Bird,Transfer,Tricolor/White,1
+Bird,Transfer,White,15
+Bird,Transfer,White/Black,6
+Bird,Transfer,White/Blue,5
+Bird,Transfer,White/Brown,2
+Bird,Transfer,White/Buff,1
+Bird,Transfer,White/Gray,1
+Bird,Transfer,White/Green,1
+Bird,Transfer,White/Orange,2
+Bird,Transfer,White/Red,2
+Bird,Transfer,White/White,2
+Bird,Transfer,White/Yellow,1
+Bird,Transfer,Yellow,9
+Bird,Transfer,Yellow/Black,9
+Bird,Transfer,Yellow/Green,1
+Bird,Transfer,Yellow/White,1
+Cat,Adoption,Agouti,10
+Cat,Adoption,Agouti/Brown Tabby,1
+Cat,Adoption,Agouti/White,2
+Cat,Adoption,Apricot,1
+Cat,Adoption,Black,3393
+Cat,Adoption,Black Smoke,131
+Cat,Adoption,Black Smoke/Black Tabby,4
+Cat,Adoption,Black Smoke/White,24
+Cat,Adoption,Black Tabby,87
+Cat,Adoption,Black Tabby/Black Smoke,1
+Cat,Adoption,Black Tabby/White,35
+Cat,Adoption,Black Tiger,2
+Cat,Adoption,Black/Black,36
+Cat,Adoption,Black/Black Smoke,3
+Cat,Adoption,Black/Brown,2
+Cat,Adoption,Black/Brown Tabby,2
+Cat,Adoption,Black/Gray,4
+Cat,Adoption,Black/Orange,1
+Cat,Adoption,Black/Silver,2
+Cat,Adoption,Black/White,2473
+Cat,Adoption,Blue,1011
+Cat,Adoption,Blue Cream,41
+Cat,Adoption,Blue Cream/Blue Tabby,1
+Cat,Adoption,Blue Cream/Tortie,1
+Cat,Adoption,Blue Cream/White,1
+Cat,Adoption,Blue Point,44
+Cat,Adoption,Blue Point/Cream,1
+Cat,Adoption,Blue Point/White,9
+Cat,Adoption,Blue Smoke,9
+Cat,Adoption,Blue Smoke/Gray,1
+Cat,Adoption,Blue Smoke/White,2
+Cat,Adoption,Blue Tabby,1112
+Cat,Adoption,Blue Tabby/Blue Cream,2
+Cat,Adoption,Blue Tabby/Brown,1
+Cat,Adoption,Blue Tabby/Cream,7
+Cat,Adoption,Blue Tabby/Tan,1
+Cat,Adoption,Blue Tabby/White,608
+Cat,Adoption,Blue/Blue,4
+Cat,Adoption,Blue/Calico,1
+Cat,Adoption,Blue/Orange,2
+Cat,Adoption,Blue/Tortie,4
+Cat,Adoption,Blue/White,739
+Cat,Adoption,Brown,10
+Cat,Adoption,Brown Tabby,4082
+Cat,Adoption,Brown Tabby/Agouti,3
+Cat,Adoption,Brown Tabby/Black,19
+Cat,Adoption,Brown Tabby/Black Brindle,1
+Cat,Adoption,Brown Tabby/Brown,2
+Cat,Adoption,Brown Tabby/Brown Tabby,2
+Cat,Adoption,Brown Tabby/Calico,1
+Cat,Adoption,Brown Tabby/Cream,2
+Cat,Adoption,Brown Tabby/Gray,4
+Cat,Adoption,Brown Tabby/Orange,6
+Cat,Adoption,Brown Tabby/Orange Tabby,1
+Cat,Adoption,Brown Tabby/Silver,4
+Cat,Adoption,Brown Tabby/Tortie,4
+Cat,Adoption,Brown Tabby/White,2218
+Cat,Adoption,Brown Tiger,7
+Cat,Adoption,Brown Tiger/White,1
+Cat,Adoption,Brown/Black,7
+Cat,Adoption,Brown/Seal Point,1
+Cat,Adoption,Brown/White,7
+Cat,Adoption,Buff,3
+Cat,Adoption,Buff/White,3
+Cat,Adoption,Calico,1267
+Cat,Adoption,Calico Point,28
+Cat,Adoption,Calico Point/White,7
+Cat,Adoption,Calico/Black,5
+Cat,Adoption,Calico/Blue Cream,3
+Cat,Adoption,Calico/Brown,2
+Cat,Adoption,Calico/Brown Tabby,8
+Cat,Adoption,Calico/Calico,1
+Cat,Adoption,Calico/Gray,2
+Cat,Adoption,Calico/Orange Tabby,1
+Cat,Adoption,Calico/Tricolor,2
+Cat,Adoption,Calico/White,94
+Cat,Adoption,Chocolate,13
+Cat,Adoption,Chocolate Point,44
+Cat,Adoption,Chocolate Point/Cream,1
+Cat,Adoption,Chocolate Point/White,6
+Cat,Adoption,Chocolate/Black Smoke,3
+Cat,Adoption,Chocolate/Seal Point,1
+Cat,Adoption,Chocolate/White,4
+Cat,Adoption,Cream,22
+Cat,Adoption,Cream Tabby,529
+Cat,Adoption,Cream Tabby/Cream Tabby,1
+Cat,Adoption,Cream Tabby/Orange Tabby,1
+Cat,Adoption,Cream Tabby/White,252
+Cat,Adoption,Cream Tiger/Brown Tabby,1
+Cat,Adoption,Cream/Blue Point,1
+Cat,Adoption,Cream/Brown,5
+Cat,Adoption,Cream/Orange,1
+Cat,Adoption,Cream/Seal Point,1
+Cat,Adoption,Cream/White,12
+Cat,Adoption,Fawn,1
+Cat,Adoption,Flame Point,196
+Cat,Adoption,Flame Point/White,5
+Cat,Adoption,Gray,29
+Cat,Adoption,Gray Tabby,94
+Cat,Adoption,Gray Tabby/Black,7
+Cat,Adoption,Gray Tabby/Orange,1
+Cat,Adoption,Gray Tabby/White,68
+Cat,Adoption,Gray/Black,1
+Cat,Adoption,Gray/Gray,2
+Cat,Adoption,Gray/Tortie,2
+Cat,Adoption,Gray/White,26
+Cat,Adoption,Lilac Point,66
+Cat,Adoption,Lilac Point/Black,1
+Cat,Adoption,Lilac Point/White,5
+Cat,Adoption,Lynx Point,419
+Cat,Adoption,Lynx Point/Blue,1
+Cat,Adoption,Lynx Point/Gray,2
+Cat,Adoption,Lynx Point/Tan,1
+Cat,Adoption,Lynx Point/Tortie Point,4
+Cat,Adoption,Lynx Point/White,43
+Cat,Adoption,Orange,28
+Cat,Adoption,Orange Tabby,1936
+Cat,Adoption,Orange Tabby/Brown,2
+Cat,Adoption,Orange Tabby/Cream,3
+Cat,Adoption,Orange Tabby/Orange,3
+Cat,Adoption,Orange Tabby/Orange Tabby,1
+Cat,Adoption,Orange Tabby/White,1117
+Cat,Adoption,Orange Tiger,3
+Cat,Adoption,Orange/Orange Tabby,1
+Cat,Adoption,Orange/White,37
+Cat,Adoption,Red Tick,1
+Cat,Adoption,Sable,1
+Cat,Adoption,Seal Point,242
+Cat,Adoption,Seal Point/White,42
+Cat,Adoption,Silver,7
+Cat,Adoption,Silver Lynx Point,11
+Cat,Adoption,Silver Lynx Point/Gray,1
+Cat,Adoption,Silver Lynx Point/White,1
+Cat,Adoption,Silver Tabby,50
+Cat,Adoption,Silver Tabby/Black,1
+Cat,Adoption,Silver Tabby/White,25
+Cat,Adoption,Silver/Silver Tabby,1
+Cat,Adoption,Tan,1
+Cat,Adoption,Tan/White,1
+Cat,Adoption,Torbie,918
+Cat,Adoption,Torbie/Black,1
+Cat,Adoption,Torbie/Blue Cream,4
+Cat,Adoption,Torbie/Blue Tabby,1
+Cat,Adoption,Torbie/Brown Tabby,2
+Cat,Adoption,Torbie/Gray,1
+Cat,Adoption,Torbie/White,209
+Cat,Adoption,Tortie,1281
+Cat,Adoption,Tortie Point,87
+Cat,Adoption,Tortie Point/Blue,1
+Cat,Adoption,Tortie Point/Seal Point,1
+Cat,Adoption,Tortie Point/White,8
+Cat,Adoption,Tortie/Black,12
+Cat,Adoption,Tortie/Black Smoke,1
+Cat,Adoption,Tortie/Blue Cream,11
+Cat,Adoption,Tortie/Blue Tabby,1
+Cat,Adoption,Tortie/Brown,1
+Cat,Adoption,Tortie/Gold,1
+Cat,Adoption,Tortie/Gray,3
+Cat,Adoption,Tortie/Orange,2
+Cat,Adoption,Tortie/Tortie,3
+Cat,Adoption,Tortie/White,81
+Cat,Adoption,White,185
+Cat,Adoption,White/Agouti,1
+Cat,Adoption,White/Black,477
+Cat,Adoption,White/Black Smoke,2
+Cat,Adoption,White/Black Tabby,10
+Cat,Adoption,White/Blue,171
+Cat,Adoption,White/Blue Tabby,61
+Cat,Adoption,White/Brown,20
+Cat,Adoption,White/Brown Brindle,3
+Cat,Adoption,White/Brown Tabby,301
+Cat,Adoption,White/Buff,1
+Cat,Adoption,White/Calico,14
+Cat,Adoption,White/Calico Point,1
+Cat,Adoption,White/Chocolate,2
+Cat,Adoption,White/Cream,13
+Cat,Adoption,White/Cream Tabby,25
+Cat,Adoption,White/Flame Point,1
+Cat,Adoption,White/Gray,51
+Cat,Adoption,White/Gray Tabby,13
+Cat,Adoption,White/Lilac Point,1
+Cat,Adoption,White/Lynx Point,2
+Cat,Adoption,White/Orange,43
+Cat,Adoption,White/Orange Tabby,115
+Cat,Adoption,White/Red,1
+Cat,Adoption,White/Seal Point,4
+Cat,Adoption,White/Silver Tabby,1
+Cat,Adoption,White/Tan,11
+Cat,Adoption,White/Tortie Point,1
+Cat,Adoption,White/Tricolor,2
+Cat,Adoption,White/White,6
+Cat,Adoption,Yellow/Cream,2
+Cat,Adoption,Yellow/Orange,1
+Cat,Died,Black,121
+Cat,Died,Black Smoke,1
+Cat,Died,Black Tabby,4
+Cat,Died,Black/Black,2
+Cat,Died,Black/Brown,1
+Cat,Died,Black/White,84
+Cat,Died,Blue,28
+Cat,Died,Blue Cream,1
+Cat,Died,Blue Point,1
+Cat,Died,Blue Smoke,1
+Cat,Died,Blue Tabby,30
+Cat,Died,Blue Tabby/White,15
+Cat,Died,Blue/White,14
+Cat,Died,Brown Merle,1
+Cat,Died,Brown Tabby,125
+Cat,Died,Brown Tabby/Black,1
+Cat,Died,Brown Tabby/Gray,1
+Cat,Died,Brown Tabby/White,69
+Cat,Died,Brown/Black,1
+Cat,Died,Buff,1
+Cat,Died,Buff/White,1
+Cat,Died,Calico,30
+Cat,Died,Calico/White,2
+Cat,Died,Chocolate,1
+Cat,Died,Cream,4
+Cat,Died,Cream Tabby,15
+Cat,Died,Cream Tabby/White,6
+Cat,Died,Cream/Seal Point,1
+Cat,Died,Cream/White,3
+Cat,Died,Flame Point,6
+Cat,Died,Flame Point/White,1
+Cat,Died,Gray,4
+Cat,Died,Gray Tabby,13
+Cat,Died,Gray Tabby/Black,2
+Cat,Died,Gray Tabby/White,2
+Cat,Died,Gray/Gray,1
+Cat,Died,Gray/White,4
+Cat,Died,Lynx Point,12
+Cat,Died,Orange,4
+Cat,Died,Orange Tabby,49
+Cat,Died,Orange Tabby/White,28
+Cat,Died,Orange/White,3
+Cat,Died,Seal Point,8
+Cat,Died,Torbie,16
+Cat,Died,Torbie/White,2
+Cat,Died,Tortie,34
+Cat,Died,Tortie Point,2
+Cat,Died,Tortie/Blue Cream,1
+Cat,Died,Tortie/White,1
+Cat,Died,White,10
+Cat,Died,White/Black,12
+Cat,Died,White/Blue,8
+Cat,Died,White/Blue Tabby,2
+Cat,Died,White/Brown,1
+Cat,Died,White/Brown Tabby,9
+Cat,Died,White/Cream Tabby,1
+Cat,Died,White/Gray,1
+Cat,Died,White/Orange,5
+Cat,Died,White/Orange Tabby,4
+Cat,Died,White/Tortie,1
+Cat,Disposal,Black,33
+Cat,Disposal,Black Tabby,2
+Cat,Disposal,Black/Black,1
+Cat,Disposal,Black/White,3
+Cat,Disposal,Blue,4
+Cat,Disposal,Blue Tabby,1
+Cat,Disposal,Brown Tabby,4
+Cat,Disposal,Brown Tabby/White,2
+Cat,Disposal,Brown/Gray,1
+Cat,Disposal,Calico,3
+Cat,Disposal,Calico/Calico,1
+Cat,Disposal,Calico/White,1
+Cat,Disposal,Cream Tabby,1
+Cat,Disposal,Gray,3
+Cat,Disposal,Gray Tabby,3
+Cat,Disposal,Gray/White,3
+Cat,Disposal,Lilac Point/Cream,1
+Cat,Disposal,Orange,3
+Cat,Disposal,Orange Tabby,8
+Cat,Disposal,Orange Tabby/White,1
+Cat,Disposal,Orange/White,3
+Cat,Disposal,Torbie,3
+Cat,Disposal,Torbie/White,1
+Cat,Disposal,Tortie,2
+Cat,Disposal,Tricolor,1
+Cat,Disposal,White,3
+Cat,Disposal,White/Black,2
+Cat,Disposal,White/Brown Tabby,1
+Cat,Disposal,White/Gray,1
+Cat,Disposal,White/Gray Tabby,1
+Cat,Disposal,White/Orange Tabby,1
+Cat,Disposal,White/White,1
+Cat,Euthanasia,Apricot/White,1
+Cat,Euthanasia,Black,292
+Cat,Euthanasia,Black Brindle,1
+Cat,Euthanasia,Black Smoke,5
+Cat,Euthanasia,Black Smoke/Black Tiger,1
+Cat,Euthanasia,Black Smoke/White,3
+Cat,Euthanasia,Black Tabby,13
+Cat,Euthanasia,Black Tabby/Black,1
+Cat,Euthanasia,Black Tabby/Brown,1
+Cat,Euthanasia,Black Tabby/White,3
+Cat,Euthanasia,Black Tiger/White,1
+Cat,Euthanasia,Black/Black,5
+Cat,Euthanasia,Black/Brown,1
+Cat,Euthanasia,Black/Gray,5
+Cat,Euthanasia,Black/Orange,1
+Cat,Euthanasia,Black/Silver,1
+Cat,Euthanasia,Black/White,245
+Cat,Euthanasia,Blue,69
+Cat,Euthanasia,Blue Cream,4
+Cat,Euthanasia,Blue Cream/White,2
+Cat,Euthanasia,Blue Point,7
+Cat,Euthanasia,Blue Tabby,66
+Cat,Euthanasia,Blue Tabby/Black,1
+Cat,Euthanasia,Blue Tabby/Cream,1
+Cat,Euthanasia,Blue Tabby/White,38
+Cat,Euthanasia,Blue/White,47
+Cat,Euthanasia,Brown,4
+Cat,Euthanasia,Brown Brindle,1
+Cat,Euthanasia,Brown Tabby,331
+Cat,Euthanasia,Brown Tabby/Black,8
+Cat,Euthanasia,Brown Tabby/Brown,1
+Cat,Euthanasia,Brown Tabby/Red,1
+Cat,Euthanasia,Brown Tabby/White,142
+Cat,Euthanasia,Brown Tiger,2
+Cat,Euthanasia,Brown Tiger/White,1
+Cat,Euthanasia,Brown/Black,4
+Cat,Euthanasia,Brown/Brown Tabby,1
+Cat,Euthanasia,Brown/Buff,1
+Cat,Euthanasia,Brown/White,1
+Cat,Euthanasia,Buff,4
+Cat,Euthanasia,Calico,87
+Cat,Euthanasia,Calico Point,2
+Cat,Euthanasia,Calico/Black,1
+Cat,Euthanasia,Calico/Brown Tabby,1
+Cat,Euthanasia,Calico/Gray Tabby,1
+Cat,Euthanasia,Calico/Orange Tabby,1
+Cat,Euthanasia,Calico/White,6
+Cat,Euthanasia,Chocolate,1
+Cat,Euthanasia,Chocolate Point,4
+Cat,Euthanasia,Cream,6
+Cat,Euthanasia,Cream Tabby,27
+Cat,Euthanasia,Cream Tabby/White,12
+Cat,Euthanasia,Cream Tiger,1
+Cat,Euthanasia,Cream/Seal Point,1
+Cat,Euthanasia,Cream/White,1
+Cat,Euthanasia,Fawn,1
+Cat,Euthanasia,Flame Point,10
+Cat,Euthanasia,Gray,20
+Cat,Euthanasia,Gray Tabby,27
+Cat,Euthanasia,Gray Tabby/Black,2
+Cat,Euthanasia,Gray Tabby/White,11
+Cat,Euthanasia,Gray/Black,1
+Cat,Euthanasia,Gray/Brown,2
+Cat,Euthanasia,Gray/Gray Tabby,1
+Cat,Euthanasia,Gray/Orange,1
+Cat,Euthanasia,Gray/Tortie,1
+Cat,Euthanasia,Gray/White,14
+Cat,Euthanasia,Lilac Point,9
+Cat,Euthanasia,Lilac Point/Cream,1
+Cat,Euthanasia,Lilac Point/White,1
+Cat,Euthanasia,Lynx Point,31
+Cat,Euthanasia,Lynx Point/Tan,1
+Cat,Euthanasia,Lynx Point/White,1
+Cat,Euthanasia,Orange,17
+Cat,Euthanasia,Orange Tabby,167
+Cat,Euthanasia,Orange Tabby/Apricot,1
+Cat,Euthanasia,Orange Tabby/Brown,3
+Cat,Euthanasia,Orange Tabby/White,62
+Cat,Euthanasia,Orange Tiger,1
+Cat,Euthanasia,Orange/White,18
+Cat,Euthanasia,Red,1
+Cat,Euthanasia,Red/White,1
+Cat,Euthanasia,Seal Point,35
+Cat,Euthanasia,Seal Point/White,2
+Cat,Euthanasia,Silver,1
+Cat,Euthanasia,Silver Tabby,4
+Cat,Euthanasia,Tan,2
+Cat,Euthanasia,Tan/Black,1
+Cat,Euthanasia,Tan/Cream Tabby,1
+Cat,Euthanasia,Torbie,46
+Cat,Euthanasia,Torbie/White,4
+Cat,Euthanasia,Tortie,74
+Cat,Euthanasia,Tortie Point,4
+Cat,Euthanasia,Tortie/Black,4
+Cat,Euthanasia,Tortie/Calico,1
+Cat,Euthanasia,Tortie/White,1
+Cat,Euthanasia,Tricolor,1
+Cat,Euthanasia,Tricolor/Orange,1
+Cat,Euthanasia,White,39
+Cat,Euthanasia,White/Black,37
+Cat,Euthanasia,White/Blue,20
+Cat,Euthanasia,White/Blue Tabby,5
+Cat,Euthanasia,White/Brown,4
+Cat,Euthanasia,White/Brown Tabby,27
+Cat,Euthanasia,White/Buff,2
+Cat,Euthanasia,White/Calico,3
+Cat,Euthanasia,White/Cream,1
+Cat,Euthanasia,White/Gray,10
+Cat,Euthanasia,White/Gray Tabby,2
+Cat,Euthanasia,White/Lynx Point,1
+Cat,Euthanasia,White/Orange,6
+Cat,Euthanasia,White/Orange Tabby,7
+Cat,Euthanasia,White/Red,1
+Cat,Euthanasia,White/Seal Point,1
+Cat,Euthanasia,White/Silver Tabby,1
+Cat,Euthanasia,White/Tan,1
+Cat,Euthanasia,White/White,1
+Cat,Euthanasia,White/Yellow,1
+Cat,Euthanasia,Yellow,1
+Cat,Euthanasia,Yellow/Orange,1
+Cat,Missing,Black,5
+Cat,Missing,Black/White,5
+Cat,Missing,Blue,2
+Cat,Missing,Blue Tabby,2
+Cat,Missing,Blue/White,1
+Cat,Missing,Brown Tabby,6
+Cat,Missing,Brown Tabby/White,4
+Cat,Missing,Calico,2
+Cat,Missing,Calico Point,1
+Cat,Missing,Lynx Point,1
+Cat,Missing,Orange Tabby,2
+Cat,Missing,Silver Lynx Point/Gray,1
+Cat,Missing,Torbie,1
+Cat,Missing,Torbie/White,1
+Cat,Missing,Tortie,1
+Cat,Missing,White/Black,1
+Cat,Missing,White/Brown Tabby,1
+Cat,Relocate,Black,1
+Cat,Relocate,Black/White,1
+Cat,Relocate,Brown Tabby,2
+Cat,Relocate,Gray,1
+Cat,Return to Owner,Agouti,1
+Cat,Return to Owner,Black,290
+Cat,Return to Owner,Black Smoke,2
+Cat,Return to Owner,Black Smoke/White,1
+Cat,Return to Owner,Black Tabby,3
+Cat,Return to Owner,Black Tabby/Gray,1
+Cat,Return to Owner,Black Tabby/Orange,1
+Cat,Return to Owner,Black Tabby/White,1
+Cat,Return to Owner,Black/Black,3
+Cat,Return to Owner,Black/Brown,1
+Cat,Return to Owner,Black/Chocolate,1
+Cat,Return to Owner,Black/Seal Point,1
+Cat,Return to Owner,Black/White,228
+Cat,Return to Owner,Blue,94
+Cat,Return to Owner,Blue Cream,3
+Cat,Return to Owner,Blue Point,5
+Cat,Return to Owner,Blue Smoke,3
+Cat,Return to Owner,Blue Tabby,77
+Cat,Return to Owner,Blue Tabby/White,36
+Cat,Return to Owner,Blue/Cream,1
+Cat,Return to Owner,Blue/White,72
+Cat,Return to Owner,Brown,6
+Cat,Return to Owner,Brown Tabby,314
+Cat,Return to Owner,Brown Tabby/Black,6
+Cat,Return to Owner,Brown Tabby/Orange,1
+Cat,Return to Owner,Brown Tabby/Orange Tabby,1
+Cat,Return to Owner,Brown Tabby/White,216
+Cat,Return to Owner,Brown/Black,2
+Cat,Return to Owner,Brown/White,3
+Cat,Return to Owner,Buff,3
+Cat,Return to Owner,Calico,108
+Cat,Return to Owner,Calico Point,4
+Cat,Return to Owner,Calico/Brown Tabby,1
+Cat,Return to Owner,Calico/White,2
+Cat,Return to Owner,Chocolate,1
+Cat,Return to Owner,Chocolate Point,7
+Cat,Return to Owner,Chocolate Point/White,1
+Cat,Return to Owner,Cream,5
+Cat,Return to Owner,Cream Tabby,30
+Cat,Return to Owner,Cream Tabby/White,16
+Cat,Return to Owner,Cream/White,3
+Cat,Return to Owner,Flame Point,21
+Cat,Return to Owner,Flame Point/Cream,1
+Cat,Return to Owner,Flame Point/White,1
+Cat,Return to Owner,Gray,17
+Cat,Return to Owner,Gray Tabby,17
+Cat,Return to Owner,Gray Tabby/Black,2
+Cat,Return to Owner,Gray Tabby/Brown,1
+Cat,Return to Owner,Gray Tabby/Brown Tabby,1
+Cat,Return to Owner,Gray Tabby/White,9
+Cat,Return to Owner,Gray/Black,1
+Cat,Return to Owner,Gray/Blue,1
+Cat,Return to Owner,Gray/Gray,1
+Cat,Return to Owner,Gray/White,14
+Cat,Return to Owner,Lilac Point,7
+Cat,Return to Owner,Lilac Point/White,1
+Cat,Return to Owner,Lynx Point,38
+Cat,Return to Owner,Lynx Point/White,13
+Cat,Return to Owner,Orange,10
+Cat,Return to Owner,Orange Tabby,201
+Cat,Return to Owner,Orange Tabby/Orange,1
+Cat,Return to Owner,Orange Tabby/White,114
+Cat,Return to Owner,Orange/White,22
+Cat,Return to Owner,Red,1
+Cat,Return to Owner,Seal Point,30
+Cat,Return to Owner,Seal Point/Brown,2
+Cat,Return to Owner,Seal Point/White,3
+Cat,Return to Owner,Silver Lynx Point,2
+Cat,Return to Owner,Silver Tabby,4
+Cat,Return to Owner,Silver Tabby/White,5
+Cat,Return to Owner,Tan/Brown,1
+Cat,Return to Owner,Tan/White,1
+Cat,Return to Owner,Torbie,66
+Cat,Return to Owner,Torbie/Calico,1
+Cat,Return to Owner,Torbie/White,7
+Cat,Return to Owner,Tortie,109
+Cat,Return to Owner,Tortie Point,13
+Cat,Return to Owner,Tortie Point/Cream,1
+Cat,Return to Owner,Tortie/Black,1
+Cat,Return to Owner,Tortie/Blue Cream,1
+Cat,Return to Owner,Tortie/White,8
+Cat,Return to Owner,White,34
+Cat,Return to Owner,White/Black,44
+Cat,Return to Owner,White/Blue,20
+Cat,Return to Owner,White/Blue Tabby,4
+Cat,Return to Owner,White/Brown,5
+Cat,Return to Owner,White/Brown Tabby,26
+Cat,Return to Owner,White/Calico,3
+Cat,Return to Owner,White/Cream Tabby,3
+Cat,Return to Owner,White/Gray,13
+Cat,Return to Owner,White/Gray Tabby,3
+Cat,Return to Owner,White/Orange,8
+Cat,Return to Owner,White/Orange Tabby,7
+Cat,Return to Owner,White/Tan,4
+Cat,Return to Owner,White/White,4
+Cat,Return to Owner,White/Yellow,1
+Cat,Rto-Adopt,Black,21
+Cat,Rto-Adopt,Black Smoke,1
+Cat,Rto-Adopt,Black Tabby/Brown,1
+Cat,Rto-Adopt,Black/White,21
+Cat,Rto-Adopt,Blue,6
+Cat,Rto-Adopt,Blue Cream,3
+Cat,Rto-Adopt,Blue Tabby,11
+Cat,Rto-Adopt,Blue Tabby/White,3
+Cat,Rto-Adopt,Blue/White,3
+Cat,Rto-Adopt,Brown Tabby,32
+Cat,Rto-Adopt,Brown Tabby/Black Tabby,1
+Cat,Rto-Adopt,Brown Tabby/White,15
+Cat,Rto-Adopt,Calico,10
+Cat,Rto-Adopt,Calico/Calico,1
+Cat,Rto-Adopt,Calico/White,1
+Cat,Rto-Adopt,Cream Tabby,2
+Cat,Rto-Adopt,Cream Tabby/White,4
+Cat,Rto-Adopt,Flame Point,2
+Cat,Rto-Adopt,Gray,2
+Cat,Rto-Adopt,Gray/White,1
+Cat,Rto-Adopt,Lynx Point/White,1
+Cat,Rto-Adopt,Orange Tabby,13
+Cat,Rto-Adopt,Orange Tabby/White,12
+Cat,Rto-Adopt,Silver/White,1
+Cat,Rto-Adopt,Torbie,1
+Cat,Rto-Adopt,Torbie/White,2
+Cat,Rto-Adopt,Tortie,11
+Cat,Rto-Adopt,Tortie Point,1
+Cat,Rto-Adopt,White,2
+Cat,Rto-Adopt,White/Black,5
+Cat,Rto-Adopt,White/Blue,4
+Cat,Rto-Adopt,White/Brown,1
+Cat,Rto-Adopt,White/Brown Tabby,2
+Cat,Rto-Adopt,White/Gray,1
+Cat,Rto-Adopt,White/Gray Tabby,1
+Cat,Rto-Adopt,White/Orange Tabby,1
+Cat,Transfer,Agouti,5
+Cat,Transfer,Agouti/Cream,1
+Cat,Transfer,Agouti/White,1
+Cat,Transfer,Black,3108
+Cat,Transfer,Black Brindle,1
+Cat,Transfer,Black Smoke,60
+Cat,Transfer,Black Smoke/Brown Tabby,1
+Cat,Transfer,Black Smoke/White,15
+Cat,Transfer,Black Tabby,137
+Cat,Transfer,Black Tabby/Gray Tabby,1
+Cat,Transfer,Black Tabby/White,41
+Cat,Transfer,Black/Black,38
+Cat,Transfer,Black/Black Smoke,2
+Cat,Transfer,Black/Black Tabby,2
+Cat,Transfer,Black/Blue,2
+Cat,Transfer,Black/Brown,5
+Cat,Transfer,Black/Brown Tabby,1
+Cat,Transfer,Black/Chocolate,2
+Cat,Transfer,Black/Gray,2
+Cat,Transfer,Black/Gray Tabby,3
+Cat,Transfer,Black/Orange,7
+Cat,Transfer,Black/Silver Tabby,1
+Cat,Transfer,Black/Tortie,3
+Cat,Transfer,Black/Tricolor,1
+Cat,Transfer,Black/White,2007
+Cat,Transfer,Black/Yellow,1
+Cat,Transfer,Blue,872
+Cat,Transfer,Blue Cream,26
+Cat,Transfer,Blue Cream/Blue Tabby,1
+Cat,Transfer,Blue Cream/Buff,1
+Cat,Transfer,Blue Cream/Tortie,2
+Cat,Transfer,Blue Cream/White,2
+Cat,Transfer,Blue Point,34
+Cat,Transfer,Blue Point/Lynx Point,1
+Cat,Transfer,Blue Point/White,4
+Cat,Transfer,Blue Smoke,2
+Cat,Transfer,Blue Smoke/White,2
+Cat,Transfer,Blue Tabby,913
+Cat,Transfer,Blue Tabby/Blue Cream,2
+Cat,Transfer,Blue Tabby/Buff,1
+Cat,Transfer,Blue Tabby/Cream,1
+Cat,Transfer,Blue Tabby/Orange,1
+Cat,Transfer,Blue Tabby/Tortie,1
+Cat,Transfer,Blue Tabby/White,333
+Cat,Transfer,Blue/Blue,2
+Cat,Transfer,Blue/Brown,1
+Cat,Transfer,Blue/Cream,1
+Cat,Transfer,Blue/Gray,2
+Cat,Transfer,Blue/Orange,1
+Cat,Transfer,Blue/Tortie,2
+Cat,Transfer,Blue/White,573
+Cat,Transfer,Brown,19
+Cat,Transfer,Brown Brindle,1
+Cat,Transfer,Brown Merle/Brown Tabby,1
+Cat,Transfer,Brown Tabby,3587
+Cat,Transfer,Brown Tabby/Black,49
+Cat,Transfer,Brown Tabby/Blue,1
+Cat,Transfer,Brown Tabby/Brown,4
+Cat,Transfer,Brown Tabby/Brown Tabby,4
+Cat,Transfer,Brown Tabby/Calico,1
+Cat,Transfer,Brown Tabby/Gray,2
+Cat,Transfer,Brown Tabby/Gray Tabby,1
+Cat,Transfer,Brown Tabby/Lynx Point,1
+Cat,Transfer,Brown Tabby/Orange,2
+Cat,Transfer,Brown Tabby/Tan,1
+Cat,Transfer,Brown Tabby/Tortie,1
+Cat,Transfer,Brown Tabby/White,1713
+Cat,Transfer,Brown Tiger,5
+Cat,Transfer,Brown Tiger/White,2
+Cat,Transfer,Brown/Black,3
+Cat,Transfer,Brown/Black Tabby,1
+Cat,Transfer,Brown/Brown Brindle,1
+Cat,Transfer,Brown/Brown Tabby,1
+Cat,Transfer,Brown/Cream,1
+Cat,Transfer,Brown/Gray,2
+Cat,Transfer,Brown/Orange,1
+Cat,Transfer,Brown/White,18
+Cat,Transfer,Buff,13
+Cat,Transfer,Buff/White,3
+Cat,Transfer,Calico,960
+Cat,Transfer,Calico Point,26
+Cat,Transfer,Calico Point/Gray,1
+Cat,Transfer,Calico Point/Lynx Point,1
+Cat,Transfer,Calico Point/White,2
+Cat,Transfer,Calico/Black,10
+Cat,Transfer,Calico/Blue Tabby,2
+Cat,Transfer,Calico/Brown,1
+Cat,Transfer,Calico/Brown Tabby,4
+Cat,Transfer,Calico/Calico,1
+Cat,Transfer,Calico/Orange,2
+Cat,Transfer,Calico/Tricolor,3
+Cat,Transfer,Calico/White,43
+Cat,Transfer,Chocolate,8
+Cat,Transfer,Chocolate Point,23
+Cat,Transfer,Chocolate Point/White,5
+Cat,Transfer,Chocolate/Black Smoke,1
+Cat,Transfer,Chocolate/Brown Tabby,3
+Cat,Transfer,Chocolate/Seal Point,1
+Cat,Transfer,Chocolate/White,3
+Cat,Transfer,Cream,45
+Cat,Transfer,Cream Tabby,414
+Cat,Transfer,Cream Tabby/Orange,1
+Cat,Transfer,Cream Tabby/White,167
+Cat,Transfer,Cream/Black,1
+Cat,Transfer,Cream/Brown,4
+Cat,Transfer,Cream/Gray,1
+Cat,Transfer,Cream/Orange,2
+Cat,Transfer,Cream/Tan,1
+Cat,Transfer,Cream/White,17
+Cat,Transfer,Fawn/White,1
+Cat,Transfer,Flame Point,113
+Cat,Transfer,Flame Point/Cream,1
+Cat,Transfer,Flame Point/White,2
+Cat,Transfer,Gray,86
+Cat,Transfer,Gray Tabby,225
+Cat,Transfer,Gray Tabby/Black,13
+Cat,Transfer,Gray Tabby/Gray,2
+Cat,Transfer,Gray Tabby/White,90
+Cat,Transfer,Gray/Black,14
+Cat,Transfer,Gray/Gray,8
+Cat,Transfer,Gray/Gray Tabby,1
+Cat,Transfer,Gray/Tan,1
+Cat,Transfer,Gray/Tortie,2
+Cat,Transfer,Gray/White,82
+Cat,Transfer,Lilac Point,69
+Cat,Transfer,Lilac Point/Gray,1
+Cat,Transfer,Lilac Point/White,11
+Cat,Transfer,Lynx Point,259
+Cat,Transfer,Lynx Point/Brown Tabby,1
+Cat,Transfer,Lynx Point/Cream,1
+Cat,Transfer,Lynx Point/Gray Tabby,1
+Cat,Transfer,Lynx Point/White,27
+Cat,Transfer,Orange,86
+Cat,Transfer,Orange Tabby,1756
+Cat,Transfer,Orange Tabby/Black,1
+Cat,Transfer,Orange Tabby/Brown,1
+Cat,Transfer,Orange Tabby/Cream,2
+Cat,Transfer,Orange Tabby/Orange Tabby,3
+Cat,Transfer,Orange Tabby/Tortie Point,1
+Cat,Transfer,Orange Tabby/White,726
+Cat,Transfer,Orange/Orange Tabby,1
+Cat,Transfer,Orange/Tricolor,1
+Cat,Transfer,Orange/White,83
+Cat,Transfer,Pink,2
+Cat,Transfer,Sable/White,1
+Cat,Transfer,Seal Point,201
+Cat,Transfer,Seal Point/Brown,1
+Cat,Transfer,Seal Point/Buff,1
+Cat,Transfer,Seal Point/Cream,1
+Cat,Transfer,Seal Point/Gray,1
+Cat,Transfer,Seal Point/White,26
+Cat,Transfer,Silver,6
+Cat,Transfer,Silver Lynx Point,13
+Cat,Transfer,Silver Tabby,55
+Cat,Transfer,Silver Tabby/White,11
+Cat,Transfer,Tan,3
+Cat,Transfer,Tan/Brown,3
+Cat,Transfer,Tan/Chocolate Point,1
+Cat,Transfer,Tan/White,1
+Cat,Transfer,Torbie,655
+Cat,Transfer,Torbie/Black,1
+Cat,Transfer,Torbie/Blue Tabby,1
+Cat,Transfer,Torbie/Brown,2
+Cat,Transfer,Torbie/Brown Tabby,2
+Cat,Transfer,Torbie/Gray,2
+Cat,Transfer,Torbie/Silver Tabby,1
+Cat,Transfer,Torbie/White,128
+Cat,Transfer,Tortie,1090
+Cat,Transfer,Tortie Point,41
+Cat,Transfer,Tortie Point/Lynx Point,1
+Cat,Transfer,Tortie Point/White,3
+Cat,Transfer,Tortie/Black,12
+Cat,Transfer,Tortie/Blue,2
+Cat,Transfer,Tortie/Blue Cream,2
+Cat,Transfer,Tortie/Brown,1
+Cat,Transfer,Tortie/Calico,1
+Cat,Transfer,Tortie/Orange,2
+Cat,Transfer,Tortie/White,48
+Cat,Transfer,Tricolor,1
+Cat,Transfer,Tricolor/Calico,1
+Cat,Transfer,Tricolor/White,1
+Cat,Transfer,White,267
+Cat,Transfer,White/Black,392
+Cat,Transfer,White/Black Tabby,6
+Cat,Transfer,White/Blue,138
+Cat,Transfer,White/Blue Tabby,35
+Cat,Transfer,White/Brown,19
+Cat,Transfer,White/Brown Brindle,2
+Cat,Transfer,White/Brown Tabby,218
+Cat,Transfer,White/Buff,1
+Cat,Transfer,White/Calico,6
+Cat,Transfer,White/Chocolate Point,3
+Cat,Transfer,White/Cream,14
+Cat,Transfer,White/Cream Tabby,18
+Cat,Transfer,White/Gray,67
+Cat,Transfer,White/Gray Tabby,11
+Cat,Transfer,White/Lynx Point,3
+Cat,Transfer,White/Orange,36
+Cat,Transfer,White/Orange Tabby,75
+Cat,Transfer,White/Red,1
+Cat,Transfer,White/Seal Point,2
+Cat,Transfer,White/Silver Tabby,1
+Cat,Transfer,White/Tan,9
+Cat,Transfer,White/Tortie,1
+Cat,Transfer,White/White,1
+Cat,Transfer,Yellow/Orange,1
+Cat,Transfer,Yellow/Orange Tabby,2
+Dog,Adoption,Agouti,2
+Dog,Adoption,Apricot,37
+Dog,Adoption,Apricot/White,3
+Dog,Adoption,Black,1855
+Dog,Adoption,Black Brindle,69
+Dog,Adoption,Black Brindle/Black,8
+Dog,Adoption,Black Brindle/Brown,9
+Dog,Adoption,Black Brindle/Brown Brindle,2
+Dog,Adoption,Black Brindle/Tan,3
+Dog,Adoption,Black Brindle/White,139
+Dog,Adoption,Black Smoke,4
+Dog,Adoption,Black Smoke/Black,1
+Dog,Adoption,Black Smoke/Blue Tick,1
+Dog,Adoption,Black Smoke/White,6
+Dog,Adoption,Black Tiger,3
+Dog,Adoption,Black Tiger/White,1
+Dog,Adoption,Black/Black,34
+Dog,Adoption,Black/Black Brindle,14
+Dog,Adoption,Black/Black Smoke,1
+Dog,Adoption,Black/Blue,1
+Dog,Adoption,Black/Blue Merle,8
+Dog,Adoption,Black/Blue Tick,33
+Dog,Adoption,Black/Brown,1528
+Dog,Adoption,Black/Brown Brindle,108
+Dog,Adoption,Black/Brown Merle,1
+Dog,Adoption,Black/Buff,8
+Dog,Adoption,Black/Chocolate,2
+Dog,Adoption,Black/Cream,24
+Dog,Adoption,Black/Fawn,10
+Dog,Adoption,Black/Gray,96
+Dog,Adoption,Black/Orange,2
+Dog,Adoption,Black/Red,40
+Dog,Adoption,Black/Silver,6
+Dog,Adoption,Black/Tan,1597
+Dog,Adoption,Black/Tricolor,292
+Dog,Adoption,Black/White,5074
+Dog,Adoption,Black/Yellow,2
+Dog,Adoption,Black/Yellow Brindle,2
+Dog,Adoption,Blue,207
+Dog,Adoption,Blue Cream,1
+Dog,Adoption,Blue Cream/White,3
+Dog,Adoption,Blue Merle,137
+Dog,Adoption,Blue Merle/Black,7
+Dog,Adoption,Blue Merle/Blue Merle,2
+Dog,Adoption,Blue Merle/Brown,10
+Dog,Adoption,Blue Merle/Brown Brindle,1
+Dog,Adoption,Blue Merle/Cream,1
+Dog,Adoption,Blue Merle/Red,2
+Dog,Adoption,Blue Merle/Red Merle,2
+Dog,Adoption,Blue Merle/Tan,30
+Dog,Adoption,Blue Merle/Tricolor,6
+Dog,Adoption,Blue Merle/White,113
+Dog,Adoption,Blue Smoke/White,1
+Dog,Adoption,Blue Tick,80
+Dog,Adoption,Blue Tick/Black,29
+Dog,Adoption,Blue Tick/Brown,8
+Dog,Adoption,Blue Tick/Red,3
+Dog,Adoption,Blue Tick/Red Tick,2
+Dog,Adoption,Blue Tick/Tan,35
+Dog,Adoption,Blue Tick/Tricolor,12
+Dog,Adoption,Blue Tick/White,13
+Dog,Adoption,Blue Tiger,6
+Dog,Adoption,Blue Tiger/White,24
+Dog,Adoption,Blue/Black,3
+Dog,Adoption,Blue/Blue Merle,1
+Dog,Adoption,Blue/Blue Tick,1
+Dog,Adoption,Blue/Brown,8
+Dog,Adoption,Blue/Brown Brindle,2
+Dog,Adoption,Blue/Cream,2
+Dog,Adoption,Blue/Fawn,1
+Dog,Adoption,Blue/Gray,3
+Dog,Adoption,Blue/Tan,51
+Dog,Adoption,Blue/Tricolor,11
+Dog,Adoption,Blue/White,1220
+Dog,Adoption,Blue/Yellow Brindle,1
+Dog,Adoption,Brown,1452
+Dog,Adoption,Brown Brindle,587
+Dog,Adoption,Brown Brindle/Black,30
+Dog,Adoption,Brown Brindle/Black Brindle,1
+Dog,Adoption,Brown Brindle/Blue Cream,1
+Dog,Adoption,Brown Brindle/Blue Tick,1
+Dog,Adoption,Brown Brindle/Brown,11
+Dog,Adoption,Brown Brindle/Brown Brindle,2
+Dog,Adoption,Brown Brindle/Gray,1
+Dog,Adoption,Brown Brindle/Red Tick,1
+Dog,Adoption,Brown Brindle/Tan,7
+Dog,Adoption,Brown Brindle/White,1297
+Dog,Adoption,Brown Merle,84
+Dog,Adoption,Brown Merle/Black,1
+Dog,Adoption,Brown Merle/Blue Merle,1
+Dog,Adoption,Brown Merle/Brown,2
+Dog,Adoption,Brown Merle/Chocolate,1
+Dog,Adoption,Brown Merle/Tan,5
+Dog,Adoption,Brown Merle/White,87
+Dog,Adoption,Brown Tiger,4
+Dog,Adoption,Brown Tiger/Brown,1
+Dog,Adoption,Brown Tiger/White,15
+Dog,Adoption,Brown/Black,1145
+Dog,Adoption,Brown/Black Brindle,1
+Dog,Adoption,Brown/Black Smoke,1
+Dog,Adoption,Brown/Brown,25
+Dog,Adoption,Brown/Brown Brindle,4
+Dog,Adoption,Brown/Buff,2
+Dog,Adoption,Brown/Chocolate,2
+Dog,Adoption,Brown/Cream,17
+Dog,Adoption,Brown/Fawn,1
+Dog,Adoption,Brown/Gold,1
+Dog,Adoption,Brown/Gray,8
+Dog,Adoption,Brown/Liver,1
+Dog,Adoption,Brown/Red,17
+Dog,Adoption,Brown/Red Merle,1
+Dog,Adoption,Brown/Red Tick,2
+Dog,Adoption,Brown/Silver,5
+Dog,Adoption,Brown/Tan,215
+Dog,Adoption,Brown/Tricolor,97
+Dog,Adoption,Brown/White,2280
+Dog,Adoption,Brown/Yellow,1
+Dog,Adoption,Buff,261
+Dog,Adoption,Buff/Black,10
+Dog,Adoption,Buff/Brown,2
+Dog,Adoption,Buff/Cream,1
+Dog,Adoption,Buff/Gray,1
+Dog,Adoption,Buff/Red Tick,2
+Dog,Adoption,Buff/Tan,14
+Dog,Adoption,Buff/White,83
+Dog,Adoption,Buff/Yellow,1
+Dog,Adoption,Calico,2
+Dog,Adoption,Chocolate,212
+Dog,Adoption,Chocolate/Black,1
+Dog,Adoption,Chocolate/Blue Tick,1
+Dog,Adoption,Chocolate/Brown,4
+Dog,Adoption,Chocolate/Brown Brindle,4
+Dog,Adoption,Chocolate/Cream,5
+Dog,Adoption,Chocolate/Fawn,1
+Dog,Adoption,Chocolate/Gold,1
+Dog,Adoption,Chocolate/Red Tick,1
+Dog,Adoption,Chocolate/Tan,155
+Dog,Adoption,Chocolate/Tricolor,13
+Dog,Adoption,Chocolate/White,568
+Dog,Adoption,Chocolate/Yellow,1
+Dog,Adoption,Cream,334
+Dog,Adoption,Cream/Black,30
+Dog,Adoption,Cream/Blue,1
+Dog,Adoption,Cream/Brown,7
+Dog,Adoption,Cream/Gold,1
+Dog,Adoption,Cream/Gray,3
+Dog,Adoption,Cream/Red,6
+Dog,Adoption,Cream/Red Tick,3
+Dog,Adoption,Cream/Silver,1
+Dog,Adoption,Cream/Tan,30
+Dog,Adoption,Cream/White,120
+Dog,Adoption,Cream/Yellow,4
+Dog,Adoption,Fawn,120
+Dog,Adoption,Fawn/Black,25
+Dog,Adoption,Fawn/Blue,3
+Dog,Adoption,Fawn/Brown,4
+Dog,Adoption,Fawn/Brown Brindle,2
+Dog,Adoption,Fawn/Chocolate,1
+Dog,Adoption,Fawn/Gray,1
+Dog,Adoption,Fawn/Tan,7
+Dog,Adoption,Fawn/Tricolor,1
+Dog,Adoption,Fawn/White,318
+Dog,Adoption,Gold,55
+Dog,Adoption,Gold/Black,1
+Dog,Adoption,Gold/Brown,5
+Dog,Adoption,Gold/Cream,2
+Dog,Adoption,Gold/Gold,2
+Dog,Adoption,Gold/Gray,1
+Dog,Adoption,Gold/Tan,2
+Dog,Adoption,Gold/White,35
+Dog,Adoption,Gold/Yellow,2
+Dog,Adoption,Gray,75
+Dog,Adoption,Gray/Black,46
+Dog,Adoption,Gray/Brown,12
+Dog,Adoption,Gray/Buff,1
+Dog,Adoption,Gray/Cream,7
+Dog,Adoption,Gray/Gold,1
+Dog,Adoption,Gray/Red,1
+Dog,Adoption,Gray/Tan,24
+Dog,Adoption,Gray/Tricolor,4
+Dog,Adoption,Gray/White,160
+Dog,Adoption,Liver,1
+Dog,Adoption,Liver Tick,5
+Dog,Adoption,Liver Tick/Brown,1
+Dog,Adoption,Liver/Blue,2
+Dog,Adoption,Liver/Brown Brindle,1
+Dog,Adoption,Liver/Tan,3
+Dog,Adoption,Liver/White,8
+Dog,Adoption,Orange/Tan,1
+Dog,Adoption,Red,671
+Dog,Adoption,Red Merle,34
+Dog,Adoption,Red Merle/Black,4
+Dog,Adoption,Red Merle/Brown,1
+Dog,Adoption,Red Merle/White,28
+Dog,Adoption,Red Tick,69
+Dog,Adoption,Red Tick/Black,1
+Dog,Adoption,Red Tick/Brown,4
+Dog,Adoption,Red Tick/Brown Brindle,1
+Dog,Adoption,Red Tick/Brown Merle,1
+Dog,Adoption,Red Tick/Orange,1
+Dog,Adoption,Red Tick/Red,3
+Dog,Adoption,Red Tick/Tan,3
+Dog,Adoption,Red Tick/Tricolor,1
+Dog,Adoption,Red Tick/White,28
+Dog,Adoption,Red/Black,119
+Dog,Adoption,Red/Brown,21
+Dog,Adoption,Red/Brown Brindle,1
+Dog,Adoption,Red/Buff,2
+Dog,Adoption,Red/Cream,10
+Dog,Adoption,Red/Red,3
+Dog,Adoption,Red/Red Merle,2
+Dog,Adoption,Red/Red Tick,4
+Dog,Adoption,Red/Silver,1
+Dog,Adoption,Red/Tan,42
+Dog,Adoption,Red/Tricolor,4
+Dog,Adoption,Red/White,764
+Dog,Adoption,Red/Yellow,2
+Dog,Adoption,Ruddy/Cream,1
+Dog,Adoption,Sable,327
+Dog,Adoption,Sable/Black,22
+Dog,Adoption,Sable/Brown,12
+Dog,Adoption,Sable/Buff,1
+Dog,Adoption,Sable/Cream,3
+Dog,Adoption,Sable/Gray,2
+Dog,Adoption,Sable/Red,4
+Dog,Adoption,Sable/Red Merle,1
+Dog,Adoption,Sable/Tan,24
+Dog,Adoption,Sable/White,177
+Dog,Adoption,Silver,10
+Dog,Adoption,Silver/Black,7
+Dog,Adoption,Silver/Brown,5
+Dog,Adoption,Silver/Chocolate,1
+Dog,Adoption,Silver/Cream,1
+Dog,Adoption,Silver/Gray,3
+Dog,Adoption,Silver/Tan,18
+Dog,Adoption,Silver/White,6
+Dog,Adoption,Tan,1713
+Dog,Adoption,Tan/Black,715
+Dog,Adoption,Tan/Blue,5
+Dog,Adoption,Tan/Blue Tick,1
+Dog,Adoption,Tan/Brown,80
+Dog,Adoption,Tan/Buff,10
+Dog,Adoption,Tan/Cream,39
+Dog,Adoption,Tan/Fawn,8
+Dog,Adoption,Tan/Gray,21
+Dog,Adoption,Tan/Red,10
+Dog,Adoption,Tan/Red Merle,3
+Dog,Adoption,Tan/Red Tick,3
+Dog,Adoption,Tan/Silver,14
+Dog,Adoption,Tan/Tan,25
+Dog,Adoption,Tan/Tricolor,19
+Dog,Adoption,Tan/White,2149
+Dog,Adoption,Tan/Yellow,2
+Dog,Adoption,Tricolor,1609
+Dog,Adoption,Tricolor/Black,43
+Dog,Adoption,Tricolor/Blue,2
+Dog,Adoption,Tricolor/Blue Merle,2
+Dog,Adoption,Tricolor/Blue Tick,9
+Dog,Adoption,Tricolor/Brown,46
+Dog,Adoption,Tricolor/Brown Brindle,1
+Dog,Adoption,Tricolor/Brown Merle,2
+Dog,Adoption,Tricolor/Chocolate,1
+Dog,Adoption,Tricolor/Cream,1
+Dog,Adoption,Tricolor/Fawn,1
+Dog,Adoption,Tricolor/Gray,2
+Dog,Adoption,Tricolor/Red,4
+Dog,Adoption,Tricolor/Red Tick,1
+Dog,Adoption,Tricolor/Tan,10
+Dog,Adoption,Tricolor/White,61
+Dog,Adoption,White,1737
+Dog,Adoption,White/Apricot,3
+Dog,Adoption,White/Black,1437
+Dog,Adoption,White/Black Brindle,16
+Dog,Adoption,White/Black Smoke,2
+Dog,Adoption,White/Blue,129
+Dog,Adoption,White/Blue Cream,3
+Dog,Adoption,White/Blue Merle,24
+Dog,Adoption,White/Blue Tick,9
+Dog,Adoption,White/Blue Tiger,1
+Dog,Adoption,White/Brown,1240
+Dog,Adoption,White/Brown Brindle,275
+Dog,Adoption,White/Brown Merle,15
+Dog,Adoption,White/Brown Tiger,2
+Dog,Adoption,White/Buff,39
+Dog,Adoption,White/Chocolate,72
+Dog,Adoption,White/Cream,69
+Dog,Adoption,White/Fawn,21
+Dog,Adoption,White/Gray,112
+Dog,Adoption,White/Gray Tiger,1
+Dog,Adoption,White/Liver,7
+Dog,Adoption,White/Orange,14
+Dog,Adoption,White/Pink,1
+Dog,Adoption,White/Red,121
+Dog,Adoption,White/Red Merle,14
+Dog,Adoption,White/Red Tick,18
+Dog,Adoption,White/Silver,4
+Dog,Adoption,White/Tan,1007
+Dog,Adoption,White/Tricolor,159
+Dog,Adoption,White/White,37
+Dog,Adoption,White/Yellow,14
+Dog,Adoption,White/Yellow Brindle,3
+Dog,Adoption,Yellow,300
+Dog,Adoption,Yellow Brindle,19
+Dog,Adoption,Yellow Brindle/Black,1
+Dog,Adoption,Yellow Brindle/Blue,1
+Dog,Adoption,Yellow Brindle/White,45
+Dog,Adoption,Yellow/Black,1
+Dog,Adoption,Yellow/Brown,1
+Dog,Adoption,Yellow/Cream,1
+Dog,Adoption,Yellow/Tan,1
+Dog,Adoption,Yellow/White,83
+Dog,Died,Black,25
+Dog,Died,Black Brindle/White,2
+Dog,Died,Black/Black,1
+Dog,Died,Black/Brown,17
+Dog,Died,Black/Cream,1
+Dog,Died,Black/Tan,9
+Dog,Died,Black/Tricolor,2
+Dog,Died,Black/White,39
+Dog,Died,Blue,2
+Dog,Died,Blue Merle/White,1
+Dog,Died,Blue/Tan,1
+Dog,Died,Blue/White,6
+Dog,Died,Brown,25
+Dog,Died,Brown Brindle,7
+Dog,Died,Brown Brindle/White,5
+Dog,Died,Brown Merle/White,1
+Dog,Died,Brown/Black,11
+Dog,Died,Brown/Tan,2
+Dog,Died,Brown/White,15
+Dog,Died,Buff,3
+Dog,Died,Chocolate,4
+Dog,Died,Chocolate/White,2
+Dog,Died,Cream,1
+Dog,Died,Cream/White,1
+Dog,Died,Gray,2
+Dog,Died,Gray/White,3
+Dog,Died,Red,9
+Dog,Died,Red/Tan,1
+Dog,Died,Red/White,2
+Dog,Died,Sable/White,4
+Dog,Died,Tan,14
+Dog,Died,Tan/Black,3
+Dog,Died,Tan/Tan,1
+Dog,Died,Tan/Tricolor,1
+Dog,Died,Tan/White,19
+Dog,Died,Tricolor,8
+Dog,Died,White,27
+Dog,Died,White/Black,12
+Dog,Died,White/Blue,1
+Dog,Died,White/Blue Merle,1
+Dog,Died,White/Brown,10
+Dog,Died,White/Brown Brindle,2
+Dog,Died,White/Chocolate,2
+Dog,Died,White/Gray,2
+Dog,Died,White/Liver,1
+Dog,Died,White/Pink,1
+Dog,Died,White/Tan,5
+Dog,Died,White/White,2
+Dog,Died,Yellow,1
+Dog,Died,Yellow Brindle/White,1
+Dog,Died,Yellow/White,1
+Dog,Disposal,Black,8
+Dog,Disposal,Black Brindle/White,1
+Dog,Disposal,Black/Brown,2
+Dog,Disposal,Black/White,7
+Dog,Disposal,Brown,6
+Dog,Disposal,Brown Brindle/White,1
+Dog,Disposal,Brown Tiger,1
+Dog,Disposal,Brown/Black,1
+Dog,Disposal,Brown/White,3
+Dog,Disposal,Chocolate/White,1
+Dog,Disposal,Cream,1
+Dog,Disposal,Fawn,1
+Dog,Disposal,Gray/White,2
+Dog,Disposal,Red,1
+Dog,Disposal,Red/White,1
+Dog,Disposal,Sable,1
+Dog,Disposal,Silver,1
+Dog,Disposal,Tan,1
+Dog,Disposal,Tan/White,4
+Dog,Disposal,Tricolor,3
+Dog,Disposal,White,4
+Dog,Disposal,White/Black,1
+Dog,Disposal,White/Brown,5
+Dog,Disposal,White/Brown Brindle,1
+Dog,Disposal,White/Tan,1
+Dog,Euthanasia,Apricot,1
+Dog,Euthanasia,Black,114
+Dog,Euthanasia,Black Brindle,3
+Dog,Euthanasia,Black Brindle/Blue Tick,1
+Dog,Euthanasia,Black Brindle/Brown,1
+Dog,Euthanasia,Black Brindle/Brown Brindle,2
+Dog,Euthanasia,Black Brindle/White,8
+Dog,Euthanasia,Black Smoke,2
+Dog,Euthanasia,Black/Black,2
+Dog,Euthanasia,Black/Blue Merle,2
+Dog,Euthanasia,Black/Brown,62
+Dog,Euthanasia,Black/Brown Brindle,4
+Dog,Euthanasia,Black/Cream,1
+Dog,Euthanasia,Black/Gray,4
+Dog,Euthanasia,Black/Red,2
+Dog,Euthanasia,Black/Silver,1
+Dog,Euthanasia,Black/Tan,69
+Dog,Euthanasia,Black/Tricolor,4
+Dog,Euthanasia,Black/White,178
+Dog,Euthanasia,Blue,18
+Dog,Euthanasia,Blue Cream,1
+Dog,Euthanasia,Blue Merle,8
+Dog,Euthanasia,Blue Merle/Black,1
+Dog,Euthanasia,Blue Merle/Gray,1
+Dog,Euthanasia,Blue Merle/Tan,1
+Dog,Euthanasia,Blue Tick,5
+Dog,Euthanasia,Blue Tick/White,1
+Dog,Euthanasia,Blue Tiger/Tan,1
+Dog,Euthanasia,Blue Tiger/White,1
+Dog,Euthanasia,Blue/Black,1
+Dog,Euthanasia,Blue/Brown Brindle,1
+Dog,Euthanasia,Blue/Tan,3
+Dog,Euthanasia,Blue/White,110
+Dog,Euthanasia,Brown,96
+Dog,Euthanasia,Brown Brindle,49
+Dog,Euthanasia,Brown Brindle/Black,5
+Dog,Euthanasia,Brown Brindle/White,71
+Dog,Euthanasia,Brown Merle,3
+Dog,Euthanasia,Brown Merle/White,2
+Dog,Euthanasia,Brown/Black,63
+Dog,Euthanasia,Brown/Brown,4
+Dog,Euthanasia,Brown/Chocolate,2
+Dog,Euthanasia,Brown/Cream,1
+Dog,Euthanasia,Brown/Fawn,1
+Dog,Euthanasia,Brown/Gray,3
+Dog,Euthanasia,Brown/Red,1
+Dog,Euthanasia,Brown/Tan,14
+Dog,Euthanasia,Brown/Tricolor,1
+Dog,Euthanasia,Brown/White,122
+Dog,Euthanasia,Buff,9
+Dog,Euthanasia,Buff/Cream,1
+Dog,Euthanasia,Buff/White,4
+Dog,Euthanasia,Chocolate,21
+Dog,Euthanasia,Chocolate/Cream,1
+Dog,Euthanasia,Chocolate/Tan,5
+Dog,Euthanasia,Chocolate/White,26
+Dog,Euthanasia,Cream,15
+Dog,Euthanasia,Cream/Black,2
+Dog,Euthanasia,Cream/White,1
+Dog,Euthanasia,Fawn,17
+Dog,Euthanasia,Fawn/Black,1
+Dog,Euthanasia,Fawn/Tan,1
+Dog,Euthanasia,Fawn/White,14
+Dog,Euthanasia,Gold,5
+Dog,Euthanasia,Gold/Gold,2
+Dog,Euthanasia,Gold/White,5
+Dog,Euthanasia,Gray,5
+Dog,Euthanasia,Gray/Black,4
+Dog,Euthanasia,Gray/Tan,1
+Dog,Euthanasia,Gray/White,9
+Dog,Euthanasia,Red,42
+Dog,Euthanasia,Red Merle,3
+Dog,Euthanasia,Red Merle/White,2
+Dog,Euthanasia,Red Tick,1
+Dog,Euthanasia,Red Tick/White,1
+Dog,Euthanasia,Red/Black,5
+Dog,Euthanasia,Red/Brown,3
+Dog,Euthanasia,Red/Gold,1
+Dog,Euthanasia,Red/Tan,3
+Dog,Euthanasia,Red/White,34
+Dog,Euthanasia,Sable,10
+Dog,Euthanasia,Sable/White,3
+Dog,Euthanasia,Silver/Chocolate,1
+Dog,Euthanasia,Silver/Gray,1
+Dog,Euthanasia,Silver/Tan,1
+Dog,Euthanasia,Tan,101
+Dog,Euthanasia,Tan/Black,17
+Dog,Euthanasia,Tan/Blue,1
+Dog,Euthanasia,Tan/Brown,7
+Dog,Euthanasia,Tan/Brown Brindle,1
+Dog,Euthanasia,Tan/Buff,2
+Dog,Euthanasia,Tan/Gray,2
+Dog,Euthanasia,Tan/White,99
+Dog,Euthanasia,Tan/Yellow Brindle,1
+Dog,Euthanasia,Tricolor,47
+Dog,Euthanasia,Tricolor/Black,1
+Dog,Euthanasia,Tricolor/Blue,1
+Dog,Euthanasia,Tricolor/Brown,1
+Dog,Euthanasia,Tricolor/Red Tick,1
+Dog,Euthanasia,White,107
+Dog,Euthanasia,White/Black,68
+Dog,Euthanasia,White/Black Brindle,1
+Dog,Euthanasia,White/Blue,5
+Dog,Euthanasia,White/Blue Cream,1
+Dog,Euthanasia,White/Brown,68
+Dog,Euthanasia,White/Brown Brindle,14
+Dog,Euthanasia,White/Chocolate,4
+Dog,Euthanasia,White/Cream,1
+Dog,Euthanasia,White/Gold,1
+Dog,Euthanasia,White/Gray,5
+Dog,Euthanasia,White/Liver,1
+Dog,Euthanasia,White/Red,14
+Dog,Euthanasia,White/Red Merle,2
+Dog,Euthanasia,White/Silver,1
+Dog,Euthanasia,White/Tan,44
+Dog,Euthanasia,White/Tricolor,6
+Dog,Euthanasia,White/White,1
+Dog,Euthanasia,Yellow,14
+Dog,Euthanasia,Yellow Brindle/White,4
+Dog,Euthanasia,Yellow/White,3
+Dog,Lost,Brown,1
+Dog,Missing,Black,1
+Dog,Missing,Black/Blue Tick,1
+Dog,Missing,Black/Tricolor,1
+Dog,Missing,Black/White,3
+Dog,Missing,Blue,2
+Dog,Missing,Blue Tiger/White,1
+Dog,Missing,Blue/Gray,1
+Dog,Missing,Blue/White,4
+Dog,Missing,Brown/Fawn,1
+Dog,Missing,Brown/White,3
+Dog,Missing,Fawn/Tricolor,1
+Dog,Missing,Fawn/White,1
+Dog,Missing,Red/White,1
+Dog,Missing,Tan/Black,1
+Dog,Missing,Tan/White,3
+Dog,Missing,Tricolor,2
+Dog,Missing,White/Black,2
+Dog,Missing,White/Brown Brindle,1
+Dog,Missing,Yellow Brindle,2
+Dog,Return to Owner,Agouti,2
+Dog,Return to Owner,Apricot,19
+Dog,Return to Owner,Apricot/Brown,2
+Dog,Return to Owner,Apricot/Tricolor,2
+Dog,Return to Owner,Apricot/White,6
+Dog,Return to Owner,Black,1160
+Dog,Return to Owner,Black Brindle,33
+Dog,Return to Owner,Black Brindle/Black,2
+Dog,Return to Owner,Black Brindle/Blue,1
+Dog,Return to Owner,Black Brindle/Brown,7
+Dog,Return to Owner,Black Brindle/White,72
+Dog,Return to Owner,Black Smoke,2
+Dog,Return to Owner,Black Smoke/Brown,2
+Dog,Return to Owner,Black Smoke/Gray,1
+Dog,Return to Owner,Black Smoke/White,2
+Dog,Return to Owner,Black/Black,17
+Dog,Return to Owner,Black/Black Brindle,1
+Dog,Return to Owner,Black/Black Smoke,1
+Dog,Return to Owner,Black/Blue,1
+Dog,Return to Owner,Black/Blue Merle,6
+Dog,Return to Owner,Black/Blue Tick,8
+Dog,Return to Owner,Black/Brown,742
+Dog,Return to Owner,Black/Brown Brindle,24
+Dog,Return to Owner,Black/Brown Merle,1
+Dog,Return to Owner,Black/Buff,7
+Dog,Return to Owner,Black/Chocolate,2
+Dog,Return to Owner,Black/Cream,16
+Dog,Return to Owner,Black/Fawn,3
+Dog,Return to Owner,Black/Gray,105
+Dog,Return to Owner,Black/Orange,2
+Dog,Return to Owner,Black/Red,28
+Dog,Return to Owner,Black/Silver,8
+Dog,Return to Owner,Black/Tan,821
+Dog,Return to Owner,Black/Tricolor,82
+Dog,Return to Owner,Black/White,2226
+Dog,Return to Owner,Black/Yellow,1
+Dog,Return to Owner,Black/Yellow Brindle,2
+Dog,Return to Owner,Blue,144
+Dog,Return to Owner,Blue Cream,1
+Dog,Return to Owner,Blue Cream/White,7
+Dog,Return to Owner,Blue Merle,86
+Dog,Return to Owner,Blue Merle/Black,6
+Dog,Return to Owner,Blue Merle/Blue Merle,1
+Dog,Return to Owner,Blue Merle/Brown,8
+Dog,Return to Owner,Blue Merle/Tan,18
+Dog,Return to Owner,Blue Merle/Tricolor,2
+Dog,Return to Owner,Blue Merle/White,70
+Dog,Return to Owner,Blue Smoke,1
+Dog,Return to Owner,Blue Smoke/White,1
+Dog,Return to Owner,Blue Tick,23
+Dog,Return to Owner,Blue Tick/Black,10
+Dog,Return to Owner,Blue Tick/Brown,4
+Dog,Return to Owner,Blue Tick/Red,1
+Dog,Return to Owner,Blue Tick/Red Tick,1
+Dog,Return to Owner,Blue Tick/Tan,2
+Dog,Return to Owner,Blue Tick/Tricolor,2
+Dog,Return to Owner,Blue Tick/White,5
+Dog,Return to Owner,Blue Tiger,4
+Dog,Return to Owner,Blue Tiger/White,16
+Dog,Return to Owner,Blue/Black,9
+Dog,Return to Owner,Blue/Black Brindle,2
+Dog,Return to Owner,Blue/Brown,3
+Dog,Return to Owner,Blue/Brown Brindle,2
+Dog,Return to Owner,Blue/Cream,1
+Dog,Return to Owner,Blue/Gray,5
+Dog,Return to Owner,Blue/Silver,1
+Dog,Return to Owner,Blue/Tan,39
+Dog,Return to Owner,Blue/Tricolor,5
+Dog,Return to Owner,Blue/White,743
+Dog,Return to Owner,Blue/Yellow Brindle,1
+Dog,Return to Owner,Brown,821
+Dog,Return to Owner,Brown Brindle,282
+Dog,Return to Owner,Brown Brindle/Black,17
+Dog,Return to Owner,Brown Brindle/Blue Tick,1
+Dog,Return to Owner,Brown Brindle/Brown,9
+Dog,Return to Owner,Brown Brindle/Brown Brindle,1
+Dog,Return to Owner,Brown Brindle/Brown Merle,1
+Dog,Return to Owner,Brown Brindle/Fawn,2
+Dog,Return to Owner,Brown Brindle/Gray,1
+Dog,Return to Owner,Brown Brindle/Tan,4
+Dog,Return to Owner,Brown Brindle/White,640
+Dog,Return to Owner,Brown Merle,31
+Dog,Return to Owner,Brown Merle/Black,1
+Dog,Return to Owner,Brown Merle/Blue Merle,1
+Dog,Return to Owner,Brown Merle/Gray,2
+Dog,Return to Owner,Brown Merle/White,41
+Dog,Return to Owner,Brown Tiger,1
+Dog,Return to Owner,Brown Tiger/White,3
+Dog,Return to Owner,Brown/Apricot,1
+Dog,Return to Owner,Brown/Black,555
+Dog,Return to Owner,Brown/Black Brindle,1
+Dog,Return to Owner,Brown/Blue,1
+Dog,Return to Owner,Brown/Blue Merle,2
+Dog,Return to Owner,Brown/Brown,8
+Dog,Return to Owner,Brown/Brown Brindle,4
+Dog,Return to Owner,Brown/Brown Merle,1
+Dog,Return to Owner,Brown/Buff,3
+Dog,Return to Owner,Brown/Chocolate,1
+Dog,Return to Owner,Brown/Cream,5
+Dog,Return to Owner,Brown/Fawn,4
+Dog,Return to Owner,Brown/Gray,15
+Dog,Return to Owner,Brown/Red,5
+Dog,Return to Owner,Brown/Red Merle,1
+Dog,Return to Owner,Brown/Red Tick,1
+Dog,Return to Owner,Brown/Silver,6
+Dog,Return to Owner,Brown/Tan,149
+Dog,Return to Owner,Brown/Tricolor,25
+Dog,Return to Owner,Brown/White,1193
+Dog,Return to Owner,Buff,140
+Dog,Return to Owner,Buff/Black,8
+Dog,Return to Owner,Buff/Cream,1
+Dog,Return to Owner,Buff/Gray,1
+Dog,Return to Owner,Buff/Red,1
+Dog,Return to Owner,Buff/Tan,11
+Dog,Return to Owner,Buff/White,39
+Dog,Return to Owner,Buff/Yellow,4
+Dog,Return to Owner,Chocolate,205
+Dog,Return to Owner,Chocolate/Black,3
+Dog,Return to Owner,Chocolate/Brown,5
+Dog,Return to Owner,Chocolate/Brown Brindle,1
+Dog,Return to Owner,Chocolate/Chocolate,1
+Dog,Return to Owner,Chocolate/Fawn,1
+Dog,Return to Owner,Chocolate/Gray,3
+Dog,Return to Owner,Chocolate/Liver Tick,1
+Dog,Return to Owner,Chocolate/Red,2
+Dog,Return to Owner,Chocolate/Tan,88
+Dog,Return to Owner,Chocolate/Tricolor,6
+Dog,Return to Owner,Chocolate/White,238
+Dog,Return to Owner,Cream,172
+Dog,Return to Owner,Cream/Black,23
+Dog,Return to Owner,Cream/Brown,8
+Dog,Return to Owner,Cream/Cream,1
+Dog,Return to Owner,Cream/Gray,1
+Dog,Return to Owner,Cream/Red,3
+Dog,Return to Owner,Cream/Tan,17
+Dog,Return to Owner,Cream/Tricolor,1
+Dog,Return to Owner,Cream/White,53
+Dog,Return to Owner,Cream/Yellow,1
+Dog,Return to Owner,Fawn,92
+Dog,Return to Owner,Fawn/Black,21
+Dog,Return to Owner,Fawn/Blue,3
+Dog,Return to Owner,Fawn/Brown,6
+Dog,Return to Owner,Fawn/Gray,4
+Dog,Return to Owner,Fawn/Tan,2
+Dog,Return to Owner,Fawn/Tricolor,6
+Dog,Return to Owner,Fawn/White,197
+Dog,Return to Owner,Gold,87
+Dog,Return to Owner,Gold/Black,4
+Dog,Return to Owner,Gold/Gold,2
+Dog,Return to Owner,Gold/Silver,1
+Dog,Return to Owner,Gold/White,18
+Dog,Return to Owner,Gold/Yellow,1
+Dog,Return to Owner,Gray,107
+Dog,Return to Owner,Gray/Black,42
+Dog,Return to Owner,Gray/Blue,3
+Dog,Return to Owner,Gray/Brown,10
+Dog,Return to Owner,Gray/Brown Brindle,1
+Dog,Return to Owner,Gray/Buff,1
+Dog,Return to Owner,Gray/Cream,6
+Dog,Return to Owner,Gray/Fawn,1
+Dog,Return to Owner,Gray/Gray,2
+Dog,Return to Owner,Gray/Silver,3
+Dog,Return to Owner,Gray/Tan,17
+Dog,Return to Owner,Gray/White,161
+Dog,Return to Owner,Liver,1
+Dog,Return to Owner,Liver Tick,6
+Dog,Return to Owner,Liver/Buff,1
+Dog,Return to Owner,Liver/Chocolate,1
+Dog,Return to Owner,Liver/Tan,3
+Dog,Return to Owner,Liver/White,12
+Dog,Return to Owner,Orange,2
+Dog,Return to Owner,Orange/Tan,3
+Dog,Return to Owner,Orange/White,3
+Dog,Return to Owner,Red,390
+Dog,Return to Owner,Red Merle,20
+Dog,Return to Owner,Red Merle/Red Merle,1
+Dog,Return to Owner,Red Merle/Tan,1
+Dog,Return to Owner,Red Merle/Tricolor,1
+Dog,Return to Owner,Red Merle/White,20
+Dog,Return to Owner,Red Tick,18
+Dog,Return to Owner,Red Tick/Blue,1
+Dog,Return to Owner,Red Tick/Blue Tick,1
+Dog,Return to Owner,Red Tick/Brown,3
+Dog,Return to Owner,Red Tick/Red,3
+Dog,Return to Owner,Red Tick/Tan,2
+Dog,Return to Owner,Red Tick/White,12
+Dog,Return to Owner,Red/Black,70
+Dog,Return to Owner,Red/Brown,23
+Dog,Return to Owner,Red/Buff,2
+Dog,Return to Owner,Red/Cream,9
+Dog,Return to Owner,Red/Gray,3
+Dog,Return to Owner,Red/Red Tick,1
+Dog,Return to Owner,Red/Silver,1
+Dog,Return to Owner,Red/Tan,36
+Dog,Return to Owner,Red/White,417
+Dog,Return to Owner,Sable,127
+Dog,Return to Owner,Sable/Black,9
+Dog,Return to Owner,Sable/Brown,3
+Dog,Return to Owner,Sable/Cream,6
+Dog,Return to Owner,Sable/Red,1
+Dog,Return to Owner,Sable/Tan,11
+Dog,Return to Owner,Sable/White,49
+Dog,Return to Owner,Silver,26
+Dog,Return to Owner,Silver/Black,6
+Dog,Return to Owner,Silver/Blue,1
+Dog,Return to Owner,Silver/Brown,2
+Dog,Return to Owner,Silver/Chocolate,1
+Dog,Return to Owner,Silver/Cream,1
+Dog,Return to Owner,Silver/Red,3
+Dog,Return to Owner,Silver/Tan,23
+Dog,Return to Owner,Silver/White,7
+Dog,Return to Owner,Tan,808
+Dog,Return to Owner,Tan/Black,306
+Dog,Return to Owner,Tan/Blue,1
+Dog,Return to Owner,Tan/Blue Merle,1
+Dog,Return to Owner,Tan/Brown,43
+Dog,Return to Owner,Tan/Brown Brindle,1
+Dog,Return to Owner,Tan/Brown Merle,1
+Dog,Return to Owner,Tan/Buff,6
+Dog,Return to Owner,Tan/Cream,17
+Dog,Return to Owner,Tan/Fawn,2
+Dog,Return to Owner,Tan/Gold,2
+Dog,Return to Owner,Tan/Gray,15
+Dog,Return to Owner,Tan/Red,7
+Dog,Return to Owner,Tan/Silver,14
+Dog,Return to Owner,Tan/Tan,8
+Dog,Return to Owner,Tan/Tricolor,6
+Dog,Return to Owner,Tan/White,1025
+Dog,Return to Owner,Tan/Yellow,1
+Dog,Return to Owner,Tricolor,728
+Dog,Return to Owner,Tricolor/Black,17
+Dog,Return to Owner,Tricolor/Blue,2
+Dog,Return to Owner,Tricolor/Blue Merle,3
+Dog,Return to Owner,Tricolor/Blue Tick,4
+Dog,Return to Owner,Tricolor/Brown,17
+Dog,Return to Owner,Tricolor/Brown Brindle,31
+Dog,Return to Owner,Tricolor/Fawn,1
+Dog,Return to Owner,Tricolor/Gray,1
+Dog,Return to Owner,Tricolor/Red Tick,1
+Dog,Return to Owner,Tricolor/Silver,2
+Dog,Return to Owner,Tricolor/Tan,4
+Dog,Return to Owner,Tricolor/Tricolor,1
+Dog,Return to Owner,Tricolor/White,22
+Dog,Return to Owner,Unknown,1
+Dog,Return to Owner,White,1280
+Dog,Return to Owner,White/Apricot,1
+Dog,Return to Owner,White/Black,699
+Dog,Return to Owner,White/Black Brindle,10
+Dog,Return to Owner,White/Black Smoke,1
+Dog,Return to Owner,White/Blue,108
+Dog,Return to Owner,White/Blue Merle,25
+Dog,Return to Owner,White/Blue Tick,1
+Dog,Return to Owner,White/Blue Tiger,1
+Dog,Return to Owner,White/Brown,711
+Dog,Return to Owner,White/Brown Brindle,138
+Dog,Return to Owner,White/Brown Merle,3
+Dog,Return to Owner,White/Brown Tabby,2
+Dog,Return to Owner,White/Buff,22
+Dog,Return to Owner,White/Chocolate,32
+Dog,Return to Owner,White/Cream,26
+Dog,Return to Owner,White/Fawn,4
+Dog,Return to Owner,White/Gold,4
+Dog,Return to Owner,White/Gray,95
+Dog,Return to Owner,White/Gray Tiger,1
+Dog,Return to Owner,White/Liver,22
+Dog,Return to Owner,White/Liver Tick,2
+Dog,Return to Owner,White/Orange,9
+Dog,Return to Owner,White/Red,82
+Dog,Return to Owner,White/Red Merle,2
+Dog,Return to Owner,White/Red Tick,9
+Dog,Return to Owner,White/Silver,4
+Dog,Return to Owner,White/Tan,515
+Dog,Return to Owner,White/Tricolor,68
+Dog,Return to Owner,White/White,44
+Dog,Return to Owner,White/Yellow,7
+Dog,Return to Owner,White/Yellow Brindle,3
+Dog,Return to Owner,Yellow,254
+Dog,Return to Owner,Yellow Brindle,9
+Dog,Return to Owner,Yellow Brindle/Brown,1
+Dog,Return to Owner,Yellow Brindle/White,14
+Dog,Return to Owner,Yellow/Brown,1
+Dog,Return to Owner,Yellow/Cream,1
+Dog,Return to Owner,Yellow/Gray,2
+Dog,Return to Owner,Yellow/White,38
+Dog,Return to Owner,Yellow/Yellow,1
+Dog,Rto-Adopt,Apricot,1
+Dog,Rto-Adopt,Black,37
+Dog,Rto-Adopt,Black Brindle/Brown,2
+Dog,Rto-Adopt,Black Smoke/Gray,1
+Dog,Rto-Adopt,Black Smoke/White,1
+Dog,Rto-Adopt,Black/Black,1
+Dog,Rto-Adopt,Black/Brown,29
+Dog,Rto-Adopt,Black/Brown Brindle,2
+Dog,Rto-Adopt,Black/Chocolate,1
+Dog,Rto-Adopt,Black/Gray,2
+Dog,Rto-Adopt,Black/Silver,1
+Dog,Rto-Adopt,Black/Tan,23
+Dog,Rto-Adopt,Black/Tricolor,6
+Dog,Rto-Adopt,Black/White,90
+Dog,Rto-Adopt,Blue,4
+Dog,Rto-Adopt,Blue Cream/White,1
+Dog,Rto-Adopt,Blue Merle/White,2
+Dog,Rto-Adopt,Blue Tick,1
+Dog,Rto-Adopt,Blue/Tan,3
+Dog,Rto-Adopt,Blue/Tricolor,1
+Dog,Rto-Adopt,Blue/White,36
+Dog,Rto-Adopt,Brown,25
+Dog,Rto-Adopt,Brown Brindle,17
+Dog,Rto-Adopt,Brown Brindle/Black,1
+Dog,Rto-Adopt,Brown Brindle/White,32
+Dog,Rto-Adopt,Brown/Black,21
+Dog,Rto-Adopt,Brown/Black Brindle,1
+Dog,Rto-Adopt,Brown/Brown,1
+Dog,Rto-Adopt,Brown/Red,1
+Dog,Rto-Adopt,Brown/Tan,6
+Dog,Rto-Adopt,Brown/Tricolor,1
+Dog,Rto-Adopt,Brown/White,60
+Dog,Rto-Adopt,Buff/Black,1
+Dog,Rto-Adopt,Buff/White,3
+Dog,Rto-Adopt,Chocolate,2
+Dog,Rto-Adopt,Chocolate/White,11
+Dog,Rto-Adopt,Cream,6
+Dog,Rto-Adopt,Cream/Black,1
+Dog,Rto-Adopt,Cream/Red,1
+Dog,Rto-Adopt,Cream/White,2
+Dog,Rto-Adopt,Fawn,4
+Dog,Rto-Adopt,Fawn/Brown,1
+Dog,Rto-Adopt,Fawn/White,7
+Dog,Rto-Adopt,Gray,5
+Dog,Rto-Adopt,Gray/Brown,1
+Dog,Rto-Adopt,Gray/Tricolor,1
+Dog,Rto-Adopt,Liver Tick,1
+Dog,Rto-Adopt,Liver/White,1
+Dog,Rto-Adopt,Red,10
+Dog,Rto-Adopt,Red Tick/Brown,1
+Dog,Rto-Adopt,Red/Black,1
+Dog,Rto-Adopt,Red/Brown,3
+Dog,Rto-Adopt,Red/Cream,1
+Dog,Rto-Adopt,Red/Tan,1
+Dog,Rto-Adopt,Red/White,12
+Dog,Rto-Adopt,Sable,3
+Dog,Rto-Adopt,Sable/White,1
+Dog,Rto-Adopt,Silver,1
+Dog,Rto-Adopt,Silver/Cream,1
+Dog,Rto-Adopt,Tan,24
+Dog,Rto-Adopt,Tan/Black,12
+Dog,Rto-Adopt,Tan/Brown,3
+Dog,Rto-Adopt,Tan/Tan,1
+Dog,Rto-Adopt,Tan/White,49
+Dog,Rto-Adopt,Tricolor,16
+Dog,Rto-Adopt,Tricolor/Black,3
+Dog,Rto-Adopt,Tricolor/Brown,1
+Dog,Rto-Adopt,Tricolor/Brown Brindle,2
+Dog,Rto-Adopt,Tricolor/Fawn,1
+Dog,Rto-Adopt,White,51
+Dog,Rto-Adopt,White/Black,31
+Dog,Rto-Adopt,White/Blue,3
+Dog,Rto-Adopt,White/Blue Merle,1
+Dog,Rto-Adopt,White/Brown,27
+Dog,Rto-Adopt,White/Brown Brindle,6
+Dog,Rto-Adopt,White/Chocolate,1
+Dog,Rto-Adopt,White/Cream,1
+Dog,Rto-Adopt,White/Gray,5
+Dog,Rto-Adopt,White/Red,3
+Dog,Rto-Adopt,White/Tan,16
+Dog,Rto-Adopt,White/Tricolor,2
+Dog,Rto-Adopt,White/White,2
+Dog,Rto-Adopt,White/Yellow Brindle,1
+Dog,Rto-Adopt,Yellow,4
+Dog,Stolen,Brown Brindle/White,1
+Dog,Stolen,Tricolor,1
+Dog,Transfer,Apricot,26
+Dog,Transfer,Apricot/Brown,1
+Dog,Transfer,Apricot/White,2
+Dog,Transfer,Black,1064
+Dog,Transfer,Black Brindle,27
+Dog,Transfer,Black Brindle/Black,1
+Dog,Transfer,Black Brindle/Brown,2
+Dog,Transfer,Black Brindle/Tan,1
+Dog,Transfer,Black Brindle/White,59
+Dog,Transfer,Black Smoke,3
+Dog,Transfer,Black Smoke/White,1
+Dog,Transfer,Black Tiger,1
+Dog,Transfer,Black/Black,34
+Dog,Transfer,Black/Black Brindle,3
+Dog,Transfer,Black/Blue,2
+Dog,Transfer,Black/Blue Merle,4
+Dog,Transfer,Black/Blue Tick,4
+Dog,Transfer,Black/Brown,552
+Dog,Transfer,Black/Brown Brindle,46
+Dog,Transfer,Black/Brown Merle,1
+Dog,Transfer,Black/Buff,5
+Dog,Transfer,Black/Chocolate,1
+Dog,Transfer,Black/Cream,15
+Dog,Transfer,Black/Fawn,1
+Dog,Transfer,Black/Gold,1
+Dog,Transfer,Black/Gray,42
+Dog,Transfer,Black/Orange,1
+Dog,Transfer,Black/Red,17
+Dog,Transfer,Black/Silver,5
+Dog,Transfer,Black/Tan,636
+Dog,Transfer,Black/Tricolor,94
+Dog,Transfer,Black/White,2056
+Dog,Transfer,Blue,105
+Dog,Transfer,Blue Cream,2
+Dog,Transfer,Blue Cream/Blue Tiger,1
+Dog,Transfer,Blue Merle,55
+Dog,Transfer,Blue Merle/Black,7
+Dog,Transfer,Blue Merle/Brown,2
+Dog,Transfer,Blue Merle/Gray,1
+Dog,Transfer,Blue Merle/Red,1
+Dog,Transfer,Blue Merle/Tan,9
+Dog,Transfer,Blue Merle/Tricolor,1
+Dog,Transfer,Blue Merle/White,36
+Dog,Transfer,Blue Smoke/Brown,1
+Dog,Transfer,Blue Tick,14
+Dog,Transfer,Blue Tick/Black,7
+Dog,Transfer,Blue Tick/Brown,3
+Dog,Transfer,Blue Tick/Brown Brindle,1
+Dog,Transfer,Blue Tick/Red Tick,3
+Dog,Transfer,Blue Tick/Tan,2
+Dog,Transfer,Blue Tick/Tricolor,3
+Dog,Transfer,Blue Tick/White,6
+Dog,Transfer,Blue Tiger,1
+Dog,Transfer,Blue Tiger/White,4
+Dog,Transfer,Blue/Blue,2
+Dog,Transfer,Blue/Brown,2
+Dog,Transfer,Blue/Brown Brindle,2
+Dog,Transfer,Blue/Gray,2
+Dog,Transfer,Blue/Silver,1
+Dog,Transfer,Blue/Tan,28
+Dog,Transfer,Blue/Tricolor,2
+Dog,Transfer,Blue/White,385
+Dog,Transfer,Brown,847
+Dog,Transfer,Brown Brindle,299
+Dog,Transfer,Brown Brindle/Black,19
+Dog,Transfer,Brown Brindle/Blue,1
+Dog,Transfer,Brown Brindle/Brown,4
+Dog,Transfer,Brown Brindle/Brown Merle,1
+Dog,Transfer,Brown Brindle/Liver Tick,1
+Dog,Transfer,Brown Brindle/Red Tick,2
+Dog,Transfer,Brown Brindle/Tricolor,1
+Dog,Transfer,Brown Brindle/White,451
+Dog,Transfer,Brown Merle,27
+Dog,Transfer,Brown Merle/Black,2
+Dog,Transfer,Brown Merle/Brown,2
+Dog,Transfer,Brown Merle/Tan,3
+Dog,Transfer,Brown Merle/White,21
+Dog,Transfer,Brown Tiger,6
+Dog,Transfer,Brown Tiger/White,4
+Dog,Transfer,Brown/Black,472
+Dog,Transfer,Brown/Brown,11
+Dog,Transfer,Brown/Brown Brindle,2
+Dog,Transfer,Brown/Buff,3
+Dog,Transfer,Brown/Chocolate,1
+Dog,Transfer,Brown/Cream,10
+Dog,Transfer,Brown/Fawn,1
+Dog,Transfer,Brown/Gray,12
+Dog,Transfer,Brown/Red,4
+Dog,Transfer,Brown/Red Tick,1
+Dog,Transfer,Brown/Silver,2
+Dog,Transfer,Brown/Tan,106
+Dog,Transfer,Brown/Tricolor,46
+Dog,Transfer,Brown/White,989
+Dog,Transfer,Brown/Yellow,1
+Dog,Transfer,Buff,142
+Dog,Transfer,Buff/Black,4
+Dog,Transfer,Buff/Brown,2
+Dog,Transfer,Buff/Cream,2
+Dog,Transfer,Buff/Gray,3
+Dog,Transfer,Buff/Red,1
+Dog,Transfer,Buff/Red Tick,1
+Dog,Transfer,Buff/Tan,7
+Dog,Transfer,Buff/White,30
+Dog,Transfer,Chocolate,133
+Dog,Transfer,Chocolate/Black,1
+Dog,Transfer,Chocolate/Brown,5
+Dog,Transfer,Chocolate/Brown Merle,1
+Dog,Transfer,Chocolate/Chocolate,2
+Dog,Transfer,Chocolate/Red,2
+Dog,Transfer,Chocolate/Tan,60
+Dog,Transfer,Chocolate/Tricolor,1
+Dog,Transfer,Chocolate/White,200
+Dog,Transfer,Cream,230
+Dog,Transfer,Cream/Black,18
+Dog,Transfer,Cream/Brown,5
+Dog,Transfer,Cream/Brown Merle,1
+Dog,Transfer,Cream/Gold,1
+Dog,Transfer,Cream/Gray,1
+Dog,Transfer,Cream/Red Tick,1
+Dog,Transfer,Cream/Silver,1
+Dog,Transfer,Cream/Tan,20
+Dog,Transfer,Cream/Tricolor,1
+Dog,Transfer,Cream/White,44
+Dog,Transfer,Cream/Yellow,1
+Dog,Transfer,Fawn,85
+Dog,Transfer,Fawn/Black,26
+Dog,Transfer,Fawn/Blue,1
+Dog,Transfer,Fawn/Brown,2
+Dog,Transfer,Fawn/Cream,1
+Dog,Transfer,Fawn/Gray,1
+Dog,Transfer,Fawn/Tan,2
+Dog,Transfer,Fawn/Tricolor,1
+Dog,Transfer,Fawn/White,111
+Dog,Transfer,Gold,47
+Dog,Transfer,Gold/Black,2
+Dog,Transfer,Gold/Brown,1
+Dog,Transfer,Gold/Buff,1
+Dog,Transfer,Gold/Cream,1
+Dog,Transfer,Gold/Tan,2
+Dog,Transfer,Gold/White,16
+Dog,Transfer,Gray,77
+Dog,Transfer,Gray/Black,27
+Dog,Transfer,Gray/Blue Merle,1
+Dog,Transfer,Gray/Brown,6
+Dog,Transfer,Gray/Cream,4
+Dog,Transfer,Gray/Fawn,1
+Dog,Transfer,Gray/Gold,1
+Dog,Transfer,Gray/Gray,2
+Dog,Transfer,Gray/Silver,2
+Dog,Transfer,Gray/Tan,16
+Dog,Transfer,Gray/Tricolor,1
+Dog,Transfer,Gray/White,102
+Dog,Transfer,Liver Tick,1
+Dog,Transfer,Liver Tick/Brown,3
+Dog,Transfer,Liver Tick/White,1
+Dog,Transfer,Liver/Chocolate,1
+Dog,Transfer,Liver/Liver Tick,1
+Dog,Transfer,Liver/Tan,1
+Dog,Transfer,Liver/White,9
+Dog,Transfer,Orange/Tan,2
+Dog,Transfer,Orange/White,1
+Dog,Transfer,Red,336
+Dog,Transfer,Red Merle,18
+Dog,Transfer,Red Merle/Brown Merle,1
+Dog,Transfer,Red Merle/White,9
+Dog,Transfer,Red Tick,29
+Dog,Transfer,Red Tick/Blue Tick,1
+Dog,Transfer,Red Tick/Brown,1
+Dog,Transfer,Red Tick/Orange,1
+Dog,Transfer,Red Tick/Red,1
+Dog,Transfer,Red Tick/Tan,1
+Dog,Transfer,Red Tick/Tricolor,1
+Dog,Transfer,Red Tick/White,11
+Dog,Transfer,Red/Black,57
+Dog,Transfer,Red/Blue,1
+Dog,Transfer,Red/Brown,5
+Dog,Transfer,Red/Buff,1
+Dog,Transfer,Red/Cream,4
+Dog,Transfer,Red/Gold,1
+Dog,Transfer,Red/Gray,2
+Dog,Transfer,Red/Red,1
+Dog,Transfer,Red/Tan,17
+Dog,Transfer,Red/Tricolor,2
+Dog,Transfer,Red/White,280
+Dog,Transfer,Red/Yellow,1
+Dog,Transfer,Sable,158
+Dog,Transfer,Sable/Black,14
+Dog,Transfer,Sable/Brown,6
+Dog,Transfer,Sable/Buff,1
+Dog,Transfer,Sable/Cream,2
+Dog,Transfer,Sable/Red,1
+Dog,Transfer,Sable/Tan,6
+Dog,Transfer,Sable/White,88
+Dog,Transfer,Silver,11
+Dog,Transfer,Silver/Black,1
+Dog,Transfer,Silver/Brown,4
+Dog,Transfer,Silver/Red,2
+Dog,Transfer,Silver/Tan,6
+Dog,Transfer,Silver/White,6
+Dog,Transfer,Tan,919
+Dog,Transfer,Tan/Apricot,1
+Dog,Transfer,Tan/Black,310
+Dog,Transfer,Tan/Blue,1
+Dog,Transfer,Tan/Blue Tick,1
+Dog,Transfer,Tan/Brown,39
+Dog,Transfer,Tan/Brown Brindle,1
+Dog,Transfer,Tan/Buff,4
+Dog,Transfer,Tan/Cream,12
+Dog,Transfer,Tan/Fawn,1
+Dog,Transfer,Tan/Gray,8
+Dog,Transfer,Tan/Red,2
+Dog,Transfer,Tan/Red Tick,2
+Dog,Transfer,Tan/Silver,13
+Dog,Transfer,Tan/Tan,12
+Dog,Transfer,Tan/Tricolor,15
+Dog,Transfer,Tan/White,948
+Dog,Transfer,Tan/Yellow,2
+Dog,Transfer,Tricolor,705
+Dog,Transfer,Tricolor/Black,8
+Dog,Transfer,Tricolor/Blue,2
+Dog,Transfer,Tricolor/Blue Merle,6
+Dog,Transfer,Tricolor/Brown,15
+Dog,Transfer,Tricolor/Brown Merle,1
+Dog,Transfer,Tricolor/Chocolate,2
+Dog,Transfer,Tricolor/Gray,1
+Dog,Transfer,Tricolor/Red,2
+Dog,Transfer,Tricolor/Tan,5
+Dog,Transfer,Tricolor/White,26
+Dog,Transfer,White,1163
+Dog,Transfer,White/Apricot,1
+Dog,Transfer,White/Black,678
+Dog,Transfer,White/Black Brindle,8
+Dog,Transfer,White/Black Tiger,1
+Dog,Transfer,White/Blue,72
+Dog,Transfer,White/Blue Cream,1
+Dog,Transfer,White/Blue Merle,14
+Dog,Transfer,White/Blue Tick,5
+Dog,Transfer,White/Brown,640
+Dog,Transfer,White/Brown Brindle,100
+Dog,Transfer,White/Brown Merle,6
+Dog,Transfer,White/Buff,30
+Dog,Transfer,White/Chocolate,41
+Dog,Transfer,White/Cream,43
+Dog,Transfer,White/Fawn,8
+Dog,Transfer,White/Gray,71
+Dog,Transfer,White/Liver,9
+Dog,Transfer,White/Liver Tick,1
+Dog,Transfer,White/Orange,9
+Dog,Transfer,White/Pink,2
+Dog,Transfer,White/Red,56
+Dog,Transfer,White/Red Merle,6
+Dog,Transfer,White/Red Tick,8
+Dog,Transfer,White/Silver,2
+Dog,Transfer,White/Tan,543
+Dog,Transfer,White/Tortie,1
+Dog,Transfer,White/Tricolor,81
+Dog,Transfer,White/White,23
+Dog,Transfer,White/Yellow,8
+Dog,Transfer,Yellow,158
+Dog,Transfer,Yellow Brindle,7
+Dog,Transfer,Yellow Brindle/White,5
+Dog,Transfer,Yellow/Black,1
+Dog,Transfer,Yellow/Tan,3
+Dog,Transfer,Yellow/White,40
+Livestock,Adoption,Black,1
+Livestock,Adoption,Black/White,3
+Livestock,Adoption,Gray/Black,1
+Livestock,Adoption,Pink,4
+Livestock,Adoption,Tan,1
+Livestock,Adoption,White,1
+Livestock,Adoption,White/Black,1
+Livestock,Died,Black,1
+Livestock,Euthanasia,Black/Brown,1
+Livestock,Euthanasia,Black/White,1
+Livestock,Return to Owner,Black/White,2
+Livestock,Return to Owner,Gray,1
+Livestock,Return to Owner,Tan/Black,1
+Livestock,Return to Owner,White,1
+Livestock,Transfer,Black,1
+Livestock,Transfer,Black/White,1
+Livestock,Transfer,Brown,1
+Livestock,Transfer,Liver/Cream,1
+Livestock,Transfer,Pink,1
+Livestock,Transfer,White,1
+Other,Adoption,Agouti,5
+Other,Adoption,Agouti/Gray,1
+Other,Adoption,Apricot,1
+Other,Adoption,Black,70
+Other,Adoption,Black Smoke,1
+Other,Adoption,Black Smoke/Chocolate,1
+Other,Adoption,Black/Brown,3
+Other,Adoption,Black/Chocolate,1
+Other,Adoption,Black/Cream,1
+Other,Adoption,Black/Gray,3
+Other,Adoption,Black/Orange,4
+Other,Adoption,Black/Red,1
+Other,Adoption,Black/Tan,1
+Other,Adoption,Black/Tricolor,4
+Other,Adoption,Black/White,42
+Other,Adoption,Blue,15
+Other,Adoption,Blue/Orange,1
+Other,Adoption,Blue/White,6
+Other,Adoption,Brown,50
+Other,Adoption,Brown Brindle,2
+Other,Adoption,Brown/Black,7
+Other,Adoption,Brown/Cream,4
+Other,Adoption,Brown/Green,2
+Other,Adoption,Brown/Tan,3
+Other,Adoption,Brown/White,28
+Other,Adoption,Buff,4
+Other,Adoption,Calico,12
+Other,Adoption,Calico/Black,1
+Other,Adoption,Chocolate,9
+Other,Adoption,Chocolate Point/Cream,1
+Other,Adoption,Chocolate/Tan,1
+Other,Adoption,Chocolate/White,3
+Other,Adoption,Cream,2
+Other,Adoption,Cream/Silver,1
+Other,Adoption,Fawn/White,2
+Other,Adoption,Gold,5
+Other,Adoption,Gray,11
+Other,Adoption,Gray/Black,4
+Other,Adoption,Gray/Brown,1
+Other,Adoption,Gray/Gray,3
+Other,Adoption,Gray/Orange,3
+Other,Adoption,Gray/Tricolor,1
+Other,Adoption,Gray/White,14
+Other,Adoption,Green,4
+Other,Adoption,Green/Brown,1
+Other,Adoption,Green/Red,1
+Other,Adoption,Green/Yellow,1
+Other,Adoption,Orange,1
+Other,Adoption,Orange/Black,4
+Other,Adoption,Orange/Gray,1
+Other,Adoption,Orange/White,6
+Other,Adoption,Red,1
+Other,Adoption,Red/Tan,1
+Other,Adoption,Red/White,3
+Other,Adoption,Sable,12
+Other,Adoption,Sable/White,5
+Other,Adoption,Seal Point,1
+Other,Adoption,Seal Point/Gray,1
+Other,Adoption,Silver,1
+Other,Adoption,Tan,13
+Other,Adoption,Tan/Black,3
+Other,Adoption,Tan/Tricolor,1
+Other,Adoption,Tan/White,5
+Other,Adoption,Tortie,5
+Other,Adoption,Tricolor,63
+Other,Adoption,Tricolor/Black,1
+Other,Adoption,Tricolor/Brown,1
+Other,Adoption,Tricolor/White,2
+Other,Adoption,White,64
+Other,Adoption,White/Black,83
+Other,Adoption,White/Blue,5
+Other,Adoption,White/Brown,50
+Other,Adoption,White/Brown Tabby,1
+Other,Adoption,White/Chocolate,6
+Other,Adoption,White/Fawn,1
+Other,Adoption,White/Gray,33
+Other,Adoption,White/Orange,5
+Other,Adoption,White/Seal Point,1
+Other,Adoption,White/Silver,1
+Other,Adoption,White/Tan,22
+Other,Adoption,White/Tricolor,11
+Other,Adoption,White/White,3
+Other,Died,Agouti/White,1
+Other,Died,Black,24
+Other,Died,Black/Brown,2
+Other,Died,Black/Gray,11
+Other,Died,Black/White,1
+Other,Died,Brown,74
+Other,Died,Brown/Black,22
+Other,Died,Brown/Brown,5
+Other,Died,Brown/White,2
+Other,Died,Gold,1
+Other,Died,Gray,8
+Other,Died,Gray/Black,9
+Other,Died,Gray/Gray,1
+Other,Died,Gray/White,1
+Other,Died,Green/Gold,1
+Other,Died,Orange,1
+Other,Died,Pink,2
+Other,Died,Red,1
+Other,Died,Red/Gray,1
+Other,Died,Sable,1
+Other,Died,Sable/Brown,1
+Other,Died,Sable/White,1
+Other,Died,Tan,1
+Other,Died,Tan/Brown,1
+Other,Died,Tan/White,2
+Other,Died,Tricolor,1
+Other,Died,White,13
+Other,Died,White/Black,8
+Other,Died,White/Brown,3
+Other,Died,White/Gray,5
+Other,Died,White/Pink,1
+Other,Died,White/Tan,2
+Other,Disposal,Black,50
+Other,Disposal,Black/Brown,26
+Other,Disposal,Black/Gray,21
+Other,Disposal,Black/Red,1
+Other,Disposal,Black/White,18
+Other,Disposal,Brown,228
+Other,Disposal,Brown/Black,35
+Other,Disposal,Brown/Brown,20
+Other,Disposal,Brown/Gray,2
+Other,Disposal,Brown/White,3
+Other,Disposal,Gray,14
+Other,Disposal,Gray/Black,15
+Other,Disposal,Gray/Brown,5
+Other,Disposal,Gray/Pink,2
+Other,Disposal,Gray/Tan,1
+Other,Disposal,Gray/White,6
+Other,Disposal,Red,15
+Other,Disposal,Red/Black,1
+Other,Disposal,Red/Brown,1
+Other,Disposal,Red/Gray,2
+Other,Disposal,Red/White,1
+Other,Disposal,Tan,1
+Other,Disposal,Tan/Black,1
+Other,Disposal,Tan/Brown,1
+Other,Disposal,White/Gray,2
+Other,Euthanasia,Agouti,1
+Other,Euthanasia,Black,368
+Other,Euthanasia,Black Smoke/Gray,1
+Other,Euthanasia,Black/Black,12
+Other,Euthanasia,Black/Brown,189
+Other,Euthanasia,Black/Gray,285
+Other,Euthanasia,Black/Green,1
+Other,Euthanasia,Black/Red,1
+Other,Euthanasia,Black/Silver,1
+Other,Euthanasia,Black/White,308
+Other,Euthanasia,Blue/White,1
+Other,Euthanasia,Brown,2328
+Other,Euthanasia,Brown/Black,353
+Other,Euthanasia,Brown/Brown,123
+Other,Euthanasia,Brown/Gray,31
+Other,Euthanasia,Brown/Orange,1
+Other,Euthanasia,Brown/Pink,1
+Other,Euthanasia,Brown/Red,18
+Other,Euthanasia,Brown/Tan,10
+Other,Euthanasia,Brown/Tricolor,1
+Other,Euthanasia,Brown/White,17
+Other,Euthanasia,Gray,292
+Other,Euthanasia,Gray/Black,348
+Other,Euthanasia,Gray/Brown,14
+Other,Euthanasia,Gray/Gold,1
+Other,Euthanasia,Gray/Gray,10
+Other,Euthanasia,Gray/Orange,5
+Other,Euthanasia,Gray/Pink,15
+Other,Euthanasia,Gray/Red,15
+Other,Euthanasia,Gray/Tan,1
+Other,Euthanasia,Gray/Tricolor,1
+Other,Euthanasia,Gray/White,51
+Other,Euthanasia,Green,4
+Other,Euthanasia,Green/Brown,2
+Other,Euthanasia,Green/Orange,1
+Other,Euthanasia,Green/Yellow,1
+Other,Euthanasia,Liver,1
+Other,Euthanasia,Orange,8
+Other,Euthanasia,Orange/Tan,1
+Other,Euthanasia,Pink,13
+Other,Euthanasia,Red,161
+Other,Euthanasia,Red/Black,6
+Other,Euthanasia,Red/Brown,13
+Other,Euthanasia,Red/Cream,7
+Other,Euthanasia,Red/Gray,14
+Other,Euthanasia,Red/Red,1
+Other,Euthanasia,Red/Silver,4
+Other,Euthanasia,Red/Tan,2
+Other,Euthanasia,Red/White,3
+Other,Euthanasia,Sable,20
+Other,Euthanasia,Sable/White,1
+Other,Euthanasia,Silver/Orange,1
+Other,Euthanasia,Silver/Red,1
+Other,Euthanasia,Tan,3
+Other,Euthanasia,Tan/Black,1
+Other,Euthanasia,Tan/Gray,1
+Other,Euthanasia,Tan/White,2
+Other,Euthanasia,Tricolor,2
+Other,Euthanasia,Tricolor/Gray,1
+Other,Euthanasia,White,18
+Other,Euthanasia,White/Black,18
+Other,Euthanasia,White/Brown,3
+Other,Euthanasia,White/Gray,44
+Other,Euthanasia,White/Tricolor,1
+Other,Missing,Brown,1
+Other,Missing,White,3
+Other,Relocate,Black,1
+Other,Relocate,Black/Gray,3
+Other,Relocate,Brown,2
+Other,Relocate,Brown/Black,2
+Other,Relocate,Brown/White,1
+Other,Relocate,Gray/White,1
+Other,Relocate,White,1
+Other,Return to Owner,Black,1
+Other,Return to Owner,Black/Blue,1
+Other,Return to Owner,Black/Brown,1
+Other,Return to Owner,Black/White,3
+Other,Return to Owner,Black/Yellow,1
+Other,Return to Owner,Blue,2
+Other,Return to Owner,Brown,10
+Other,Return to Owner,Brown/Black,5
+Other,Return to Owner,Brown/Tan,2
+Other,Return to Owner,Brown/White,4
+Other,Return to Owner,Buff/Brown,1
+Other,Return to Owner,Buff/Red,1
+Other,Return to Owner,Gray,2
+Other,Return to Owner,Sable,4
+Other,Return to Owner,Sable/White,2
+Other,Return to Owner,Tan,5
+Other,Return to Owner,Tan/Black,2
+Other,Return to Owner,Tricolor,3
+Other,Return to Owner,White,2
+Other,Return to Owner,White/Black,5
+Other,Return to Owner,White/Blue,1
+Other,Return to Owner,White/Brown,2
+Other,Return to Owner,White/Gray,1
+Other,Return to Owner,White/Orange,1
+Other,Return to Owner,White/Yellow,1
+Other,Return to Owner,Yellow,1
+Other,Return to Owner,Yellow/Black,1
+Other,Rto-Adopt,Black,1
+Other,Rto-Adopt,Gray,1
+Other,Rto-Adopt,Tan,1
+Other,Transfer,Agouti,1
+Other,Transfer,Black,85
+Other,Transfer,Black Brindle,1
+Other,Transfer,Black Smoke,1
+Other,Transfer,Black Smoke/White,1
+Other,Transfer,Black/Brown,3
+Other,Transfer,Black/Gray,3
+Other,Transfer,Black/Orange,3
+Other,Transfer,Black/Pink,2
+Other,Transfer,Black/Red,1
+Other,Transfer,Black/Silver,2
+Other,Transfer,Black/Tan,6
+Other,Transfer,Black/Tricolor,4
+Other,Transfer,Black/White,75
+Other,Transfer,Black/Yellow,2
+Other,Transfer,Blue,8
+Other,Transfer,Blue/Brown,1
+Other,Transfer,Blue/White,7
+Other,Transfer,Brown,98
+Other,Transfer,Brown Brindle,2
+Other,Transfer,Brown/Black,13
+Other,Transfer,Brown/Gray,1
+Other,Transfer,Brown/Green,1
+Other,Transfer,Brown/Orange,2
+Other,Transfer,Brown/Red,1
+Other,Transfer,Brown/Tan,7
+Other,Transfer,Brown/Tricolor,1
+Other,Transfer,Brown/White,44
+Other,Transfer,Brown/Yellow,1
+Other,Transfer,Buff,1
+Other,Transfer,Calico,29
+Other,Transfer,Chocolate,5
+Other,Transfer,Chocolate/Tan,1
+Other,Transfer,Chocolate/White,10
+Other,Transfer,Cream,2
+Other,Transfer,Cream/Black,1
+Other,Transfer,Cream/White,3
+Other,Transfer,Fawn,2
+Other,Transfer,Fawn/Black,1
+Other,Transfer,Fawn/White,2
+Other,Transfer,Gold/White,2
+Other,Transfer,Gray,49
+Other,Transfer,Gray/Black,4
+Other,Transfer,Gray/Brown,3
+Other,Transfer,Gray/Gray,7
+Other,Transfer,Gray/Pink,3
+Other,Transfer,Gray/White,29
+Other,Transfer,Green,17
+Other,Transfer,Green/Brown,1
+Other,Transfer,Green/Yellow,3
+Other,Transfer,Lilac Point,2
+Other,Transfer,Orange,4
+Other,Transfer,Orange/Black,1
+Other,Transfer,Orange/Blue,1
+Other,Transfer,Orange/Brown,2
+Other,Transfer,Orange/White,8
+Other,Transfer,Pink,17
+Other,Transfer,Red,4
+Other,Transfer,Red/Brown,1
+Other,Transfer,Red/White,4
+Other,Transfer,Sable,5
+Other,Transfer,Sable/Black,1
+Other,Transfer,Sable/White,5
+Other,Transfer,Seal Point,3
+Other,Transfer,Seal Point/Gray,1
+Other,Transfer,Seal Point/White,1
+Other,Transfer,Silver,1
+Other,Transfer,Silver/Black,1
+Other,Transfer,Tan,26
+Other,Transfer,Tan/Black,2
+Other,Transfer,Tan/Red,1
+Other,Transfer,Tan/White,10
+Other,Transfer,Tortie,4
+Other,Transfer,Tortie/Black,1
+Other,Transfer,Tricolor,96
+Other,Transfer,Tricolor/Black,3
+Other,Transfer,Tricolor/Brown,3
+Other,Transfer,Tricolor/Calico,1
+Other,Transfer,Tricolor/White,4
+Other,Transfer,White,84
+Other,Transfer,White/Black,70
+Other,Transfer,White/Blue,6
+Other,Transfer,White/Brown,40
+Other,Transfer,White/Buff,1
+Other,Transfer,White/Calico,1
+Other,Transfer,White/Chocolate,1
+Other,Transfer,White/Cream,1
+Other,Transfer,White/Gray,33
+Other,Transfer,White/Orange,2
+Other,Transfer,White/Red,3
+Other,Transfer,White/Silver,1
+Other,Transfer,White/Tan,9
+Other,Transfer,White/Tricolor,7
+Other,Transfer,White/White,4
+Other,Transfer,Yellow/Black,1

@@ -152,12 +152,6 @@ class AnimalIntakeVisuals {
 
         console.log("Animal Intake Visuals", vis.displayData);
 
-        //vis.x.domain([0, d3.max(vis.displayData, d => d.value)]);
-        vis.color.domain([0,  d3.max(vis.displayData, d=> d.value)]);
-        vis.xlegend.domain([0, d3.max(vis.displayData, d=> d.value)]);
-        vis.xAxislegend = d3.axisBottom().scale(vis.xlegend).tickValues([d3.max(vis.displayData, d=> d.value),d3.min(vis.displayData, d=> d.value)])//.tickFormat(d => parseInt(d/1000) + "k");
-        vis.svg.select(".xaxis").call(vis.xAxislegend)
-            .attr("transform", "translate("+400+"," + 240 + ")");
 
         vis.colorScale.domain([0,  d3.max(vis.displayData, d=> d.value)]);
         let maxValue=d3.max(vis.displayData, d => d.value)
@@ -184,38 +178,27 @@ class AnimalIntakeVisuals {
                 .attr("cy", 100 / 2)
                 .attr("r", 100 / 2)
                 //.style("fill", "#fff")
-                .attr("stroke-width",'5px' )
+                //.attr("stroke-width",'5px' )
                 //.attr("background-color",'red' )
-                .attr("stroke",vis.colorScale(d.value))
+                //.attr("stroke",vis.colorScale(d.value))
                 .style("fill", "url(#grump_avatar" + i + ")")
                 .on('mouseover', function(){
                     console.log(d.img);
                     console.log(d.value);
                     console.log(d.key);
+                    d3.select(this)
+                        .attr('stroke-width', '3px')
+                        .attr('stroke', 'steelblue')
                     animalType=d.key;
                     animalColor.wrangleData();
                 })
+                .on('mouseout', function(){
+                    d3.select(this)
+                        .attr('stroke', 'none')
+                })
         })
 
-        vis.legendcolor = vis.svg.select(".legend").selectAll("rect")
-            .data(vis.displayData);
 
-        vis.legendcolor
-            .enter().append("rect")
-            .merge(vis.legendcolor)
-            //.attr("x", 100)
-            .attr("x", function(d,i){ return 220 + (i*2)})
-            //.attr("y", function(d,i){ return 100 + i*(20+5)})
-            //.attr("y",220)
-            .attr("width", 142)
-            .attr("height", 20)
-            .attr("fill",
-                function(d,i){
-                    console.log(d.value);
-                    let assignColor=" ";
-                    assignColor=vis.color(d.value);
-                    return assignColor;
-                });
-            vis.legendcolor.exit().remove()
+
     }
 }

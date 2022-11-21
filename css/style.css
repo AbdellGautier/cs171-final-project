@@ -45,6 +45,10 @@ hr {
     margin-top: 0rem !important;
 }
 
+.a-btn {
+    color: white !important;
+}
+
 /*
     Charts
 */
@@ -86,4 +90,8 @@ hr {
 }
 .legend-other {
     color: #00aa00;
+}
+
+.textstyle{
+    fill:green;
 }
