@@ -111,8 +111,6 @@ class AnimalIntakeVisuals {
         // Sort columns descending
         vis.displayData.sort((a, b) => b.value - a.value);
 
-        console.log(vis.displayData);
-
         vis.displayData.forEach(function(d){
             if (d.key=='Dog'){
                 d.img="images/dog.jpg"
@@ -150,8 +148,6 @@ class AnimalIntakeVisuals {
     updateVis() {
         let vis = this;
 
-        console.log("Animal Intake Visuals", vis.displayData);
-
 
         vis.colorScale.domain([0,  d3.max(vis.displayData, d=> d.value)]);
         let maxValue=d3.max(vis.displayData, d => d.value)
@@ -183,9 +179,6 @@ class AnimalIntakeVisuals {
                 //.attr("stroke",vis.colorScale(d.value))
                 .style("fill", "url(#grump_avatar" + i + ")")
                 .on('mouseover', function(){
-                    console.log(d.img);
-                    console.log(d.value);
-                    console.log(d.key);
                     d3.select(this)
                         .attr('stroke-width', '3px')
                         .attr('stroke', 'steelblue')

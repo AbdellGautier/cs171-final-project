@@ -83,17 +83,14 @@ class AnimalColorBarChart {
         //let counts = d3.rollup(vis.displayData, v => v.length, d => d[vis.config.key],d => d['Color']);
         //vis.displayData = Array.from(counts).map(([key, value]) => ({ key, value }));
         selectedCategory =  document.getElementById('categorySelector').value;
-        console.log('In the wrangle method :: ', selectedCategory);
+
         let dataByDate = Array.from(d3.group(vis.data, d => d['Animal Type']), ([key, value]) => ({key, value}))
-        console.log(dataByDate)
-        console.log('From event', animalType);
         if(animalType==''){
             animalType="Dog";
         }
         if (selectedCategory=='animalintake'){
             dataByDate.forEach(function(d){
                 if(animalType==d.key){
-                    console.log('Number of Colors ',d.value.length)
                     noOfColors=d.value.length
                     vis.displayData=d.value;
                 }
@@ -104,7 +101,6 @@ class AnimalColorBarChart {
             let animalData;
             outcomeData.forEach(function(d){
                 if(animalType==d.key){
-                    //console.log('Number of Colors ',d.value.length)
                     noOfColors=d.value.length
                     animalData=d.value;
                 }
@@ -113,7 +109,6 @@ class AnimalColorBarChart {
             let animalData_final;
             finalData.forEach(function(d){
                 if(selectedCategory==d.key){
-                    console.log('Number of Colors ',d.value.length)
                     noOfColors=d.value.length
                     vis.displayData=d.value;
                 }
@@ -123,7 +118,6 @@ class AnimalColorBarChart {
         //sort the data
         vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(0,5);
         // Sort columns descending
-        console.log('FINAL Color Data to chekc ', vis.displayData);
 
         // Update the visualization
         vis.updateVis();

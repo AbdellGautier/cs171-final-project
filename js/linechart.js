@@ -23,19 +23,17 @@ function drawAreaChart(data) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    let colors = ['#FF0000','#3c948b','#0000FF','#A52A2A']
+    let colors = ["#f46a9b", "#ef9b20", "#9b19f5", "#00bfa0"]; // '#FF0000','#3c948b','#0000FF','#A52A2A']
 
     let sumstat = Array.from(d3.group(data, d => d.year), ([key, value]) => ({key, value}))
 
     linearray = []
     sumstat.forEach(function(d){
-        console.log(d.value)
         linearray.push(d.value)
     })
 
     var year = sumstat.map(d => d.key)
     var color = d3.scaleOrdinal().domain(year).range(colors)
-    console.log(year);
 
 
     x = d3.scaleLinear()

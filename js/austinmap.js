@@ -25,8 +25,6 @@ class AustinMap {
 	initVis() {
 		let vis = this;
 
-		console.log("test");
-
 		// --------------------------------------------------------------------------------------------
 		// Optimizing the map for many circles placement later
 		// 
