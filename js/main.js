@@ -52,6 +52,9 @@ Promise.all(promises)
 		// Draw panel one
 		new PanelOne(intakeCSV);
 
+		// Draw the Austin Map
+		let austinMap = new AustinMap("austin-map", intakeCSV, [30.27513099074509, -97.74782301534331]);
+
 		new AnimalIntakeVisuals(
 			"intakecount",
 			intakeCSV,

@@ -42,7 +42,7 @@ p {
 }
 
 hr {
-    margin-tom: 0rem !important;
+    margin-top: 0rem !important;
 }
 
 .a-btn {
@@ -63,6 +63,33 @@ hr {
 
 .xaxis, .yaxis {
     font-size: .5em;
+}
+
+/* Austin Map */
+#austin-map {
+    height: 90%;
+}
+
+#austin-map-disclaimer {
+    height: 20px;
+}
+
+.legend-dog, 
+.legend-cat, 
+.legend-other {
+    font-size: 32px !important;
+    font-weight: bold;
+    vertical-align: sub;
+}
+
+.legend-dog {
+    color: #0000ff;
+}
+.legend-cat {
+    color: #ff0000;
+}
+.legend-other {
+    color: #00aa00;
 }
 
 .textstyle{
