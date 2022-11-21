@@ -2,6 +2,7 @@
 let animalColor;
 let animalType = '';
 let noOfColors=0;
+let selectedCategory='';
 
 
 // Date parser
@@ -30,6 +31,10 @@ let promises = [
 		row.count = +row['Animal ID'];
 		return row
 	}),
+	d3.csv("data/intake_outcomes.csv", row => {
+		row.count = +row['Animal ID'];
+		return row
+	}),
 ];
 
 // Load data and draw charts
@@ -39,6 +44,7 @@ Promise.all(promises)
 		let outcomeCSV = data[1];
 		let intakeCountCSV = data[2];
 		let animalColorCSV = data[3];
+		let outcomes = data[4];
 
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
@@ -50,12 +56,12 @@ Promise.all(promises)
 			"intakecount",
 			intakeCSV,
 			{
-				"title": "Animal Intakes Count",
+				"title": "",
 				"key": "Animal Type"
 			}
 		)
 		animalColor = new AnimalColorBarChart("detailsColor",
-			animalColorCSV, {
+			animalColorCSV,outcomes, {
 				"title": "Top 5 Colors of Animal",
 				"key": "Animal Type"
 			})
@@ -66,3 +72,8 @@ Promise.all(promises)
 	.catch(function (err) {
 		console.log(err)
 	});
+
+function categoryChange() {
+	selectedCategory =  document.getElementById('categorySelector').value;
+	animalColor.wrangleData(); // maybe you need to change this slightly depending on the name of your MapVis instance
+}

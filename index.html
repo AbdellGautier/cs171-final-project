@@ -105,10 +105,15 @@
                                 <div id="chart-area"></div>
                             </section>
                             <section class="panel white">
-                                <h3>Animal Intake Color</h3>
+                                <h3>Animal Intake, Adoption and Died Color</h3>
                                 <div class="row">
                                     <div class="col-8">
                                         <div id="intakecount"></div>
+                                        <select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
+                                            <option value="animalintake" selected>Intake</option>
+                                            <option value="Adoption">Adoption</option>
+                                            <option value="Died">Died</option>
+                                        </select>
                                     </div>
                                     <div class="col-4">
                                         <div id="detailsColor">
