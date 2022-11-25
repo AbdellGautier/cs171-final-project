@@ -95,3 +95,22 @@ hr {
 .textstyle{
     fill:green;
 }
+
+
+.tooltip-circle {
+    fill: #5C865B;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px "Arial Black";
+    /*  pointer-events: none;	This line needs to be removed */
+}
+.tooltip h3,h4 {
+    text-align: left;
+}
+.tooltip h4 {
+    font: 10px sans-serif;
+}

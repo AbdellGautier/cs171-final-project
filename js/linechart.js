@@ -32,6 +32,8 @@ function drawAreaChart(data) {
         linearray.push(d.value)
     })
 
+    let circArrayData=linearray.flat();
+
     var year = sumstat.map(d => d.key)
     var color = d3.scaleOrdinal().domain(year).range(colors)
 
@@ -51,6 +53,13 @@ function drawAreaChart(data) {
 
     let months= ['Jan','Feb','Mar','Apr','May','Jun','July','Aug','Sep','Oct','Nov','Dec']
 
+    //var monthMap = [];
+
+
+    let monthMap={1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',
+        9:'September',10:'October',11:'November',12:'December'};
+
+
     let xAxis = d3.axisBottom().scale(x)
         .tickFormat(function(d) {
             return months[d-1];
@@ -60,6 +69,16 @@ function drawAreaChart(data) {
         .attr("class", "y-axis axis");
     let xAxisGroup = svg.append("g")
         .attr("class", "x-axis axis");
+
+    //tooltip
+    tooltip = d3.select("body").append('div')
+        .attr('class', "tooltip")
+        .attr('id', 'pieTooltip')
+
+    var t = d3.transition()
+        .duration(1500)
+        .ease(d3.easeLinear);
+
 
     let yAxis = d3.axisLeft().scale(y);
     svg.select(".y-axis").call(yAxis);
@@ -78,6 +97,7 @@ function drawAreaChart(data) {
         .append("g")
         .attr("class", "line")
         .data(linearray)
+        //.attr("d", function(d){return line(d.values); })
         .enter()
         .append("path")
         .attr("d", line)
@@ -86,6 +106,49 @@ function drawAreaChart(data) {
             return color(d[0]['year']);
         })
         .attr("stroke-width", 2)
+
+    console.log(linearray);
+
+    let circ = d3.select("g").selectAll("circle")
+        .data(circArrayData);
+
+    circ.enter().append("circle")
+        .merge(circ)
+        .attr('id', 'dot')
+        //.attr("class", "dot")
+        .attr("class", "tooltip-circle")
+        .attr('r', 3)
+        .style('fill', 'black')
+        .attr('cx', (d)=>{
+            return x(d.month);
+        })
+        .attr('cy', (d)=> {
+                return y(d.count);
+        })
+        .on("mouseover", function(event,d){
+                console.log(d);
+            tooltip
+                .style("opacity", 1)
+                .style("left", event.pageX + 10 + "px")
+                .style("top", event.pageY + "px")
+                .html(`
+             <div style="border: thin solid grey; border-radius: 3px; background: lightgrey; padding: 10px">                 
+                 <h4> <b>Month:</b> `+monthMap[d.month]+`</h4>
+                 <h4> <b>Intake Count:</b> `+d3.format(',')(d.count)+`</h4>
+                 <h4> <b>Year:</b> `+d.year+`</h4>                             
+             </div>`);
+
+            })
+            .on('mouseout', function(event, d){
+            tooltip
+                .style("opacity", 0)
+                .style("left", 0)
+                .style("top", 0)
+                .html(``);
+
+            })
+
+    circ.exit().remove();
 
     var legend = d3.select("svg")
         .selectAll('g.legend')
