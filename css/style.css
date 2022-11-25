@@ -62,7 +62,7 @@ hr {
 }
 
 .xaxis, .yaxis {
-    font-size: .5em;
+    font-size: .7em;
 }
 
 /* Austin Map */
@@ -113,4 +113,9 @@ hr {
 }
 .tooltip h4 {
     font: 10px sans-serif;
+}
+
+
+.xaxisch, .yaxisch {
+    font-size: .1em;
 }

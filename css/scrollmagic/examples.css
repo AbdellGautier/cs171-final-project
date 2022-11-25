@@ -106,7 +106,7 @@ section#titlechart #description ol {
 }
 
 
-section.demo * {
+section.demo {
 	font-size: 13px;
 }
 section.demo {
@@ -114,6 +114,11 @@ section.demo {
 	text-align: center;
 	background-image: url("../img/example_bg_v.png");
 }
+
+section.xaxis{
+	font-size: 8px;
+}
+
 section.demo.fullheight {
 	min-height: 100%;
 }

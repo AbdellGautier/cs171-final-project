@@ -25,11 +25,11 @@ class AnimalIntakeVisuals {
         let vis = this;
 
         // Set margin
-        vis.margin = {top: 30, right: 10, bottom: 0, left: 5};
+        vis.margin = {top: 30, right:0 , bottom: 0, left: 0};
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 300 - vis.margin.top - vis.margin.bottom;
+        vis.height = 250 - vis.margin.top - vis.margin.bottom;
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -40,6 +40,14 @@ class AnimalIntakeVisuals {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
         vis.defs = vis.svg.append('svg:defs');
+
+
+        vis.svg.append('g')
+            .attr('class', 'instructions')
+            .append('text')
+            .text(' *** Please hover the pet image ***')
+            .attr('transform', `translate(200, 30)`)
+            .attr("fill","red")
 
 
         // Scales and axes
@@ -148,11 +156,18 @@ class AnimalIntakeVisuals {
     updateVis() {
         let vis = this;
 
+        //tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'pieTooltip')
+
 
         vis.colorScale.domain([0,  d3.max(vis.displayData, d=> d.value)]);
         let maxValue=d3.max(vis.displayData, d => d.value)
         let minValue=d3.min(vis.displayData, d => d.value)
         var rScale = d3.scaleLinear().domain([ minValue, maxValue ]).range([ 25, 100]);
+
+        let otherString='';
 
 
         vis.displayData.forEach(function(d, i) {
@@ -174,11 +189,33 @@ class AnimalIntakeVisuals {
                 .attr("cy", 100 / 2)
                 .attr("r", 100 / 2)
                 //.style("fill", "#fff")
-                //.attr("stroke-width",'5px' )
+                /*.attr("stroke-width",function(){
+                    if(d.key=='Dog')
+                        return '3px';
+                })
+                .attr("stroke",function(){
+                    if(d.key=='Dog')
+                        return 'steelblue';
+                })*/
                 //.attr("background-color",'red' )
                 //.attr("stroke",vis.colorScale(d.value))
                 .style("fill", "url(#grump_avatar" + i + ")")
-                .on('mouseover', function(){
+                .on('mouseover', function(event){
+                    console.log(d.key)
+                    if(d.key=='Other'){
+                        otherString='Other Animals'
+                    }
+                    else{
+                        otherString=d.key
+                    }
+                    vis.tooltip
+                        .style("opacity", 1)
+                        .style("left", event.pageX + 10 + "px")
+                        .style("top", event.pageY + "px")
+                        .html(`
+                        <div style="border: thin solid grey; border-radius: 3px; background: lightgrey; padding: 10px">                 
+                        <h4> <b>`+otherString+`</h4>                                                    
+                        </div>`);
                     d3.select(this)
                         .attr('stroke-width', '3px')
                         .attr('stroke', 'steelblue')
@@ -186,6 +223,11 @@ class AnimalIntakeVisuals {
                     animalColor.wrangleData();
                 })
                 .on('mouseout', function(){
+                    vis.tooltip
+                        .style("opacity", 0)
+                        .style("left", 0)
+                        .style("top", 0)
+                        .html(``);
                     d3.select(this)
                         .attr('stroke', 'none')
                 })

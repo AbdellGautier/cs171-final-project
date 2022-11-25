@@ -41,6 +41,7 @@ class AnimalColorBarChart {
             .attr('class', 'heading')
 
 
+
             /*.append('text')
             .text('Top 5 Colors of Dog')
             .attr('transform', `translate(${vis.width / 2}, 10)`)
@@ -68,6 +69,14 @@ class AnimalColorBarChart {
             .attr("class", "xaxis axis")
             .attr("transform", "translate(0," + 196 + ")");
 
+        vis.svg.append("g")
+            .attr("class", "xaxis axis")
+            .attr("transform", "translate(0," + 196 + ")");
+
+
+
+
+
 
         // (Filter, aggregate, modify data)
         vis.displayData = vis.data
@@ -82,7 +91,8 @@ class AnimalColorBarChart {
         // Group data by key variable and count
         //let counts = d3.rollup(vis.displayData, v => v.length, d => d[vis.config.key],d => d['Color']);
         //vis.displayData = Array.from(counts).map(([key, value]) => ({ key, value }));
-        selectedCategory =  document.getElementById('categorySelector').value;
+        //selectedCategory =  document.getElementById('categorySelector').value;
+        selectedCategory =  "Adoption";
 
         let dataByDate = Array.from(d3.group(vis.data, d => d['Animal Type']), ([key, value]) => ({key, value}))
         if(animalType==''){
@@ -116,23 +126,30 @@ class AnimalColorBarChart {
 
         }
         //sort the data
-        vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(0,5);
+
+        //vis.displayData=vis.displayData.sort((a, b) => b.count - a.count);
+        console.log(vis.displayData);
+        vis.displayData=vis.displayData.sort((a, b) => b.count - a.count)
+        //vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(Math.max(vis.displayData.length - 10, 0))
+
+
         // Sort columns descending
 
         // Update the visualization
         vis.updateVis();
     }
 
-
     updateVis() {
         let vis = this;
-        vis.x.domain(vis.displayData.map(d=> d.Color));
 
+        vis.x.domain(vis.displayData.map(d=> d['Sex upon Outcome']));
         vis.y.domain([0, d3.max(vis.displayData, d=> d.count)]);
+
+
+
 
         vis.title = vis.svg.select("g.heading").selectAll("text")
             .data(vis.displayData);
-
         vis.title.enter()
             .append("text")
             .merge(vis.title)
@@ -140,13 +157,17 @@ class AnimalColorBarChart {
             .duration(1000)
             .attr("fill","blue")
             .text(function(d){
-                return "Top 5 Colors of " + d['Animal Type'] + " Out of " + noOfColors
+                if(d['Animal Type']=='Other'){
+                    return "Gender of Other Adopted Animals"
+                }else{
+                    return "Gender of Adopted " + d['Animal Type']
+                }
+
             })
             .attr("x", 200)
             .attr("y", -5)
             .attr('text-anchor', 'middle')
         vis.title.exit().remove()
-
         vis.text = vis.svg.select("g").selectAll("text")
             .data(vis.displayData);
 
@@ -156,9 +177,8 @@ class AnimalColorBarChart {
             .transition()
             .duration(1000)
             .text(d=>d.count)
-            .attr('x', d=>vis.x(d.Color)+10)
+            .attr('x', d=>vis.x(d['Sex upon Outcome'])+10)
             .attr('y', d=>vis.y(d.count))
-
         vis.text.exit().remove()
 
         vis.xAxis = d3.axisBottom().scale(vis.x);
@@ -168,7 +188,6 @@ class AnimalColorBarChart {
 
         vis.barchart = vis.svg.select("g").selectAll("rect")
             .data(vis.displayData);
-
         vis.barchart.enter()
             .append("rect")
             .merge(vis.barchart)
@@ -176,7 +195,7 @@ class AnimalColorBarChart {
             .duration(1000)
             //.attr("fill","#3C948B")
             .attr("fill", "steelblue")
-            .attr('x', d=>vis.x(d.Color))
+            .attr('x', d=>vis.x(d['Sex upon Outcome']))
             .attr('y', d=>vis.y(d.count))
             .attr('height', (d)=>{
                     return (vis.height-vis.y(d.count));
