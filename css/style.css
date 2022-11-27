@@ -119,3 +119,8 @@ hr {
 .xaxisch, .yaxisch {
     font-size: .1em;
 }
+
+
+.rectangle:hover{
+    opacity:0.4;
+}

@@ -128,7 +128,6 @@ class AnimalColorBarChart {
         //sort the data
 
         //vis.displayData=vis.displayData.sort((a, b) => b.count - a.count);
-        console.log(vis.displayData);
         vis.displayData=vis.displayData.sort((a, b) => b.count - a.count)
         //vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(Math.max(vis.displayData.length - 10, 0))
 
@@ -193,7 +192,7 @@ class AnimalColorBarChart {
             .merge(vis.barchart)
             .transition()
             .duration(1000)
-            //.attr("fill","#3C948B")
+            .attr("class","rectangle")
             .attr("fill", "steelblue")
             .attr('x', d=>vis.x(d['Sex upon Outcome']))
             .attr('y', d=>vis.y(d.count))
