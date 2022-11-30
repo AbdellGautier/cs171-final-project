@@ -4,7 +4,6 @@ let animalType = '';
 let noOfColors=0;
 let selectedCategory='';
 
-
 // Date parser
 let formatDate = d3.timeFormat("%Y");
 let parseDate = d3.timeParse("%m/%d/%Y %H:%I");
@@ -54,6 +53,7 @@ Promise.all(promises)
 
 		// Draw the Austin Map
 		let austinMap = new AustinMap("austin-map", intakeCSV, [30.27513099074509, -97.74782301534331]);
+		console.log(austinMap);
 
 		new AnimalIntakeVisuals(
 			"intakecount",
