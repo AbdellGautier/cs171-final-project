@@ -1,10 +1,22 @@
 /*
+    Fonts
+*/
+
+@font-face {
+    font-family: Gotham;
+    src: url('../fonts/GothamHTF-Medium.otf'); }
+
+/*
     Global
 */
 body {
     padding: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: Gotham, serif !important;
     background-color: #ebf5fc;
+}
+
+a {
+    margin-bottom: 0.3rem;
 }
 
 .a {
@@ -12,32 +24,40 @@ body {
 }
 
 h1 {
-  font-weight: 100;
-  margin-top: 50px;
-  color: #4B6D4A;
+  /*color: #4B6D4A;*/
 }
 
-h1 sup {
-  font-size: 11px;
-  top: -18px;
-  font-weight: 400;
-  color: #5b835a;
+#title {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.primary-color {
+    color: #F29361;
+}
+
+.secondary-color {
+    color: #5C9E33;
+}
+
+.tertiary-color {
+    color: #3A5AA6;
 }
 
 h2 {
-  font-weight: 300;
-  font-size: 18px;
   color: #91988B;
-  margin-bottom: 40px;
 }
 
-h3 {
-    font-weight: 300;
-    font-size: 40px !important;
-    color: #91988B;
+.section-heading {
+    color: #F29361;
+    font-size: 3rem;
 }
 
 p {
+    margin-bottom: 0.5rem !important;
+}
+
+a {
     margin-bottom: 0.5rem !important;
 }
 
@@ -51,10 +71,27 @@ li {
 
 .a-btn {
     color: white !important;
+    margin: 0.5rem;
 }
 
 #img-austin-animal-shelter {
     width: 100%;
+    height: auto;
+}
+
+#img-city {
+    width: 100%;
+    height: auto;
+}
+
+#img-pets {
+    width: 40%;
+    height: auto;
+/*    margin-bottom: -6rem;*/
+}
+
+#img-cs171 {
+    width: 75%;
     height: auto;
 }
 
@@ -67,8 +104,12 @@ li {
     padding-left: 2.5rem;
 }
 
-#show-me {
-    display: none;
+#credits {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    width:100%;
 }
 
 /* Highlighters */
