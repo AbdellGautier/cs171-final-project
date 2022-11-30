@@ -45,8 +45,56 @@ hr {
     margin-top: 0rem !important;
 }
 
+li {
+    margin: 0.5rem;
+}
+
 .a-btn {
     color: white !important;
+}
+
+#img-austin-animal-shelter {
+    width: 100%;
+    height: auto;
+}
+
+#form-animal-intakes-container {
+    padding-left: 3rem;
+}
+
+#form-animal-intakes {
+    padding-top: 0.5rem;
+    padding-left: 2.5rem;
+}
+
+#show-me {
+    display: none;
+}
+
+/* Highlighters */
+
+.highlight-peach {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(56,93%,78%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+
+.highlight-rose {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(15,86%,78%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+
+.highlight-violet {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(340,81%,79%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+
+.highlight-blue {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(267,28%,72%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
 }
 
 /*
