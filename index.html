@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=500" />
     <title>Lost and Found Animals in Austin, Texas</title>
-
-    <link rel="stylesheet" href="./css/scrollmagic/normalize.css" type="text/css">
-    <link rel="stylesheet" href="./css/scrollmagic/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/scrollmagic/examples.css" type="text/css">
 
     <link rel="stylesheet" href="css/leaflet.css" />
 
@@ -18,244 +14,223 @@
 
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
-    <script type="text/javascript" src="./js/scrollmagic/lib/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/scrollmagic/lib/highlight.pack.js"></script>
-    <script type="text/javascript" src="./js/scrollmagic/lib/modernizr.custom.min.js"></script>
-
-    <script type="text/javascript" src="./js/scrollmagic/lib/gsap3/gsap.min.js"></script>
-    <script type="text/javascript" src="./js/scrollmagic/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="./js/scrollmagic/animation.gsap.min.js"></script>
-    <script type="text/javascript" src="./js/scrollmagic/debug.addIndicators.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/fullpage/fullpage.css" />
 
     <script src="js/leaflet.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/fullpage/fullpage.css" />
+    <script type="text/javascript" src="./js/fullpage/fullpage.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <ul id="menu"></ul>
-    <div id="content-wrapper">
-        <div id="example-wrapper">
-            <div class="scrollContent">
-                <!-- Title Page -->
-                <section id="titlechart">
-                    <div id="description">
-                        <img src="./images/pet_adoption_logo.png">
-                        <h1>Lost & Found Animals in Austin, TX</h1>
-                        <h2>How you can you help animals in need?</h2>
-                        <span>Scroll down</span>
-                </section>
+<div id="fullpage">
+    <!-- Title Section -->
+    <div class="section active">
+        <div class="container">
+            <img src="./images/pet_adoption_logo.png">
+            <h1>Lost & Found Animals in Austin, TX</h1>
+            <h2>How you can you help animals in need?</h2>
+            <span>Scroll down</span>
+        </div>
+    </div>
 
-                <!-- ScrollMagic Panels -->
-                <section class="demo" id="section-slides">
-                    <style type="text/css">
-                        #pinContainer {
-                            width: 100%;
-                            height: 100%;
-                            overflow: hidden;
-                            -webkit-perspective: 1000;
-                            perspective: 1000;
-                        }
-
-                        #slideContainer {
-                            width: 500%;
-                            /* to contain 4 panels, each with 100% of window width */
-                            height: 100%;
-                        }
-
-                        .panel {
-                            height: 100%;
-                            width: 20%;
-                            /* relative to parent -> 25% of 400% = 100% of window width */
-                            float: left;
-                        }
-                    </style>
-                    <div id="pinContainer">
-                        <div id="slideContainer">
-                            <!-- Exposition: Area Chart and Bar Charts -->
-                            <section class="panel">
-                                <h3>The Problem</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="text-center">
-                                            Animal Shelters in Austin intake an enormous number of animals each year.
-                                        </p>
-                                        <p class="text-center">
-                                            While the majority of these animals are found unharmed, many animals
-                                            are found sick and injured.
-                                        </p>
-                                        <p class="text-center">
-                                            Most animals are stray cats and dogs that could easily be
-                                            adopted.
-                                        </p>
-                                    </div>
-                                </div>
-                                <br />
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div id="panel1-intake-areachart"></div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div id="panel1-animal-type-barchart"></div>
-                                        <hr />
-                                        <div id="panel1-intake-type-barchart"></div>
-                                        <hr />
-                                        <div id="panel1-intake-condition-barchart"></div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Rising Action: Line and Map Chart -->
-                            <section class="panel white">
-                                <h3>When and Where are Animals Found?</h3>
-                                <p>
-                                    Animals are found all across Austin at virtually all times of the year.
-                                </p>
-                                <p>
-                                    However, most animals are found in the warmer spring and summer months and in downtown areas.
-                                </p>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div id="chart-area"></div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div id="austin-map"></div>
-                                        <div id="austin-map-disclaimer">
-                                            <span class="legend-dog">&bull;</span> = Dogs
-                                            <span class="legend-cat">&bull;</span> = Cats
-                                            <span class="legend-other">&bull;</span> = Bird & Others
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            * Data from 1/1/2022 to 10/25/2022
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Climax: Sankey Chart -->
-                            <section class="panel">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>The Life of a Found Animal</h3>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <p>
-                                            What are the fates of all these animals once they are taken into the Austin Animal Shelter?
-                                        </p>
-                                        <p>
-                                            Most are adopted, while many are transferred to another shelter.
-                                        </p>
-                                        <p>
-                                            However, a still-too-large portion of animals will die in shelter either by
-                                            euthanasia or natural causes.
-                                        </p>
-                                    </div>
-                                </div>
-                                <br />
-                                <div id="panel3-sankey"></div>
-                            </section>
-
-                            <!-- Falling Action: Which pets to adopt? -->
-                            <section class="panel white">
-                                <h3>Which pets need the most help?</h3>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="text-center">
-                                            Least adopted genders are Intact Female/Intact Male for Dogs and Cats, Intact Female for birds, and Unknown gender for other animals.
-                                        </p>
-                                        <p class="text-center">
-                                            To help an animal in need, consider those which are not adopted most based on Gender.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-8">
-                                        <div id="intakecount"></div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div id="detailsColor">
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <!-- Solution: What can you do? -->
-                            <section class="panel text-center">
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>The Solution</h3>
-                                        <p>What can you do?</p>
-                                        <p>
-                                            While the problem might seem difficult, there are many steps that you can take
-                                            to help animals in need in Austin.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-success a-btn" role="button">Adopt a Pet</a>
-                                        <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-primary a-btn" role="button">Volunteer</a>
-                                        <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-secondary a-btn" role="button">Foster a Pet</a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        or
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="https://www.austintexas.gov/austin-animal-center">Learn more</a>
-                                    </div>
-                                </div>
-                                <br /><br /><br /><br /><br /><br /><br />
-                                <hr />
-                                <div id="credits" class="row">
-                                    <div class="col">
-                                        <p>This webpage was created by Abdell Gautier, Rob Walker, and Venkatesh Guru Moorthy for Harvard's CS171.</p>
-                                        <p>The data for visualizations was provided by the city of Austin, Texas and included</p>
-                                        <div class="row">
-                                            <div class="col">
-                                                <a href="https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm">Austin Animal Center Intakes</a>
-                                                |
-                                                <a href="https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes/9t4d-g238">Austin Animal Center Outcomes</a>
-                                            </div>
-                                        </div>
-                                        <br /><br />
-                                        <p>We would like to thank the entire CS171 staff, especially our TF mentor Eshika Saxena, for their generous support.</p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </section>
+    <!-- Exposition: Area Chart and Bar Charts -->
+    <div class="section">
+        <div class="container">
+            <h3 class="text-center">The Problem</h3>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                        Animal Shelters in Austin intake an enormous number of animals each year.
+                    </p>
+                    <p class="text-center">
+                        While the majority of these animals are found unharmed, many animals
+                        are found sick and injured.
+                    </p>
+                    <p class="text-center">
+                        Most animals are stray cats and dogs that could easily be
+                        adopted.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-6">
+                    <div id="panel1-intake-areachart"></div>
+                </div>
+                <div class="col-6">
+                    <div id="panel1-animal-type-barchart"></div>
+                    <hr />
+                    <div id="panel1-intake-type-barchart"></div>
+                    <hr />
+                    <div id="panel1-intake-condition-barchart"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- embedding JS libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://unpkg.com/d3-array@1"></script>
-    <script src="https://unpkg.com/d3-collection@1"></script>
-    <script src="https://unpkg.com/d3-path@1"></script>
-    <script src="https://unpkg.com/d3-shape@1"></script>
-    <script src="https://unpkg.com/d3-sankey@0"></script>
-    <script src="js/scrollevents.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/linechart.js"></script>
-    <script src="js/austinmap.js"></script>
-    <script src="js/barchart.js"></script>
-    <script src="js/areachart.js"></script>
-    <script src="js/sankey.js"></script>
-    <script src="js/panel-one.js"></script>
-    <script src="js/animalintakevisuals.js"></script>
-    <script src="js/animalcolor.js"></script>
-    <script src="js/panel-three.js"></script>
+    <!-- Rising Action: Line and Map Chart -->
+    <div class="section">
+        <div class="container">
+            <h3 class="text-center">When and Where are Animals Found?</h3>
+            <p class="text-center">
+                Animals are found all across Austin at virtually all times of the year.
+            </p>
+            <p class="text-center">
+                However, most animals are found in the warmer spring and summer months and in downtown areas.
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <div id="chart-area"></div>
+                </div>
+                <div class="col-6">
+                    <div id="austin-map"></div>
+                    <div id="austin-map-disclaimer">
+                        <span class="legend-dog">&bull;</span> = Dogs
+                        <span class="legend-cat">&bull;</span> = Cats
+                        <span class="legend-other">&bull;</span> = Bird & Others
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        * Data from 1/1/2022 to 10/25/2022
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Climax: Sankey Chart -->
+    <div class="section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>The Life of a Found Animal</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        What are the fates of all these animals once they are taken into the Austin Animal Shelter?
+                    </p>
+                    <p>
+                        Most are adopted, while many are transferred to another shelter.
+                    </p>
+                    <p>
+                        However, a still-too-large portion of animals will die in shelter either by
+                        euthanasia or natural causes.
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div id="panel3-sankey"></div>
+        </div>
+    </div>
+
+    <!-- Falling Action: Which pets to adopt? -->
+    <div class="section">
+        <div class="container text-center">
+            <h3>Which pets need the most help?</h3>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                        Least adopted genders are Intact Female/Intact Male for Dogs and Cats, Intact Female for birds, and Unknown gender for other animals.
+                    </p>
+                    <p class="text-center">
+                        To help an animal in need, consider those which are not adopted most based on Gender.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div id="intakecount"></div>
+                </div>
+                <div class="col-4">
+                    <div id="detailsColor">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution: What can you do? -->
+    <div class="section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>The Solution</h3>
+                    <p>What can you do?</p>
+                    <p>
+                        While the problem might seem difficult, there are many steps that you can take
+                        to help animals in need in Austin.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-success a-btn" role="button">Adopt a Pet</a>
+                    <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-primary a-btn" role="button">Volunteer</a>
+                    <a href="https://www.austintexas.gov/department/adopt-pet" class="btn btn-secondary a-btn" role="button">Foster a Pet</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    or
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.austintexas.gov/austin-animal-center">Learn more</a>
+                </div>
+            </div>
+            <br /><br /><br /><br /><br /><br /><br />
+            <hr />
+            <div id="credits" class="row">
+                <div class="col">
+                    <p>This webpage was created by Abdell Gautier, Rob Walker, and Venkatesh Guru Moorthy for Harvard's CS171.</p>
+                    <p>The data for visualizations was provided by the city of Austin, Texas and included</p>
+                    <div class="row">
+                        <div class="col">
+                            <a href="https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm">Austin Animal Center Intakes</a>
+                            |
+                            <a href="https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Outcomes/9t4d-g238">Austin Animal Center Outcomes</a>
+                        </div>
+                    </div>
+                    <br /><br />
+                    <p>We would like to thank the entire CS171 staff, especially our TF mentor Eshika Saxena, for their generous support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    new fullpage('#fullpage', {
+        navigation: true,
+    });
+</script>
+
+<!-- embedding JS libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/d3-array@1"></script>
+<script src="https://unpkg.com/d3-collection@1"></script>
+<script src="https://unpkg.com/d3-path@1"></script>
+<script src="https://unpkg.com/d3-shape@1"></script>
+<script src="https://unpkg.com/d3-sankey@0"></script>
+<script src="js/main.js"></script>
+<script src="js/linechart.js"></script>
+<script src="js/austinmap.js"></script>
+<script src="js/barchart.js"></script>
+<script src="js/areachart.js"></script>
+<script src="js/sankey.js"></script>
+<script src="js/panel-one.js"></script>
+<script src="js/animalintakevisuals.js"></script>
+<script src="js/animalcolor.js"></script>
+<script src="js/panel-three.js"></script>
+
 </body>
 
 </html>
