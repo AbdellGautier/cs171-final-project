@@ -96,12 +96,17 @@ li {
 }
 
 #form-animal-intakes-container {
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 #form-animal-intakes {
     padding-top: 0.5rem;
     padding-left: 2.5rem;
+}
+
+#form-animal-intakes-answer {
+    display: none;
+    margin-top: 1rem;
 }
 
 #credits {
@@ -137,6 +142,20 @@ li {
     margin: -2px -6px;
     padding:  2px  6px;
 }
+
+.highlight-expected {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(201,52%,77%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+
+.highlight-actual {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(208,42%,62%\));
+    margin: -2px -6px;
+    padding:  2px  6px;
+}
+
+
 
 /*
     Charts
@@ -212,4 +231,20 @@ li {
 
 .rectangle:hover{
     opacity:0.4;
+}
+
+.area {
+    opacity: 0.7;
+    clip-path: url(#clip);
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+#expected-intakes-areachart {
+    display: none;
 }
