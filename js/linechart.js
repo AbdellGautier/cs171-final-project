@@ -75,9 +75,9 @@ function drawAreaChart(data) {
         .attr('class', "tooltip")
         .attr('id', 'pieTooltip')
 
-    var t = d3.transition()
+/*    var t = d3.transition()
         .duration(1500)
-        .ease(d3.easeLinear);
+        .ease(d3.easeLinear);*/
 
 
     let yAxis = d3.axisLeft().scale(y);
@@ -87,13 +87,56 @@ function drawAreaChart(data) {
         .call(xAxis)
         .attr("transform", "translate(0," + height + ")")
 
-
     svg.append("text")
         .attr("x", 5)
         .attr("y", 12)
         .text("Count");
 
-    d3.select("g").selectAll(".line")
+    console.log(linearray);
+
+    let t=d3.transition()
+        .delay(function(d, i) {
+            return i * 100;
+        })
+        .duration(300)
+    //new code
+
+    var city = svg.selectAll(".line")
+        .data(linearray)
+        .enter().append("g")
+        .attr("class", "line");
+
+    city.append("path")
+        .attr("class", "line");
+
+    d3.transition().selectAll(".line")
+        .duration(7500)
+        .delay(function(d, i) { return i * 800; })
+        .attr("d", function(d){return line(d); })
+        .style("stroke", function(d) {return color(d[0]['year']); })
+        .attr("fill","none")
+        .attr("stroke-width", 2)
+
+
+
+
+
+
+
+
+
+
+    /* lines.enter()
+         .append("path")
+         .attr("class", "line")
+         .merge(lines)
+         .transition()
+         .duration(100)
+         .attr("x1", function (d, i) {return x(d.month) })
+         .attr("y1", function (d, i) { return y(d.count) })*/
+
+
+    /*d3.select("g").selectAll(".line")
         .append("g")
         .attr("class", "line")
         .data(linearray)
@@ -105,9 +148,16 @@ function drawAreaChart(data) {
         .attr("stroke", function(d,i){
             return color(d[0]['year']);
         })
-        .attr("stroke-width", 2)
+        .attr("stroke-width", 2)*/
 
-    console.log(linearray);
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("text-decoration", "underline")
+        .text("Intake Count Vs Last 4 Years Comparison");
+
 
     let circ = d3.select("g").selectAll("circle")
         .data(circArrayData);
@@ -126,6 +176,7 @@ function drawAreaChart(data) {
                 return y(d.count);
         })
         .on("mouseover", function(event,d){
+            d3.select(this).style("fill", "red")
                 console.log(d);
             tooltip
                 .style("opacity", 1)
@@ -140,6 +191,7 @@ function drawAreaChart(data) {
 
             })
             .on('mouseout', function(event, d){
+                d3.select(this).style("fill", "black")
             tooltip
                 .style("opacity", 0)
                 .style("left", 0)
@@ -158,8 +210,8 @@ function drawAreaChart(data) {
         .attr("class", "legend");
 
     legend.append("circle")
-        .attr("cx", 510+23)
-        .attr('cy', (d, i) => i * 20 + 45)
+        .attr("cx", 515+25)
+        .attr('cy', (d, i) => i * 20 + 43)
         .attr("r", 6)
         .style("fill", d => color(d.key))
 

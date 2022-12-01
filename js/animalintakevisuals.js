@@ -130,9 +130,9 @@ class AnimalIntakeVisuals {
                 d.posx= 120
                 d.posy= 100
             }
-            if (d.key=='Livestock'){
-                d.img="images/livestock.jpg"
-                d.posx= 500
+            if (d.key=='Other'){
+                d.img="images/other.jpg"
+                d.posx= 250
                 d.posy= 100
             }
             if (d.key=='Bird'){
@@ -140,11 +140,14 @@ class AnimalIntakeVisuals {
                 d.posx= 375
                 d.posy= 100
             }
-            if (d.key=='Other'){
-                d.img="images/other.jpg"
-                d.posx= 250
+
+
+            if (d.key=='Livestock'){
+                d.img="images/livestock.jpg"
+                d.posx= 500
                 d.posy= 100
             }
+
 
         });
 
