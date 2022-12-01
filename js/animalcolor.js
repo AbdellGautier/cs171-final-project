@@ -23,7 +23,7 @@ class AnimalColorBarChart {
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 250 - vis.margin.top - vis.margin.bottom;
+        vis.height = 400 - vis.margin.top - vis.margin.bottom;
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -67,11 +67,7 @@ class AnimalColorBarChart {
 
         vis.svg.append("g")
             .attr("class", "xaxis axis")
-            .attr("transform", "translate(0," + 196 + ")");
-
-        vis.svg.append("g")
-            .attr("class", "xaxis axis")
-            .attr("transform", "translate(0," + 196 + ")");
+            .attr("transform", "translate(0," + 345 + ")");
 
 
 
