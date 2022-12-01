@@ -170,8 +170,19 @@ class AnimalColorBarChart {
             .merge(vis.text)
             .transition()
             .duration(1000)
-            .text(d=>d.count)
-            .attr('x', d=>vis.x(d['Sex upon Outcome'])+15)
+            //.text(d=>d3.format(',')(d.count))
+            .text(d=>(d.count))
+            //.attr('x', d=>vis.x(d['Sex upon Outcome'])+15)
+            .attr('x', function(d){
+                    console.log(d['Animal Type'])
+                    if(d['Animal Type']=='Livestock' || d['Animal Type']=='Bird'){
+                        return vis.x(d['Sex upon Outcome'])+35;
+                    }
+                    else{
+                        return vis.x(d['Sex upon Outcome'])+12;
+                    }
+
+            })
             .attr('y', d=>vis.y(d.count))
         vis.text.exit().remove()
 
