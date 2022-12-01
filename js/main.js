@@ -48,10 +48,11 @@ Promise.all(promises)
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
 
-		// Draw panel one
-		new PanelOne(intakeCSV);
-		console.log("total intakes:")
-		console.log(intakeCSV.length);
+		// // Draw interactive area and bar chart slides
+		// new PanelOne(intakeCSV);
+
+		// Draw expected intake slide
+		new PanelExpectedIntakes(intakeCSV);
 
 		// Draw the Austin Map
 		let austinMap = new AustinMap("austin-map", intakeCSV, [30.27513099074509, -97.74782301534331]);
