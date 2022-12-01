@@ -152,9 +152,7 @@ class AnimalColorBarChart {
         vis.title.enter()
             .append("text")
             .merge(vis.title)
-            .transition()
-            .duration(1000)
-            .attr("fill","blue")
+            .attr("fill","saddlebrown")
             .text(function(d){
                 if(d['Animal Type']=='Other'){
                     return "Gender of Other Adopted Animals"
@@ -166,8 +164,7 @@ class AnimalColorBarChart {
             .attr("x", 200)
             .attr("y", -5)
             .attr('text-anchor', 'middle')
-            .transition()
-            .duration(1000)
+
         vis.title.exit().remove()
         vis.text = vis.svg.select("g").selectAll("text")
             .data(vis.displayData);
