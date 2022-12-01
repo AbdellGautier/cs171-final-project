@@ -160,6 +160,7 @@ class AnimalColorBarChart {
             .attr("x", 200)
             .attr("y", -5)
             .attr('text-anchor', 'middle')
+            .attr('text-decoration', 'underline')
 
         vis.title.exit().remove()
         vis.text = vis.svg.select("g").selectAll("text")
