@@ -166,6 +166,8 @@ class AnimalColorBarChart {
             .attr("x", 200)
             .attr("y", -5)
             .attr('text-anchor', 'middle')
+            .transition()
+            .duration(1000)
         vis.title.exit().remove()
         vis.text = vis.svg.select("g").selectAll("text")
             .data(vis.displayData);
@@ -176,7 +178,7 @@ class AnimalColorBarChart {
             .transition()
             .duration(1000)
             .text(d=>d.count)
-            .attr('x', d=>vis.x(d['Sex upon Outcome'])+10)
+            .attr('x', d=>vis.x(d['Sex upon Outcome'])+15)
             .attr('y', d=>vis.y(d.count))
         vis.text.exit().remove()
 

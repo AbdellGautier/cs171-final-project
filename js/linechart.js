@@ -110,12 +110,14 @@ function drawAreaChart(data) {
         .attr("class", "line");
 
     d3.transition().selectAll(".line")
-        .duration(7500)
-        .delay(function(d, i) { return i * 800; })
+        //.duration(7500)
+        //.delay(function(d, i) { return i * 800; })
         .attr("d", function(d){return line(d); })
         .style("stroke", function(d) {return color(d[0]['year']); })
         .attr("fill","none")
         .attr("stroke-width", 2)
+        .duration(8000)
+        .delay(function(d, i) { return i * 800; })
 
 
 
