@@ -161,7 +161,7 @@ function drawAreaChart(data) {
         .text("Intake Count Vs Last 4 Years Comparison");
 
 
-    let circ = d3.select("g").selectAll("circle")
+    let circ = svg.select("g").selectAll("circle")
         .data(circArrayData);
 
     circ.enter().append("circle")
@@ -204,8 +204,7 @@ function drawAreaChart(data) {
 
     circ.exit().remove();
 
-    var legend = d3.select("svg")
-        .selectAll('g.legend')
+    var legend = svg.selectAll('g.legend')
         .data(sumstat)
         .enter()
         .append("g")
