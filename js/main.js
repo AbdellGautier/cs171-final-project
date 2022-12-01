@@ -6,7 +6,8 @@ let selectedCategory='';
 
 // Date parser
 let formatDate = d3.timeFormat("%Y");
-let parseDate = d3.timeParse("%m/%d/%Y %H:%I");
+let parseDate = d3.timeParse("%m/%d/%Y %H:%M");
+let parseDateOutcome = d3.timeParse("%m/%d/%Y %I:%M:%S %p")
 
 // Define datasets to load
 let promises = [
@@ -15,7 +16,7 @@ let promises = [
 		return row
 	}),
 	d3.csv("data/Austin_Animal_Center_Outcomes.csv", row => {
-		row.DATE = parseDate(row.DateTime);
+		row.DATE = parseDateOutcome(row["DateTime"]);
 		return row;
 	}),
 	d3.csv("data/intakecount_years.csv" ,row => {
@@ -45,10 +46,12 @@ Promise.all(promises)
 		let animalColorCSV = data[3];
 		let outcomes = data[4];
 
+		new PanelInnovative(intakeCSV, outcomeCSV);
+
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
 
-		// // Draw interactive area and bar chart slides
+		// Draw interactive area and bar chart slides
 		// new PanelOne(intakeCSV);
 
 		// Draw expected intake slide
