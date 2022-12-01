@@ -29,7 +29,7 @@ class AnimalIntakeVisuals {
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 250 - vis.margin.top - vis.margin.bottom;
+        vis.height = 700 - vis.margin.top - vis.margin.bottom;
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
