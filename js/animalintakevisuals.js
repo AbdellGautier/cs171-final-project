@@ -122,7 +122,7 @@ class AnimalIntakeVisuals {
         vis.displayData.forEach(function(d){
             if (d.key=='Dog'){
                 d.img="images/dog.jpg"
-                d.posx= 5
+                d.posx= 2
                 d.posy= 100
             }
             if (d.key=='Cat'){
@@ -172,25 +172,28 @@ class AnimalIntakeVisuals {
 
         let otherString='';
 
+        vis.petgroup=vis.svg.append("g")
+            .attr("transform", "translate(0," + 40 + ")");
+
 
         vis.displayData.forEach(function(d, i) {
             vis.defs.append("svg:pattern")
                 .attr("id", "grump_avatar" + i)
-                .attr("width", 100)
-                .attr("height", 100)
+                .attr("width", 115)
+                .attr("height", 115)
                 .attr("patternUnits", "userSpaceOnUse")
                 .append("svg:image")
                 .attr("xlink:href", d.img)
-                .attr("width", 100)
-                .attr("height", 100)
+                .attr("width", 115)
+                .attr("height", 115)
                 .attr("x", 0)
                 .attr("y", 0);
 
-            var circle = vis.svg.append("circle")
+            var circle = vis.petgroup.append("circle")
                 .attr("transform", "translate(" + d.posx + "," + d.posy + ")")
-                .attr("cx", 100 / 2)
-                .attr("cy", 100 / 2)
-                .attr("r", 100 / 2)
+                .attr("cx", 115 / 2)
+                .attr("cy", 115 / 2)
+                .attr("r", 115 / 2)
                 //.style("fill", "#fff")
                 /*.attr("stroke-width",function(){
                     if(d.key=='Dog')
