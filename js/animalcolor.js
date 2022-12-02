@@ -19,11 +19,13 @@ class AnimalColorBarChart {
         let vis = this;
 
         // Set margin
-        vis.margin = {top: 30, right: 10, bottom: 25, left: 0};
+        vis.margin = {top: 20, right: 10, bottom: 25, left: 0};
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 400 - vis.margin.top - vis.margin.bottom;
+        vis.height = 200 - vis.margin.top - vis.margin.bottom;
+
+        console.log(vis.width);
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -37,9 +39,9 @@ class AnimalColorBarChart {
         vis.svg.append('g')
             .attr('class', 'title bar-title')
 
+
         vis.svg.append('g')
             .attr('class', 'heading')
-
 
 
             /*.append('text')
@@ -49,11 +51,9 @@ class AnimalColorBarChart {
 
         vis.defs = vis.svg.append('svg:defs');
 
-
         vis.x = d3.scaleBand()
             .range([0, vis.width])
             .paddingInner(0.1);
-
 
         vis.colorScale = d3.scaleLinear()
             //vis.colorScale = d3.scaleBand()
@@ -67,10 +67,7 @@ class AnimalColorBarChart {
 
         vis.svg.append("g")
             .attr("class", "xaxis axis")
-            .attr("transform", "translate(0," + 345 + ")");
-
-
-
+            .attr("transform", "translate(0," + 155+ ")");
 
 
 
@@ -127,7 +124,6 @@ class AnimalColorBarChart {
         vis.displayData=vis.displayData.sort((a, b) => b.count - a.count)
         //vis.displayData=vis.displayData.sort((a, b) => b.count - a.count).slice(Math.max(vis.displayData.length - 10, 0))
 
-
         // Sort columns descending
 
         // Update the visualization
@@ -140,15 +136,12 @@ class AnimalColorBarChart {
         vis.x.domain(vis.displayData.map(d=> d['Sex upon Outcome']));
         vis.y.domain([0, d3.max(vis.displayData, d=> d.count)]);
 
-
-
-
         vis.title = vis.svg.select("g.heading").selectAll("text")
             .data(vis.displayData);
         vis.title.enter()
             .append("text")
             .merge(vis.title)
-            .attr("fill","saddlebrown")
+            .attr("fill","black")
             .text(function(d){
                 if(d['Animal Type']=='Other'){
                     return "Gender of Other Adopted Animals"
@@ -157,14 +150,17 @@ class AnimalColorBarChart {
                 }
 
             })
-            .attr("x", 200)
+            .attr("x", 300)
             .attr("y", -5)
             .attr('text-anchor', 'middle')
-            .attr('text-decoration', 'underline')
+            //.attr('text-decoration', 'underline')
 
         vis.title.exit().remove()
         vis.text = vis.svg.select("g").selectAll("text")
             .data(vis.displayData);
+
+        //const barHeight = vis.height * (score / 10);
+
 
         vis.text.enter()
             .append("text")
@@ -175,16 +171,20 @@ class AnimalColorBarChart {
             .text(d=>(d.count))
             //.attr('x', d=>vis.x(d['Sex upon Outcome'])+15)
             .attr('x', function(d){
-                    console.log(d['Animal Type'])
                     if(d['Animal Type']=='Livestock' || d['Animal Type']=='Bird'){
-                        return vis.x(d['Sex upon Outcome'])+35;
+                        return vis.x(d['Sex upon Outcome'])+55;
+                    }
+                    else if (d['Animal Type']=='Other'){
+                        return vis.x(d['Sex upon Outcome'])+28;
                     }
                     else{
-                        return vis.x(d['Sex upon Outcome'])+12;
+                        return vis.x(d['Sex upon Outcome'])+25;
                     }
 
             })
             .attr('y', d=>vis.y(d.count))
+
+
         vis.text.exit().remove()
 
         vis.xAxis = d3.axisBottom().scale(vis.x);
