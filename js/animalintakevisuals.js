@@ -25,11 +25,11 @@ class AnimalIntakeVisuals {
         let vis = this;
 
         // Set margin
-        vis.margin = {top: 30, right:0 , bottom: 0, left: 0};
+        vis.margin = {top: 20, right:0 , bottom: 0, left: 0};
 
         // Set width and height
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
-        vis.height = 700 - vis.margin.top - vis.margin.bottom;
+        vis.height = 200 - vis.margin.top - vis.margin.bottom;
 
         // Create SVG
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -41,13 +41,13 @@ class AnimalIntakeVisuals {
 
         vis.defs = vis.svg.append('svg:defs');
 
-
         vis.svg.append('g')
             .attr('class', 'instructions')
             .append('text')
             .text(' *** Please hover the pet image ***')
-            .attr('transform', `translate(200, 30)`)
-            .attr("fill","red")
+            .attr('transform', `translate(460, -1)`)
+            //.attr('text-anchor', 'right')
+            .attr("fill","black")
 
 
         // Scales and axes
@@ -123,29 +123,29 @@ class AnimalIntakeVisuals {
             if (d.key=='Dog'){
                 d.img="images/dog.jpg"
                 d.posx= 2
-                d.posy= 100
+                d.posy= -1
             }
             if (d.key=='Cat'){
                 d.img="images/cat.png"
                 d.posx= 120
-                d.posy= 100
+                d.posy= -1
             }
             if (d.key=='Other'){
                 d.img="images/other.jpg"
                 d.posx= 250
-                d.posy= 100
+                d.posy= -1
             }
             if (d.key=='Bird'){
                 d.img="images/birds.jpg"
                 d.posx= 375
-                d.posy= 100
+                d.posy= -1
             }
 
 
             if (d.key=='Livestock'){
                 d.img="images/livestock.jpg"
                 d.posx= 500
-                d.posy= 100
+                d.posy= -1
             }
 
 
@@ -173,27 +173,27 @@ class AnimalIntakeVisuals {
         let otherString='';
 
         vis.petgroup=vis.svg.append("g")
-            .attr("transform", "translate(0," + 40 + ")");
+            .attr("transform", "translate(275," + 40 + ")");
 
 
         vis.displayData.forEach(function(d, i) {
             vis.defs.append("svg:pattern")
                 .attr("id", "grump_avatar" + i)
-                .attr("width", 115)
-                .attr("height", 115)
+                .attr("width", 100)
+                .attr("height", 100)
                 .attr("patternUnits", "userSpaceOnUse")
                 .append("svg:image")
                 .attr("xlink:href", d.img)
-                .attr("width", 115)
-                .attr("height", 115)
+                .attr("width", 100)
+                .attr("height", 100)
                 .attr("x", 0)
                 .attr("y", 0);
 
             var circle = vis.petgroup.append("circle")
                 .attr("transform", "translate(" + d.posx + "," + d.posy + ")")
-                .attr("cx", 115 / 2)
-                .attr("cy", 115 / 2)
-                .attr("r", 115 / 2)
+                .attr("cx", 100 / 2)
+                .attr("cy", 100 / 2)
+                .attr("r", 100 / 2)
                 //.style("fill", "#fff")
                 /*.attr("stroke-width",function(){
                     if(d.key=='Dog')
@@ -207,7 +207,6 @@ class AnimalIntakeVisuals {
                 //.attr("stroke",vis.colorScale(d.value))
                 .style("fill", "url(#grump_avatar" + i + ")")
                 .on('mouseover', function(event){
-                    console.log(d.key)
                     if(d.key=='Other'){
                         otherString='Other Animals'
                     }

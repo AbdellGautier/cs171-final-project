@@ -248,6 +248,11 @@ li {
 #expected-intakes-areachart {
     display: none;
 }
+#detailsColor{
+    width:500px;
+}
+
+
 
 .matrix-legend-text {
     font-size: 0.75rem;

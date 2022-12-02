@@ -1,5 +1,5 @@
 
-let margin = {top: 40, right: 40, bottom: 60, left: 60};
+let margin = {top: 40, right: 40, bottom: 60, left: 40};
 
 let width = 600 - margin.left - margin.right;
 let height = 500 - margin.top - margin.bottom;
@@ -92,8 +92,6 @@ function drawAreaChart(data) {
         .attr("y", 12)
         .text("Count");
 
-    console.log(linearray);
-
     let t=d3.transition()
         .delay(function(d, i) {
             return i * 100;
@@ -109,15 +107,15 @@ function drawAreaChart(data) {
     city.append("path")
         .attr("class", "line");
 
-    d3.transition().selectAll(".line")
+    svg.selectAll(".line")
         //.duration(7500)
         //.delay(function(d, i) { return i * 800; })
         .attr("d", function(d){return line(d); })
         .style("stroke", function(d) {return color(d[0]['year']); })
         .attr("fill","none")
         .attr("stroke-width", 2)
-        .duration(8000)
-        .delay(function(d, i) { return i * 800; })
+      /*  .duration(8000)
+        .delay(function(d, i) { return i * 800; })*
 
 
 
@@ -161,13 +159,55 @@ function drawAreaChart(data) {
         .text("Intake Count Vs Last 4 Years Comparison");
 
 
-    let circ = svg.select("g").selectAll("circle")
-        .data(circArrayData);
+    //let circ = svg.select("g").selectAll("circle")
+      //  .data(circArrayData);
 
-    circ.enter().append("circle")
-        .merge(circ)
+    svg.selectAll("circle")
+      .data(circArrayData)
+        .enter()
+        .append("circle")
         .attr('id', 'dot')
         //.attr("class", "dot")
+        .attr("stroke-width", 2)
+        .attr("class", "tooltip-circle")
+        .attr('r', 5)
+        .style('fill', 'black')
+        .attr('cx', (d)=>{
+            return x(d.month);
+        })
+        .attr('cy', (d)=> {
+            return y(d.count);
+        })
+        .on("mouseover", function(event,d){
+            d3.select(this).style("fill", "red")
+            console.log(d);
+            tooltip
+                .style("opacity", 1)
+                .style("left", event.pageX + 10 + "px")
+                .style("top", event.pageY + "px")
+                .html(`
+             <div style="border: thin solid grey; border-radius: 3px; background: lightgrey; padding: 10px">                 
+                 <h4> <b>Month:</b> `+monthMap[d.month]+`</h4>
+                 <h4> <b>Intake Count:</b> `+d3.format(',')(d.count)+`</h4>
+                 <h4> <b>Year:</b> `+d.year+`</h4>                             
+             </div>`);
+
+        })
+        .on('mouseout', function(event, d){
+            d3.select(this).style("fill", "black")
+            tooltip
+                .style("opacity", 0)
+                .style("left", 0)
+                .style("top", 0)
+                .html(``);
+
+        })
+
+   /* circ.enter().append("circle")
+        //.merge(circ)
+        .attr('id', 'dot')
+        //.attr("class", "dot")
+
         .attr("class", "tooltip-circle")
         .attr('r', 3)
         .style('fill', 'black')
@@ -202,7 +242,8 @@ function drawAreaChart(data) {
 
             })
 
-    circ.exit().remove();
+
+    circ.exit().remove();*/
 
     var legend = svg.selectAll('g.legend')
         .data(sumstat)
@@ -211,14 +252,13 @@ function drawAreaChart(data) {
         .attr("class", "legend");
 
     legend.append("circle")
-        .attr("cx", 515+25)
-        .attr('cy', (d, i) => i * 20 + 43)
+        .attr("cx", 510)
+        .attr('cy', (d, i) => i * 20 + 47)
         .attr("r", 6)
         .style("fill", d => color(d.key))
 
-
     legend.append("text")
-        .attr("x", 487)
-        .attr("y", (d, i) => i * 20+50)
+        .attr("x", 460)
+        .attr("y", (d, i) => i * 20+52)
         .text(d => d.key)
 }
