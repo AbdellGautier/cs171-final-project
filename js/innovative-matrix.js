@@ -41,7 +41,7 @@ class InnovativeMatrix {
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
         vis.barSize = 3;
-        vis.squareSize = 20;
+        vis.squareSize = 15;
 
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
             .attr("width", vis.width + vis.margin.left + vis.margin.right)
@@ -93,8 +93,8 @@ class InnovativeMatrix {
             .attr("class", "legend-square")
             .attr("x", vis.matrixHeight * (vis.barSize + vis.squareSize) + 20)
             .attr("y", (_, i) => 10 + i * vis.squareSize)
-            .attr("width", vis.squareSize / 2)
-            .attr("height", vis.squareSize / 2)
+            .attr("width", vis.squareSize / 1.5)
+            .attr("height", vis.squareSize / 1.5)
             .attr("fill", d => d[1]);
 
         vis.svg.selectAll("text")
@@ -102,13 +102,19 @@ class InnovativeMatrix {
             .enter()
             .append("text")
             .attr("class", "matrix-legend-text")
-            .attr("x", vis.matrixHeight * (vis.barSize + vis.squareSize) + vis.squareSize + 15)
+            .attr("x", vis.matrixHeight * (vis.barSize + vis.squareSize) + vis.squareSize + 18)
             .attr("y", (_, i) => 19 + i * vis.squareSize)
             .text(d => d[0])
     }
 
 
     intakeAnimal(animal) {
+        // Return if no more room
+        if (this.openSquares.length === 0) {
+            return;
+        }
+
+        // Add animal to open square
         this.animals.push({
             square: this.openSquares.pop(),
             ...animal,

@@ -56,10 +56,10 @@ class PanelInnovative {
         let minIntakeTime = d3.min(visData, d => d.intakeTime);
 
         // Initialize the visualization
-        let matrix = new InnovativeMatrix("innovative-matrix", visData, 15, 20);
+        let matrix = new InnovativeMatrix("innovative-matrix", visData, 20, 25);
 
         // Toggle to pause visualization
-        visData = visData.splice(0, 100)
+        // visData = visData.splice(0, 100)
 
         // Update the visualization in real-time based on animal intakes and outcomes
         visData.forEach(function(d, i) {
@@ -73,8 +73,8 @@ class PanelInnovative {
                     // Once outcome, handle remove
                     matrix.removeAnimal(d)
 
-                }, ((d.intakeTime - minIntakeTime) / 3600) * 1000);
-            }, ((d.intakeTime - minIntakeTime) / 3600) * 1000);
+                }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
+            }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
         });
     }
 }
