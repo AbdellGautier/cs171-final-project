@@ -10,6 +10,8 @@ class PanelInnovative {
         this.intakeData = _intakeData;
         this.outcomeData = _outcomeData;
 
+        this.timeouts = [];
+
         this.initPanel();
     }
 
@@ -48,33 +50,51 @@ class PanelInnovative {
             });
         });
 
-        // Filter and sort
-        visData = visData.filter(d => d.timeInShelter && d.timeInShelter > 0);
-        visData = visData.sort((a, b) => a.intakeTime - b.intakeTime);
-
-        // Find min intake time
-        let minIntakeTime = d3.min(visData, d => d.intakeTime);
-
         // Initialize the visualization
-        let matrix = new InnovativeMatrix("innovative-matrix", visData, 20, 25);
+        let matrix = new InnovativeMatrix("innovative-matrix",20, 30);
 
-        // Toggle to pause visualization
-        // visData = visData.splice(0, 100)
+        d3.select(`#innovative-matrix-start`).on("change", function (e) {
+            // Reset visualization
+            panel.timeouts.forEach(timeout => {
+                clearTimeout(timeout);
+            });
 
-        // Update the visualization in real-time based on animal intakes and outcomes
-        visData.forEach(function(d, i) {
-            // Wait until intake
-            setTimeout(() => {
-                // Once intake, handle enter
-                matrix.intakeAnimal(d);
+            matrix.reset();
 
-                // Wait until outcome
-                setTimeout(() => {
-                    // Once outcome, handle remove
-                    matrix.removeAnimal(d)
+            let parseDate = d3.timeParse("%Y-%m-%d");
+            let startTime = parseDate(e.target.value).getTime() / 1000;
 
+            // Filter and sort
+            visData = visData.filter(d => d.timeInShelter && d.timeInShelter > 0 && d.intakeTime >= startTime);
+            visData = visData.sort((a, b) => a.intakeTime - b.intakeTime);
+
+            // Find min intake time
+            let minIntakeTime = d3.min(visData, d => d.intakeTime);
+            matrix.setStartTime(minIntakeTime);
+
+            // Update the visualization in real-time based on animal intakes and outcomes
+            visData.forEach(function(d, i) {
+                // Wait until intake
+                let intakeTimeout = setTimeout(() => {
+                    // Once intake, handle enter
+                    matrix.intakeAnimal(d);
+
+                    // Wait until outcome
+                    let outcomeTimeout = setTimeout(() => {
+                        // Once outcome, handle remove
+                        matrix.removeAnimal(d)
+
+                    }, ((d.outcomeTime - minIntakeTime) / 3600) * 100);
+
+                    panel.timeouts.push(outcomeTimeout);
                 }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
-            }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
+
+                panel.timeouts.push(intakeTimeout);
+            });
         });
     }
+
+
+
+
 }

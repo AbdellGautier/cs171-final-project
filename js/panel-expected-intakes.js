@@ -1,7 +1,7 @@
 
 // Chart variables
 /*
- * PanelOne - Object constructor function
+ * PanelExpectedIntakes - Object constructor function
  * @param _data				-- the dataset
  */
 
@@ -58,7 +58,7 @@ class PanelExpectedIntakes {
                 new StackedAreaChartExpectedIntakes(
                     "expected-intakes-areachart",
                     displayData
-                ).initVis();
+                );
             });
         });
     }

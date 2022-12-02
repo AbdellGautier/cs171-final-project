@@ -7,7 +7,8 @@ let selectedCategory='';
 // Date parser
 let formatDate = d3.timeFormat("%Y");
 let parseDate = d3.timeParse("%m/%d/%Y %H:%M");
-let parseDateOutcome = d3.timeParse("%m/%d/%Y %I:%M:%S %p")
+let parseDateOutcome = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
+let parserMatrixTime = d3.timeFormat("%Y-%m-%d");
 
 // Define datasets to load
 let promises = [
@@ -46,40 +47,38 @@ Promise.all(promises)
 		let animalColorCSV = data[3];
 		let outcomes = data[4];
 
+		// Draw expected intake panel
+		new PanelExpectedIntakes(intakeCSV);
+
+		// Draw innovative visualization panel
 		new PanelInnovative(intakeCSV, outcomeCSV);
 
 		// Draw animal intakes chart
 		drawAreaChart(intakeCountCSV);
 
-		// Draw interactive area and bar chart slides
-		// new PanelOne(intakeCSV);
-
-		// Draw expected intake slide
-		new PanelExpectedIntakes(intakeCSV);
-
 		// Draw the Austin Map
-		let austinMap = new AustinMap("austin-map", intakeCSV, [30.27513099074509, -97.74782301534331]);
-		console.log(austinMap);
+		new AustinMap("austin-map", intakeCSV, [30.27513099074509, -97.74782301534331]);
 
 		new AnimalIntakeVisuals(
 			"intakecount",
 			intakeCSV,
 			{
 				"title": "",
-				"key": "Animal Type"
-			}
-		)
+				"key": "Animal Type",
+			},
+		);
+
 		animalColor = new AnimalColorBarChart("detailsColor",
 			animalColorCSV,outcomes, {
 				"title": "Top 5 Colors of Animal",
 				"key": "Animal Type"
-			})
+			});
 
-		// Draw panel three
-		new PanelThree(intakeCSV, outcomeCSV);
+		// Draw sankey panel
+		new PanelSankey(intakeCSV, outcomeCSV);
 	})
 	.catch(function (err) {
-		console.log(err)
+		console.log(err);
 	});
 
 function categoryChange() {

@@ -144,7 +144,7 @@ li {
 }
 
 .highlight-expected {
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(201,52%,77%\));
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(21,85%,66%\));
     margin: -2px -6px;
     padding:  2px  6px;
 }
@@ -154,6 +154,7 @@ li {
     margin: -2px -6px;
     padding:  2px  6px;
 }
+
 
 
 
@@ -248,12 +249,29 @@ li {
 #expected-intakes-areachart {
     display: none;
 }
-#detailsColor{
-    width:500px;
+
+.intake-areachart-legend-text {
+    font-size: 0.75rem;
+}
+
+#expected-intakes-tooltip-label {
+    font-size: 0.75rem;
+}
+
+.expected-intakes-tooltip-sublabel {
+    font-size: 0.5rem;
 }
 
 
 
+#detailsColor{
+    width:500px;
+}
+
 .matrix-legend-text {
+    font-size: 0.75rem;
+}
+
+#matrix-elapsed-time {
     font-size: 0.75rem;
 }

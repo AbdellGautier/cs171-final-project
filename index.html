@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <!-- Austin Animal Shelter Overview-->
+    <!-- Hook: Austin Animal Shelter Overview-->
     <div class="section">
         <div class="container">
             <div class="row justify-content-center">
@@ -111,7 +111,7 @@
         </div>
     </div>
 
-    <!-- Expected vs. Actual Animals Found -->
+    <!-- Rising Action: Expected vs. Actual Animals Found -->
     <div class="section">
         <div class="container">
             <div class="row">
@@ -122,7 +122,7 @@
                     <div id="form-animal-intakes-container">
                         <div class="row">
                             To begin, let's look at the big picture. How many lost animals do you think the
-                            Austin Animal Shelter has found since 2014?
+                            Austin Animal Shelter has found since 2014? <i>Select an option.</i>
                         </div>
                         <div id="div-animal-intakes-form" class="row">
                             <form id="form-animal-intakes" class="form-check">
@@ -153,17 +153,20 @@
                                 versus <b class="highlight-actual">what is the actual</b> number of animals found
                                 by the shelters.
                             </p>
+                            <p>
+                                Hover over the chart to see more details.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-8 justify-content-center">
                     <div id="expected-intakes-areachart"></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Innovative Visualization -->
+    <!-- Rising Action: Matrix (Innovative Visualization) -->
     <div class="section">
         <div class="container">
             <div class="row">
@@ -181,51 +184,24 @@
                         Can you imagine what all of these animals look like in their kennels?
                     </p>
                     <p>
-                        The grid to the right is several stacks of animal kennels. <b>Each square represents an animal, and
-                        every second that the square appears is ten hours</b> that the animal spends in the shelter.
+                        <i>The grid on the right is stacks of animal kennels. Each cell is a real-life animal, and every
+                            second that a cell appears is <u>ten hours</u> that the animal actually spent
+                            inside the shelter.</i>
                     </p>
+                    <b>Select a date to begin.</b>
                 </div>
                 <div class="col-8">
-                    <div id="innovative-matrix"></div>
+                    <div class="row" style="display: table-cell; vertical-align: middle;">
+                        <label for="innovative-matrix-start">Start date:&nbsp;</label>
+                        <input type="date" id="innovative-matrix-start" name="innovative-start" min="2013-10-01" max="2022-10-01">
+                    </div>
+                    <div class="row">
+                        <div id="innovative-matrix"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Exposition: Area Chart and Bar Charts -->
-<!--    <div class="section">-->
-<!--        <div class="container">-->
-<!--            <h2 class="section-heading text-center">The Problem</h2>-->
-<!--            <div class="row">-->
-<!--                <div class="col">-->
-<!--                    <p class="text-center">-->
-<!--                        Animal Shelters in Austin intake an enormous number of animals each year.-->
-<!--                    </p>-->
-<!--                    <p class="text-center">-->
-<!--                        While the majority of these animals are found unharmed, many animals-->
-<!--                        are found sick and injured.-->
-<!--                    </p>-->
-<!--                    <p class="text-center">-->
-<!--                        Most animals are stray cats and dogs that could easily be-->
-<!--                        adopted.-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <br />-->
-<!--            <div class="row">-->
-<!--                <div class="col-6">-->
-<!--                    <div id="panel1-intake-areachart"></div>-->
-<!--                </div>-->
-<!--                <div class="col-6">-->
-<!--                    <div id="panel1-animal-type-barchart"></div>-->
-<!--                    <hr />-->
-<!--                    <div id="panel1-intake-type-barchart"></div>-->
-<!--                    <hr />-->
-<!--                    <div id="panel1-intake-condition-barchart"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
     <!-- Rising Action: Line and Map Chart -->
     <div class="section">
@@ -256,29 +232,28 @@
     </div>
 
     <!-- Climax: Sankey Chart -->
-    <div class="section">
-        <div class="container text-center">
+    <div class="section active">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <h3 class="section-heading">The Life of a Found Animal</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-3">
                     <p>
                         What are the fates of all these animals once they are taken into the Austin Animal Shelter?
                     </p>
                     <p>
-                        Most are adopted, while many are transferred to another shelter.
-                    </p>
-                    <p>
-                        However, a still-too-large portion of animals will die in shelter either by
+                        Most are adopted, while many are transferred to another shelter. However, as you can see on the
+                        right, a still-too-large portion of animals will die in shelter either by
                         euthanasia or natural causes.
                     </p>
                 </div>
+                <div class="col-9">
+                    <div id="panel3-sankey"></div>
+                </div>
             </div>
-            <br />
-            <div id="panel3-sankey"></div>
         </div>
     </div>
     <!-- Falling Action: Which pets to adopt? -->
@@ -395,19 +370,15 @@
 <script src="js/main.js"></script>
 <script src="js/linechart.js"></script>
 <script src="js/austinmap.js"></script>
-<script src="js/barchart.js"></script>
-<script src="js/areachart.js"></script>
-<script src="js/sankey.js"></script>
-<script src="js/panel-one.js"></script>
 <script src="js/animalintakevisuals.js"></script>
 <script src="js/animalcolor.js"></script>
-<script src="js/panel-three.js"></script>
+
+<script src="js/panel-sankey.js"></script>
+<script src="js/sankey.js"></script>
 
 <script src="js/panel-expected-intakes.js"></script>
 <script src="js/expected-intakes-areachart.js"></script>
 
-<script src="js/intake-stacked-areachart.js"></script>
-<script src="js/panel-problem.js"></script>
 <script src="js/panel-innovative.js"></script>
 <script src="js/innovative-matrix.js"></script>
 

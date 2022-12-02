@@ -5,7 +5,7 @@
  * @param outcomeData	-- the outcome dataset
  */
 
-class PanelThree {
+class PanelSankey {
 
     constructor(intakeData, outcomeData) {
         this.intakeData = intakeData;

@@ -7,9 +7,8 @@
 
 class InnovativeMatrix {
 
-    constructor(parentElement, data, width, height) {
+    constructor(parentElement, width, height) {
         this.parentElement = parentElement;
-        this.data = data;
 
         this.matrixWidth = width;
         this.matrixHeight = height;
@@ -35,9 +34,9 @@ class InnovativeMatrix {
     initVis() {
         let vis = this;
 
-        vis.margin = {top: 0, right: 20, bottom: 20, left: 20};
+        vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
 
-        vis.width = 600 - vis.margin.left - vis.margin.right;
+        vis.width = 800 - vis.margin.left - vis.margin.right;
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
         vis.barSize = 3;
@@ -97,7 +96,7 @@ class InnovativeMatrix {
             .attr("height", vis.squareSize / 1.5)
             .attr("fill", d => d[1]);
 
-        vis.svg.selectAll("text")
+        vis.svg.selectAll(".matrix-legend-text")
             .data(legendData)
             .enter()
             .append("text")
@@ -105,6 +104,28 @@ class InnovativeMatrix {
             .attr("x", vis.matrixHeight * (vis.barSize + vis.squareSize) + vis.squareSize + 18)
             .attr("y", (_, i) => 19 + i * vis.squareSize)
             .text(d => d[0])
+
+        // Draw elapsed time
+        vis.elapsedTime = vis.svg.append("text")
+            .attr("id", "matrix-elapsed-time")
+            .attr("x", 0)
+            .attr("y", -5)
+            .text("Current date: select a start date");
+    }
+
+    reset() {
+        let vis = this;
+
+        vis.openSquares = [];
+        d3.range(vis.matrixHeight).forEach(row => {
+            d3.range(vis.matrixWidth).forEach(col => {
+                vis.openSquares.push([row, col]);
+            })
+        });
+        vis.openSquares = vis.randomize(vis.openSquares);
+
+        vis.animals = [];
+        vis.updateVis();
     }
 
 
@@ -113,6 +134,9 @@ class InnovativeMatrix {
         if (this.openSquares.length === 0) {
             return;
         }
+
+        // Update time
+        this.currentTime = animal.intakeTime;
 
         // Add animal to open square
         this.animals.push({
@@ -139,6 +163,11 @@ class InnovativeMatrix {
     updateVis() {
         let vis = this;
 
+        // Update elapsed time
+        let currentTime = new Date(vis.currentTime * 1000);
+        vis.elapsedTime.text(`Current date: ${parserMatrixTime(currentTime)}`);
+
+        // Update animal squares
         let animalRects = vis.svg.selectAll(".animal-square")
             .data(vis.animals, d => d.animalID);
 
@@ -164,6 +193,10 @@ class InnovativeMatrix {
             .duration(50)
             .attr("opacity", 0)
             .remove();
+    }
+
+    setStartTime(time) {
+        this.starTime = time;
     }
 
     randomize(arr) {

@@ -17,14 +17,16 @@ class StackedAreaChartExpectedIntakes {
         this.data = data;
         this.displayData = [];
 
-        let colors = ['#a6cee3', '#1f78b4'];
+        this.colors = ['#F29361', '#1f78b4'];
 
         this.dataCategories = ["expected", "actual"]
 
         // Set ordinal color scale
         this.colorScale = d3.scaleOrdinal()
             .domain(this.dataCategories)
-            .range(colors);
+            .range(this.colors);
+
+        this.initVis();
     }
 
 
@@ -34,7 +36,7 @@ class StackedAreaChartExpectedIntakes {
     initVis(){
         let vis = this;
 
-        vis.margin = {top: 40, right: 40, bottom: 60, left: 40};
+        vis.margin = {top: 50, right: 85, bottom: 60, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
@@ -57,7 +59,7 @@ class StackedAreaChartExpectedIntakes {
         // Scales and axes
         vis.x = d3.scaleTime()
             .range([0, vis.width])
-            .domain(d3.extent(vis.data, d=> d.date));
+            .domain(d3.extent(vis.data, d => d.date));
 
         vis.y = d3.scaleLinear()
             .range([vis.height, 0]);
@@ -75,30 +77,52 @@ class StackedAreaChartExpectedIntakes {
         vis.svg.append("g")
             .attr("class", "y-axis axis");
 
+        // Add title
+        vis.svg.append("text")
+            .attr("x", vis.width / 2)
+            .attr("y", 0 - (margin.top / 2))
+            .attr("text-anchor", "middle")
+            .text("Your Expectations vs Reality: Found Animals in Austin, TX");
+
+        // Add legend
+        let legendData = this.dataCategories.map((d, i) => ({
+            data: d, color: this.colors[i]
+        })).reverse();
+
+        vis.svg.selectAll(".intake-areachart-legend-rect")
+            .data(legendData)
+            .enter()
+            .append("rect")
+            .attr("class", "intake-areachart-legend-rect")
+            .attr("x", 10 + vis.width)
+            .attr("y", (_, i) => vis.height / 2 + i * 20)
+            .attr("width", 10)
+            .attr("height", 10)
+            .attr("fill", d => d.color);
+
+        vis.svg.selectAll(".intake-areachart-legend-text")
+            .data(legendData)
+            .enter()
+            .append("text")
+            .attr("class", "intake-areachart-legend-text")
+            .attr("x", 25 + vis.width)
+            .attr("y", (_, i) => vis.height / 2 + 9 + i * 20)
+            .text(d => d.data[0].toUpperCase() + d.data.slice(1))
 
         // Initialize stack layout
         let stack = d3.stack()
             .keys(vis.dataCategories);
 
-        // TO-DO (Activity II) Stack data
+        // Stack data
         vis.stackedData = stack(vis.data);
 
-
-        // TO-DO (Activity II) Stacked area layout
+        // Stacked area layout
         vis.area = d3.area()
             .curve(d3.curveCardinal)
             .x(d => vis.x(d.data.date))
             .y0(d => vis.y(d[0]))
             .y1(d => vis.y(d[1]));
 
-
-        // TO-DO (Activity IV): Add Tooltip placeholder
-        vis.svg.append("text")
-            .attr("x", 10)
-            .attr("y", 10)
-            .attr("id", "tooltip-label");
-
-        // TO-DO: (Filter, aggregate, modify data)
         vis.wrangleData();
 
     }
@@ -146,18 +170,72 @@ class StackedAreaChartExpectedIntakes {
                 return vis.colorScale(d)
             })
             .attr("d", d => vis.area(d))
-            // TO-DO (Activity IV): update tooltip text on hover
-            .on("mouseover", function(i, d) {
-                vis.svg.select("#tooltip-label")
-                    .text(d.key);
-            })
-            .on("mouseout", function() {
-                vis.svg.select("#tooltip-label")
-                    .text(null);
-            });
 
 
         categories.exit().remove();
+
+        // Add tooltip
+        // Create tooltip group
+        let tooltip = vis.svg.append("g")
+            .style("display", "none");
+
+        // Draw tooltip vertical bar
+        tooltip.append("rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("height", vis.height)
+            .attr("width", 0.25)
+            .attr("stroke", "black");
+
+        // Add tooltip label
+        let tooltipLabel = tooltip.append("text")
+            .attr("y", 10)
+            .attr("x", 10)
+            .attr("id", "expected-intakes-tooltip-label")
+            .text("Label");
+
+        // Add tooltip sub-label
+        let tooltipActual = tooltip.append("text")
+            .attr("y", 25)
+            .attr("x", 10)
+            .attr("class", "expected-intakes-tooltip-sublabel")
+            .text("Sub-label");
+
+        let tooltipExpected = tooltip.append("text")
+            .attr("y", 35)
+            .attr("x", 10)
+            .attr("class", "expected-intakes-tooltip-sublabel")
+            .text("Sub-label");
+
+        // Add listener for area chart that updates the tooltip
+        // group based on mouse position
+        vis.svg.append("rect")
+            .attr("class", "listener-rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("height", vis.height)
+            .attr("width", vis.width)
+            .attr("fill-opacity", "0")
+            .on("mouseover", _ => tooltip.style("display", null))
+            .on("mouseout", _ => tooltip.style("display", "none"))
+            .on("mousemove", (event) => {
+                // Get data element with the closest date to the mouse position
+                let mousePos = d3.pointer(event)[0];
+                let dateAtMousePos = vis.x.invert(mousePos);
+
+                let bisectDate = d3.bisector(d => d.data.date).left;
+
+                let closestElementIdx = bisectDate(vis.displayData[0], dateAtMousePos);
+
+                let d = vis.displayData[0][closestElementIdx];
+
+                // Update tooltip with the population and date from element
+                tooltipLabel.text(d.data.date.toLocaleDateString("en-US"));
+                tooltipActual.text(`${Math.round(d.data.actual + d.data.expected)} actual animals`);
+                tooltipExpected.text(`${Math.round(d.data.expected)} expected animals`);
+
+                tooltip.attr("transform", `translate(${mousePos}, 0)`);
+            });
 
         // Call axis functions with the new domain
         vis.svg.select(".x-axis").call(vis.xAxis);
