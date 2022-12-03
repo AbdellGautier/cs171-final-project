@@ -154,8 +154,12 @@ class InnovativeMatrix {
         let vis = this;
 
         // Update elapsed time
-        let currentTime = new Date(vis.currentTime * 1000);
-        vis.elapsedTime.text(`Current date: ${formatMatrixTime(currentTime)}`);
+        if (vis.currentTime) {
+            let currentTime = new Date(vis.currentTime * 1000);
+            vis.elapsedTime.text(`Current date: ${formatMatrixTime(currentTime)}`);
+        } else {
+            vis.elapsedTime.text("Current date: select a start date")
+        }
 
         // Render squares
         let animalRects = vis.svg.selectAll(".animal-square")
@@ -185,7 +189,7 @@ class InnovativeMatrix {
                 vis.tooltip
                     .style("display", "block")
                     .style("left", vis.barSize + d.square[0] * (vis.barSize + vis.squareSize) + 38 + "px")
-                    .style("top", vis.barSize + d.square[1] * (vis.barSize + vis.squareSize) + 53 + "px")
+                    .style("top", vis.barSize + d.square[1] * (vis.barSize + vis.squareSize) + 65 + "px")
                     .html(`
                         <p class="matrix-tooltip-text">
                             <b>${d.breed}</b>
@@ -257,6 +261,10 @@ class InnovativeMatrix {
         let vis = this;
 
         vis.openSquares = vis.resetOpenSquares();
+
+        vis.elapsedTime.text("Current date: select a start date");
+
+        vis.currentTime = null;
 
         vis.animals = [];
         vis.updateVis();

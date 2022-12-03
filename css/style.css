@@ -150,7 +150,7 @@ li {
 }
 
 .highlight-actual {
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(208,42%,62%\));
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(204,71%,41%\));
     margin: -2px -6px;
     padding:  2px  6px;
 }
@@ -255,11 +255,11 @@ li {
 }
 
 #expected-intakes-tooltip-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
 .expected-intakes-tooltip-sublabel {
-    font-size: 0.75rem;
+    font-size: 0.6rem;
 }
 
 
@@ -290,3 +290,6 @@ li {
     font-size: 0.6rem;
 }
 
+#matrix-reset-btn {
+    margin-top: 12px;
+}

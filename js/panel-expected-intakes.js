@@ -32,11 +32,10 @@ class PanelExpectedIntakes {
                 let displayData = Array.from(counts).map(([key, value]) => {
                     return ({
                         "date": key,
-                        "actual": value * (1 - percentage),
+                        "actual": value,
                         "expected": Math.round(value * percentage),
                     });
                 });
-
 
                 let radioOptions = document.getElementsByName("intake-option");
                 radioOptions.forEach(radio => radio.disabled = true);
