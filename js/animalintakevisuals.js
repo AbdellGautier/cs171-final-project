@@ -121,7 +121,7 @@ class AnimalIntakeVisuals {
 
         vis.displayData.forEach(function(d){
             if (d.key=='Dog'){
-                d.img="images/dog.jpg"
+                d.img="images/dog.png"
                 d.posx= 2
                 d.posy= -1
             }
@@ -131,19 +131,19 @@ class AnimalIntakeVisuals {
                 d.posy= -1
             }
             if (d.key=='Other'){
-                d.img="images/other.jpg"
+                d.img="images/other.png"
                 d.posx= 250
                 d.posy= -1
             }
             if (d.key=='Bird'){
-                d.img="images/birds.jpg"
+                d.img="images/bird.png"
                 d.posx= 375
                 d.posy= -1
             }
 
 
             if (d.key=='Livestock'){
-                d.img="images/livestock.jpg"
+                d.img="images/livestock.png"
                 d.posx= 500
                 d.posy= -1
             }
