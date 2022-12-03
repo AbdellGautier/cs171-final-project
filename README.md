@@ -71,8 +71,10 @@ hovers over the chart.
 
 **This is our innovative visualization**. We used the Intake and Outcome CSVs to determine when animal entered the 
 shelter and when it left. We then used timeouts to simulate animals "entering" and "exiting" the shelter so that the
-squares appeared when the animal entered and were removed when the animal exited. Each square has a tooltip that
-shows more details about the animal when the user hovers over it.
+squares appeared when the animal entered and were removed when the animal exited.
+
+For interactions, each square has a tooltip that shows more details about the animal when the user hovers over it. The squares
+also change size and stroke on mouseover.
 
 ### "The Life of a Found Animal" panel
 
@@ -83,7 +85,9 @@ shows more details about the animal when the user hovers over it.
 **Description**
 
 Shows a sankey chart that illustrates the various outcomes (e.g., adopted, death) of different animal species (e.g., dog
-, cat). There is a tooltip that appears on hover.
+, cat).
+
+For interactions, there is a tooltip that appears on hover.
 
 ## Styles
 
