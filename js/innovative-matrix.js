@@ -23,6 +23,8 @@ class InnovativeMatrix {
             "Bird": "#A7C7E7",
         };
 
+        this.lastRemoved = null;
+
         this.initVis();
     }
 
@@ -36,6 +38,8 @@ class InnovativeMatrix {
 
         vis.margin = {top: 20, right: 20, bottom: 20, left: 20};
 
+        // TODO: refactor to allow for dynamic width (not enough time to do this by submission deadline).
+        //       Complicated b/c must determine square width, bar width, and spacing.
         vis.width = 800 - vis.margin.left - vis.margin.right;
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
 
@@ -49,13 +53,7 @@ class InnovativeMatrix {
             .attr("transform", "translate(" + vis.margin.left + "," + vis.margin.top + ")");
 
         // Populate open squares
-        this.openSquares = [];
-        d3.range(vis.matrixHeight).forEach(row => {
-            d3.range(vis.matrixWidth).forEach(col => {
-                this.openSquares.push([row, col]);
-            })
-        });
-        this.openSquares = this.randomize(this.openSquares);
+        this.openSquares = this.resetOpenSquares();
 
         // Draw kennel rows
         let rows = d3.range(vis.matrixWidth + 1);
@@ -111,24 +109,14 @@ class InnovativeMatrix {
             .attr("x", 0)
             .attr("y", -5)
             .text("Current date: select a start date");
-    }
 
-    reset() {
-        let vis = this;
-
-        vis.openSquares = [];
-        d3.range(vis.matrixHeight).forEach(row => {
-            d3.range(vis.matrixWidth).forEach(col => {
-                vis.openSquares.push([row, col]);
-            })
-        });
-        vis.openSquares = vis.randomize(vis.openSquares);
-
-        vis.animals = [];
-        vis.updateVis();
+        // Setup tooltip
+        vis.tooltip = d3.select(`#${this.parentElement}`).append("div")
+            .attr("id", "matrix-tooltip");
     }
 
 
+    // Add the animal to the visualization
     intakeAnimal(animal) {
         // Return if no more room
         if (this.openSquares.length === 0) {
@@ -147,7 +135,11 @@ class InnovativeMatrix {
         this.updateVis();
     }
 
+
+    // Remove the animal from the visualization
     removeAnimal(animal) {
+        this.lastRemoved = animal.animalID;
+
         this.openSquares.push(
             this.animals.find(a => a.animalID === animal.animalID)
                 .square
@@ -156,49 +148,122 @@ class InnovativeMatrix {
         this.updateVis();
     }
 
-    /*
-     * The drawing function
-     */
 
+   // Draw the current grid state
     updateVis() {
         let vis = this;
 
         // Update elapsed time
         let currentTime = new Date(vis.currentTime * 1000);
-        vis.elapsedTime.text(`Current date: ${parserMatrixTime(currentTime)}`);
+        vis.elapsedTime.text(`Current date: ${formatMatrixTime(currentTime)}`);
 
-        // Update animal squares
+        // Render squares
         let animalRects = vis.svg.selectAll(".animal-square")
             .data(vis.animals, d => d.animalID);
 
+        // Enter
         let animalRect = animalRects.enter()
             .append("rect")
             .attr("class", "animal-square")
-            .attr("opacity", 0);
+            .attr("opacity", 0)
+            .attr("x", d => vis.barSize + d.square[0] * (vis.barSize + vis.squareSize))
+            .attr("y", d => vis.barSize + d.square[1] * (vis.barSize + vis.squareSize))
+            .attr("height", vis.squareSize)
+            .attr("width", vis.squareSize)
+            .attr("fill", d => vis.colors[d.animalType])
 
         animalRect.transition()
             .duration(50)
             .attr("opacity", 1);
 
-        animalRect
-            .merge(animalRects)
-            .attr("x", d => vis.barSize + d.square[0] * (vis.barSize + vis.squareSize))
-            .attr("y", d => vis.barSize + d.square[1] * (vis.barSize + vis.squareSize))
-            .attr("height", vis.squareSize)
-            .attr("width", vis.squareSize)
-            .attr("fill", d => vis.colors[d.animalType]);
+        // Update
+        animalRect.merge(animalRects)
+            .on("mouseover", function(e, d) {
+                vis.tooltipAnimal = d.animalID;
 
+                // Show tooltip with animal info
+                vis.tooltip
+                    .style("display", "block")
+                    .style("left", vis.barSize + d.square[0] * (vis.barSize + vis.squareSize) + 38 + "px")
+                    .style("top", vis.barSize + d.square[1] * (vis.barSize + vis.squareSize) + 53 + "px")
+                    .html(`
+                        <p class="matrix-tooltip-text">
+                            <b>${d.breed}</b>
+                        </p>
+                        <p class="matrix-tooltip-text">
+                            Name: ${d.name}
+                        </p>
+                        <p class="matrix-tooltip-text">
+                            Age: ${d.age}
+                        </p>
+                        <p class="matrix-tooltip-text">
+                            Sex: ${d.sex}
+                        </p>
+                    `)
+
+                // Increase square size
+                d3.select(this)
+                    .attr("x", vis.barSize + d.square[0] * (vis.barSize + vis.squareSize) - 2)
+                    .attr("y", vis.barSize + d.square[1] * (vis.barSize + vis.squareSize) - 2)
+                    .attr("height", vis.squareSize + 4)
+                    .attr("width", vis.squareSize + 4)
+                    .attr("stroke", "#202020");
+            })
+            .on("mouseout", function(e, d) {
+                // Reset square size
+                d3.select(this)
+                    .attr("x", vis.barSize + d.square[0] * (vis.barSize + vis.squareSize))
+                    .attr("y", vis.barSize + d.square[1] * (vis.barSize + vis.squareSize))
+                    .attr("height", vis.squareSize)
+                    .attr("width", vis.squareSize)
+                    .attr("stroke", "none");
+
+                // Hide tooltip
+                vis.tooltip.style("display", "none");
+            });
+
+        // Exit
         animalRects.exit()
+            .call(_ => {
+                // Hide tooltip if animal was removed
+                if (vis.tooltipAnimal && vis.lastRemoved && vis.tooltipAnimal === vis.lastRemoved) {
+                    vis.tooltip.style("display", "none");
+                }
+            })
             .transition()
             .duration(50)
             .attr("opacity", 0)
             .remove();
     }
 
-    setStartTime(time) {
-        this.starTime = time;
+
+    // Create open squares
+    resetOpenSquares() {
+        let vis = this;
+
+        let openSquares = [];
+        d3.range(vis.matrixHeight).forEach(row => {
+            d3.range(vis.matrixWidth).forEach(col => {
+                openSquares.push([row, col]);
+            })
+        });
+
+        return vis.randomize(openSquares);
     }
 
+
+    // Reset the visualization to an empty grid
+    reset() {
+        let vis = this;
+
+        vis.openSquares = vis.resetOpenSquares();
+
+        vis.animals = [];
+        vis.updateVis();
+    }
+
+
+    // Randomize an array (cannot believe JS does not have a built-in array randomizer grrr)
     randomize(arr) {
         return arr.sort(_ => Math.random() - 0.5);
     }
