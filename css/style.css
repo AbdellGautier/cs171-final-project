@@ -4,7 +4,8 @@
 
 @font-face {
     font-family: Gotham;
-    src: url('../fonts/GothamHTF-Medium.otf'); }
+    src: url('../fonts/GothamHTF-Medium.otf');
+}
 
 /*
     Global
@@ -20,11 +21,11 @@ a {
 }
 
 .a {
-  text-indent: 20px;
+    text-indent: 20px;
 }
 
 h1 {
-  /*color: #4B6D4A;*/
+    /*color: #4B6D4A;*/
 }
 
 #title {
@@ -45,7 +46,7 @@ h1 {
 }
 
 h2 {
-  color: #91988B;
+    color: #91988B;
 }
 
 .section-heading {
@@ -85,9 +86,7 @@ li {
 }
 
 #img-pets {
-    width: 40%;
     height: auto;
-/*    margin-bottom: -6rem;*/
 }
 
 #img-cs171 {
@@ -110,11 +109,11 @@ li {
 }
 
 #credits {
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     padding: 1rem;
-    width:100%;
+    width: 100%;
 }
 
 /* Highlighters */
@@ -122,41 +121,38 @@ li {
 .highlight-peach {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(56,93%,78%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
 
 .highlight-rose {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(15,86%,78%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
 
 .highlight-violet {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(340,81%,79%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
 
 .highlight-blue {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(267,28%,72%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
 
 .highlight-expected {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(21,85%,66%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
 
 .highlight-actual {
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=hsl\(208,42%,62%\));
     margin: -2px -6px;
-    padding:  2px  6px;
+    padding: 2px 6px;
 }
-
-
-
 
 /*
     Charts
@@ -170,7 +166,8 @@ li {
     padding: 1rem;
 }
 
-.xaxis, .yaxis {
+.xaxis,
+.yaxis {
     font-size: .5em;
 }
 
@@ -194,15 +191,17 @@ li {
 .legend-dog {
     color: #0000ff;
 }
+
 .legend-cat {
     color: #ff0000;
 }
+
 .legend-other {
     color: #00aa00;
 }
 
-.textstyle{
-    fill:green;
+.textstyle {
+    fill: green;
 }
 
 
@@ -217,21 +216,25 @@ li {
     font: 12px "Arial Black";
     /*  pointer-events: none;	This line needs to be removed */
 }
-.tooltip h3,h4 {
+
+.tooltip h3,
+h4 {
     text-align: left;
 }
+
 .tooltip h4 {
     font: 10px sans-serif;
 }
 
 
-.xaxisch, .yaxisch {
+.xaxisch,
+.yaxisch {
     font-size: .1em;
 }
 
 
-.rectangle:hover{
-    opacity:0.4;
+.rectangle:hover {
+    opacity: 0.4;
 }
 
 .area {
@@ -262,10 +265,8 @@ li {
     font-size: 0.5rem;
 }
 
-
-
-#detailsColor{
-    width:500px;
+#detailsColor {
+    width: 500px;
 }
 
 .matrix-legend-text {
