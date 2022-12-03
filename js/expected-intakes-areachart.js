@@ -17,7 +17,7 @@ class StackedAreaChartExpectedIntakes {
         this.data = data;
         this.displayData = [];
 
-        this.colors = ['#F29361', '#1f78b4'];
+        this.colors = ['#F29361', '#5090cc'];
 
         this.dataCategories = ["expected", "actual"]
 
