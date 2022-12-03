@@ -18,13 +18,17 @@ class PanelInnovative {
     initPanel() {
         let panel = this;
 
+        // Wrangle data
         let animalDataByID = {};
-
 
         panel.intakeData.forEach(d => {
             animalDataByID[d["Animal ID"]] = {
                 animalType: d["Animal Type"],
+                breed: d["Breed"],
+                sex: d["Sex upon Intake"],
+                age: d["Age upon Intake"],
                 intakeTime: d.DATE.getTime() / 1000,
+                name: null,
                 outcomeTime: null,
             };
         })
@@ -33,6 +37,7 @@ class PanelInnovative {
             let id = d["Animal ID"];
             if (animalDataByID[id]) {
                 animalDataByID[id].outcomeTime = d.DATE.getTime() / 1000;
+                animalDataByID[id].name = d["Name"] ? d["Name"] : "unknown";
             }
         });
 
@@ -53,12 +58,10 @@ class PanelInnovative {
         // Initialize the visualization
         let matrix = new InnovativeMatrix("innovative-matrix",20, 30);
 
+        // Update the visualization once user selects a date
         d3.select(`#innovative-matrix-start`).on("change", function (e) {
             // Reset visualization
-            panel.timeouts.forEach(timeout => {
-                clearTimeout(timeout);
-            });
-
+            panel.timeouts.forEach(timeout => clearTimeout(timeout));
             matrix.reset();
 
             let parseDate = d3.timeParse("%Y-%m-%d");
@@ -70,31 +73,28 @@ class PanelInnovative {
 
             // Find min intake time
             let minIntakeTime = d3.min(visData, d => d.intakeTime);
-            matrix.setStartTime(minIntakeTime);
 
             // Update the visualization in real-time based on animal intakes and outcomes
-            visData.forEach(function(d, i) {
-                // Wait until intake
+            visData.forEach(function(d) {
+                // Wait until intakes
                 let intakeTimeout = setTimeout(() => {
-                    // Once intake, handle enter
+                    // Once intake, add the animal to the vis
                     matrix.intakeAnimal(d);
 
                     // Wait until outcome
                     let outcomeTimeout = setTimeout(() => {
-                        // Once outcome, handle remove
+                        // Once outcome, remove animal from vis
                         matrix.removeAnimal(d)
 
                     }, ((d.outcomeTime - minIntakeTime) / 3600) * 100);
 
+                    // Store timeout
                     panel.timeouts.push(outcomeTimeout);
                 }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
 
+                // Store timeout
                 panel.timeouts.push(intakeTimeout);
             });
         });
     }
-
-
-
-
 }

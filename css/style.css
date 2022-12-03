@@ -259,7 +259,7 @@ li {
 }
 
 .expected-intakes-tooltip-sublabel {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
 }
 
 
@@ -275,3 +275,18 @@ li {
 #matrix-elapsed-time {
     font-size: 0.75rem;
 }
+
+#matrix-tooltip {
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    position: absolute;
+    border-width: 2px;
+    border: solid;
+}
+
+.matrix-tooltip-text {
+    font-size: 0.6rem;
+}
+

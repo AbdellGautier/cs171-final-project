@@ -8,7 +8,7 @@ let selectedCategory='';
 let formatDate = d3.timeFormat("%Y");
 let parseDate = d3.timeParse("%m/%d/%Y %H:%M");
 let parseDateOutcome = d3.timeParse("%m/%d/%Y %I:%M:%S %p");
-let parserMatrixTime = d3.timeFormat("%Y-%m-%d");
+let formatMatrixTime = d3.timeFormat("%Y-%m-%d");
 
 // Define datasets to load
 let promises = [
