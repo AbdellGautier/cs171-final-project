@@ -1,7 +1,8 @@
 
 /*
  * PanelInnovative - Object constructor function
- * @param _data				-- the dataset
+ * @param _intakeData		-- the intake dataset
+ * @param _outcomeData		-- the outcome dataset
  */
 
 class PanelInnovative {
@@ -18,7 +19,7 @@ class PanelInnovative {
     initPanel() {
         let panel = this;
 
-        // Wrangle data
+        // Prepare data for visualization
         let animalDataByID = {};
 
         panel.intakeData.forEach(d => {
@@ -47,24 +48,10 @@ class PanelInnovative {
             }
 
         })
-
-        panel.visData = Object.entries(animalDataByID).map(d => {
-            return ({
-                animalID: d[0],
-                ...d[1],
-            });
-        });
+        panel.visData = Object.entries(animalDataByID).map(d => ({ animalID: d[0], ...d[1] }));
 
         // Initialize the visualization
         panel.matrix = new InnovativeMatrix("innovative-matrix",20, 30);
-
-        // Add listener for reset button
-        d3.select("#matrix-reset-btn").on("click", function() {
-            panel.resetVis();
-
-            document.getElementById("innovative-matrix-start").value = '';
-            d3.select(this).attr("disabled", "true");
-        })
 
         // Update the visualization once user selects a date
         d3.select(`#innovative-matrix-start`).on("change", function (e) {
@@ -75,15 +62,24 @@ class PanelInnovative {
 
             panel.startVis(e.target.value);
         });
+
+        // Reset the visualization once user clicks reset
+        d3.select("#matrix-reset-btn").on("click", function() {
+            panel.resetVis();
+            document.getElementById("innovative-matrix-start").value = '';
+            d3.select(this).attr("disabled", "true");
+        })
     }
 
+
+    // Reset the visualization to its initial state
     resetVis() {
         let panel = this;
-
         panel.timeouts.forEach(timeout => clearTimeout(timeout));
         panel.matrix.reset();
     }
 
+    // Start the visualization
     startVis(selectedDate) {
         let panel = this;
 
@@ -100,7 +96,7 @@ class PanelInnovative {
 
         // Update the visualization in real-time based on animal intakes and outcomes
         panel.visData.forEach(function(d) {
-            // Wait until intakes
+            // Wait until intake
             let intakeTimeout = setTimeout(() => {
                 // Once intake, add the animal to the vis
                 panel.matrix.intakeAnimal(d);

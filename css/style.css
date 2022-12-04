@@ -294,3 +294,7 @@ h4 {
 #matrix-reset-btn {
     margin-top: 12px;
 }
+
+.instructions {
+    font-style: italic;
+}

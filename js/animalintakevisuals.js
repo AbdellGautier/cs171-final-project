@@ -44,7 +44,7 @@ class AnimalIntakeVisuals {
         vis.svg.append('g')
             .attr('class', 'instructions')
             .append('text')
-            .text(' *** Please hover the pet image ***')
+            .text('Hover over the animals')
             .attr('transform', `translate(460, -1)`)
             //.attr('text-anchor', 'right')
             .attr("fill","black")
