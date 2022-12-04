@@ -204,6 +204,10 @@ li {
     fill: green;
 }
 
+.text-action {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .tooltip-circle {
     fill: #5C865B;
@@ -214,7 +218,14 @@ li {
     position: absolute;
     text-align: center;
     font: 12px "Arial Black";
-    /*  pointer-events: none;	This line needs to be removed */
+}
+
+.tooltip-animals {
+    opacity: 1;
+    border: thin solid #1ca7bf;
+    border-radius: 3px;
+    background: #85d2e2;
+    padding: 10px;
 }
 
 .tooltip h3,
@@ -226,12 +237,20 @@ h4 {
     font: 10px sans-serif;
 }
 
+.animal-circle {
+    opacity: 1;
+    stroke-width: 3px;
+    stroke: #85d2e2;
+}
 
 .xaxisch,
 .yaxisch {
     font-size: .1em;
 }
 
+.rectangle {
+    fill: #85d2e2;
+}
 
 .rectangle:hover {
     opacity: 0.4;
@@ -302,4 +321,8 @@ h4 {
 /* Animal Intakes Count */
 .count-animal-intakes {
     font-size: 13px;
+}
+
+.img-arrow {
+    vertical-align: text-top;
 }

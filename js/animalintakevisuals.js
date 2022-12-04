@@ -15,7 +15,41 @@ class AnimalIntakeVisuals {
         this.displayData = _data;
         this.config = _config;
 
-        this.colors = ['#EBF4F3', '#3c948b']
+        this.colors = ['#85d2e2'];
+
+        // Holds the reference to our animal images
+        this.animalImages = [
+            {
+                key: 'Dog',
+                img: "images/dog.png",
+                posx: 2,
+                posy: -1
+            },
+            {
+                key: 'Cat',
+                img: "images/cat.png",
+                posx: 120,
+                posy: -1
+            },
+            {
+                key: 'Other',
+                img: "images/other.png",
+                posx: 250,
+                posy: -1
+            },
+            {
+                key: 'Bird',
+                img: "images/bird.png",
+                posx: 375,
+                posy: -1
+            },
+            {
+                key: 'Livestock',
+                img: "images/livestock.png",
+                posx: 500,
+                posy: -1
+            }
+        ];
 
         this.initVis();
     }
@@ -42,17 +76,9 @@ class AnimalIntakeVisuals {
 
         vis.defs = vis.svg.append('svg:defs');
 
-        vis.svg.append('g')
-            .attr('class', 'instructions')
-            .append('text')
-            .text('Hover over the animals')
-            .attr('transform', `translate(460, -1)`)
-            .attr("fill", "black");
-
         // Scales and axes
         vis.x = d3.scaleLinear()
             .range([0, vis.width]);
-
 
         vis.colorScale = d3.scaleLinear()
             .range(vis.colors);
@@ -92,10 +118,10 @@ class AnimalIntakeVisuals {
         vis.svg.append("text")
             .attr("x", -vis.margin.left)
             .attr("y", -vis.margin.top / 4)
-            .text(vis.config.title)
+            .text(vis.config.title);
 
         // (Filter, aggregate, modify data)
-        vis.displayData = vis.data
+        vis.displayData = vis.data;
 
         vis.wrangleData();
     }
@@ -111,39 +137,6 @@ class AnimalIntakeVisuals {
         // Sort columns descending
         vis.displayData.sort((a, b) => b.value - a.value);
 
-        vis.displayData.forEach(function (d) {
-
-            if (d.key == 'Dog') {
-                d.img = "images/dog.png"
-                d.posx = 2
-                d.posy = -1
-            }
-
-            if (d.key == 'Cat') {
-                d.img = "images/cat.png"
-                d.posx = 120
-                d.posy = -1
-            }
-
-            if (d.key == 'Other') {
-                d.img = "images/other.png"
-                d.posx = 250
-                d.posy = -1
-            }
-
-            if (d.key == 'Bird') {
-                d.img = "images/bird.png"
-                d.posx = 375
-                d.posy = -1
-            }
-
-            if (d.key == 'Livestock') {
-                d.img = "images/livestock.png"
-                d.posx = 500
-                d.posy = -1
-            }
-        });
-
         // Update the visualization
         vis.updateVis();
     }
@@ -154,13 +147,9 @@ class AnimalIntakeVisuals {
         // Tooltip
         vis.tooltip = d3.select("body").append('div')
             .attr('class', "tooltip")
-            .attr('id', 'pieTooltip')
+            .attr('id', 'pieTooltip');
 
         vis.colorScale.domain([0, d3.max(vis.displayData, d => d.value)]);
-
-        let maxValue = d3.max(vis.displayData, d => d.value)
-        let minValue = d3.min(vis.displayData, d => d.value)
-        var rScale = d3.scaleLinear().domain([minValue, maxValue]).range([25, 100]);
 
         let otherString = '';
 
@@ -175,14 +164,14 @@ class AnimalIntakeVisuals {
                 .attr("height", 100)
                 .attr("patternUnits", "userSpaceOnUse")
                 .append("svg:image")
-                .attr("xlink:href", d.img)
+                .attr("xlink:href", vis.animalImages.find((animal) => animal.key == d.key).img)
                 .attr("width", 100)
                 .attr("height", 100)
                 .attr("x", 0)
                 .attr("y", 0);
 
             var circle = vis.petgroup.append("circle")
-                .attr("transform", "translate(" + d.posx + "," + d.posy + ")")
+                .attr("transform", "translate(" + vis.animalImages.find((animal) => animal.key == d.key).posx + "," + vis.animalImages.find((animal) => animal.key == d.key).posy + ")")
                 .attr("cx", 100 / 2)
                 .attr("cy", 100 / 2)
                 .attr("r", 100 / 2)
@@ -190,10 +179,10 @@ class AnimalIntakeVisuals {
                 .on('mouseover', function (event) {
 
                     if (d.key == 'Other') {
-                        otherString = 'Other Animals'
+                        otherString = 'Other Animals';
                     }
                     else {
-                        otherString = d.key
+                        otherString = d.key;
                     }
 
                     vis.tooltip
@@ -201,13 +190,12 @@ class AnimalIntakeVisuals {
                         .style("left", event.pageX + 10 + "px")
                         .style("top", event.pageY + "px")
                         .html(`
-                        <div style="border: thin solid grey; border-radius: 3px; background: lightgrey; padding: 10px">                 
+                        <div class="tooltip-animals">                 
                         <h4> <b>`+ otherString + `</h4>                                                    
                         </div>`);
 
                     d3.select(this)
-                        .attr('stroke-width', '3px')
-                        .attr('stroke', 'steelblue');
+                        .attr('class', 'animal-circle');
 
                     animalType = d.key;
                     animalColor.wrangleData();
@@ -216,12 +204,11 @@ class AnimalIntakeVisuals {
 
                     vis.tooltip
                         .style("opacity", 0)
-                        .style("left", 0)
-                        .style("top", 0)
                         .html(``);
+
                     d3.select(this)
-                        .attr('stroke', 'none')
-                })
-        })
+                        .attr('class', '');
+                });
+        });
     }
 }

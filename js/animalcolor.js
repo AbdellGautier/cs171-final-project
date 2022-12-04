@@ -10,7 +10,7 @@ class AnimalColorBarChart {
         this.displayData = _data;
         this.config = _config;
 
-        this.colors = ['#EBF4F3', '#3c948b']
+        this.colors = ['#EBF4F3', '#3c948b'];
 
         this.initVis();
     }
@@ -107,7 +107,6 @@ class AnimalColorBarChart {
 
         }
         // Sort the data
-
         vis.displayData = vis.displayData.sort((a, b) => b.count - a.count);
 
         // Update the visualization
@@ -176,7 +175,6 @@ class AnimalColorBarChart {
             .transition()
             .duration(1000)
             .attr("class", "rectangle")
-            .attr("fill", "steelblue")
             .attr('x', d => vis.x(d['Sex upon Outcome']))
             .attr('y', d => vis.y(d.count))
             .attr('height', (d) => {
