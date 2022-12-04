@@ -298,3 +298,8 @@ h4 {
 .instructions {
     font-style: italic;
 }
+
+/* Animal Intakes Count */
+.count-animal-intakes {
+    font-size: 13px;
+}
