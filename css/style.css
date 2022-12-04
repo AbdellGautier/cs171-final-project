@@ -294,3 +294,8 @@ h4 {
 #matrix-reset-btn {
     margin-top: 12px;
 }
+
+/* Animal Intakes Count */
+.count-animal-intakes {
+    font-size: 13px;
+}
