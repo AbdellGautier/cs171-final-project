@@ -48,7 +48,7 @@ class PanelInnovative {
 
         })
 
-        let visData = Object.entries(animalDataByID).map(d => {
+        panel.visData = Object.entries(animalDataByID).map(d => {
             return ({
                 animalID: d[0],
                 ...d[1],
@@ -56,45 +56,68 @@ class PanelInnovative {
         });
 
         // Initialize the visualization
-        let matrix = new InnovativeMatrix("innovative-matrix",20, 30);
+        panel.matrix = new InnovativeMatrix("innovative-matrix",20, 30);
+
+        // Add listener for reset button
+        d3.select("#matrix-reset-btn").on("click", function() {
+            panel.resetVis();
+
+            document.getElementById("innovative-matrix-start").value = '';
+            d3.select(this).attr("disabled", "true");
+        })
 
         // Update the visualization once user selects a date
         d3.select(`#innovative-matrix-start`).on("change", function (e) {
             // Reset visualization
-            panel.timeouts.forEach(timeout => clearTimeout(timeout));
-            matrix.reset();
+            panel.resetVis();
 
-            let parseDate = d3.timeParse("%Y-%m-%d");
-            let startTime = parseDate(e.target.value).getTime() / 1000;
+            d3.select("#matrix-reset-btn").attr("disabled", null);
 
-            // Filter and sort
-            visData = visData.filter(d => d.timeInShelter && d.timeInShelter > 0 && d.intakeTime >= startTime);
-            visData = visData.sort((a, b) => a.intakeTime - b.intakeTime);
+            panel.startVis(e.target.value);
+        });
+    }
 
-            // Find min intake time
-            let minIntakeTime = d3.min(visData, d => d.intakeTime);
+    resetVis() {
+        let panel = this;
 
-            // Update the visualization in real-time based on animal intakes and outcomes
-            visData.forEach(function(d) {
-                // Wait until intakes
-                let intakeTimeout = setTimeout(() => {
-                    // Once intake, add the animal to the vis
-                    matrix.intakeAnimal(d);
+        panel.timeouts.forEach(timeout => clearTimeout(timeout));
+        panel.matrix.reset();
+    }
 
-                    // Wait until outcome
-                    let outcomeTimeout = setTimeout(() => {
-                        // Once outcome, remove animal from vis
-                        matrix.removeAnimal(d)
+    startVis(selectedDate) {
+        let panel = this;
 
-                    }, ((d.outcomeTime - minIntakeTime) / 3600) * 100);
+        // Parse date
+        let parseDate = d3.timeParse("%Y-%m-%d");
+        let startTime = parseDate(selectedDate).getTime() / 1000;
 
-                    // Store timeout
-                    panel.timeouts.push(outcomeTimeout);
-                }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
+        // Filter and sort
+        panel.visData = panel.visData.filter(d => d.timeInShelter && d.timeInShelter > 0 && d.intakeTime >= startTime);
+        panel.visData = panel.visData.sort((a, b) => a.intakeTime - b.intakeTime);
+
+        // Find min intake time
+        let minIntakeTime = d3.min(panel.visData, d => d.intakeTime);
+
+        // Update the visualization in real-time based on animal intakes and outcomes
+        panel.visData.forEach(function(d) {
+            // Wait until intakes
+            let intakeTimeout = setTimeout(() => {
+                // Once intake, add the animal to the vis
+                panel.matrix.intakeAnimal(d);
+
+                // Wait until outcome
+                let outcomeTimeout = setTimeout(() => {
+                    // Once outcome, remove animal from vis
+                    panel.matrix.removeAnimal(d)
+
+                }, ((d.outcomeTime - minIntakeTime) / 3600) * 100);
 
                 // Store timeout
-                panel.timeouts.push(intakeTimeout);
-            });
+                panel.timeouts.push(outcomeTimeout);
+            }, ((d.intakeTime - minIntakeTime) / 3600) * 100);
+
+            // Store timeout
+            panel.timeouts.push(intakeTimeout);
         });
     }
 }

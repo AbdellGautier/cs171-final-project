@@ -17,7 +17,7 @@ class StackedAreaChartExpectedIntakes {
         this.data = data;
         this.displayData = [];
 
-        this.colors = ['#F29361', '#1f78b4'];
+        this.colors = ['#F29361', '#5090cc'];
 
         this.dataCategories = ["expected", "actual"]
 
@@ -25,6 +25,11 @@ class StackedAreaChartExpectedIntakes {
         this.colorScale = d3.scaleOrdinal()
             .domain(this.dataCategories)
             .range(this.colors);
+
+        this.isAreaHidden = {
+            "expected": false,
+            "actual": false,
+        }
 
         this.initVis();
     }
@@ -36,7 +41,7 @@ class StackedAreaChartExpectedIntakes {
     initVis(){
         let vis = this;
 
-        vis.margin = {top: 50, right: 85, bottom: 60, left: 40};
+        vis.margin = {top: 50, right: 110, bottom: 60, left: 40};
 
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right;
         vis.height = 500 - vis.margin.top - vis.margin.bottom;
@@ -98,7 +103,23 @@ class StackedAreaChartExpectedIntakes {
             .attr("y", (_, i) => vis.height / 2 + i * 20)
             .attr("width", 10)
             .attr("height", 10)
-            .attr("fill", d => d.color);
+            .attr("fill", d => d.color)
+            .on("mouseover", function() {
+                d3.select(this).style("cursor", "pointer");
+            })
+            .on("mouseout", function() {
+                d3.select(this).style("cursor", "default");
+            })
+            .on("click", function(_, d) {
+                if (vis.isAreaHidden[d.data]) {
+                    d3.select(this).style("opacity", 1);
+                    d3.select(`.area-${d.data}`).style("opacity", 1);
+                } else {
+                    d3.select(this).style("opacity", 0.5);
+                    d3.select(`.area-${d.data}`).style("opacity", 0);
+                }
+                vis.isAreaHidden[d.data] = !vis.isAreaHidden[d.data];
+            });
 
         vis.svg.selectAll(".intake-areachart-legend-text")
             .data(legendData)
@@ -108,20 +129,32 @@ class StackedAreaChartExpectedIntakes {
             .attr("x", 25 + vis.width)
             .attr("y", (_, i) => vis.height / 2 + 9 + i * 20)
             .text(d => d.data[0].toUpperCase() + d.data.slice(1))
+            .on("mouseover", function() {
+                d3.select(this).style("cursor", "pointer");
+            })
+            .on("mouseout", function() {
+                d3.select(this).style("cursor", "default");
+            });
 
-        // Initialize stack layout
-        let stack = d3.stack()
-            .keys(vis.dataCategories);
+        vis.actualPath = vis.svg.append("path")
+            .attr("class", "area-actual");
 
-        // Stack data
-        vis.stackedData = stack(vis.data);
+        vis.expectedPath = vis.svg.append("path")
+            .attr("class", "area-expected");
 
-        // Stacked area layout
-        vis.area = d3.area()
-            .curve(d3.curveCardinal)
-            .x(d => vis.x(d.data.date))
-            .y0(d => vis.y(d[0]))
-            .y1(d => vis.y(d[1]));
+        // // Initialize stack layout
+        // let stack = d3.stack()
+        //     .keys(vis.dataCategories);
+        //
+        // // Stack data
+        // vis.stackedData = stack(vis.data);
+        //
+        // // Stacked area layout
+        // vis.area = d3.area()
+        //     .curve(d3.curveCardinal)
+        //     .x(d => vis.x(d.data.date))
+        //     .y0(d => vis.y(d[0]))
+        //     .y1(d => vis.y(d[1]));
 
         vis.wrangleData();
 
@@ -133,8 +166,9 @@ class StackedAreaChartExpectedIntakes {
     wrangleData(){
         let vis = this;
 
-        vis.displayData = vis.stackedData;
+        // vis.displayData = vis.stackedData;
 
+        vis.displayData = vis.data;
 
         // Update the visualization
         vis.updateVis();
@@ -147,32 +181,32 @@ class StackedAreaChartExpectedIntakes {
     updateVis(){
         let vis = this;
 
-        // Update domain
-        // Get the maximum of the multi-dimensional array or in other words, get the highest peak of the uppermost layer
-        vis.y.domain([0, d3.max(vis.displayData, function(d) {
-            return d3.max(d, function(e) {
-                return e[1];
-            });
-        })
-        ]);
+        vis.y.domain([0, d3.max(vis.displayData, function (d) {
+            return d.actual;
+        })])
 
-        vis.displayData[0] = vis.displayData[0].sort((a, b) => a.data.date - b.data.date);
-        vis.displayData[1] = vis.displayData[1].sort((a, b) => a.data.date - b.data.date);
-
-        // Draw the layers
-        let categories = vis.svg.selectAll(".area")
-            .data(vis.displayData);
-
-        categories.enter().append("path")
-            .attr("class", "area")
-            .merge(categories)
-            .style("fill", d => {
-                return vis.colorScale(d)
-            })
-            .attr("d", d => vis.area(d))
+        vis.displayData = vis.displayData.sort((a, b) => a.date - b.date);
 
 
-        categories.exit().remove();
+        vis.areaActual = d3.area()
+            .curve(d3.curveCardinal)
+            .x(d => vis.x(d.date))
+            .y0(vis.height)
+            .y1(d => vis.y(d.actual));
+
+        vis.actualPath.datum(vis.displayData)
+            .attr("d", vis.areaActual)
+            .attr("fill", vis.colors[1]);
+
+        vis.areaExpected = d3.area()
+            .curve(d3.curveCardinal)
+            .x(d => vis.x(d.date))
+            .y0(vis.height)
+            .y1(d => vis.y(d.expected));
+
+        vis.expectedPath.datum(vis.displayData)
+            .attr("d", vis.areaExpected)
+            .attr("fill", vis.colors[0]);
 
         // Add tooltip
         // Create tooltip group
@@ -190,20 +224,20 @@ class StackedAreaChartExpectedIntakes {
         // Add tooltip label
         let tooltipLabel = tooltip.append("text")
             .attr("y", 10)
-            .attr("x", 10)
+            .attr("x", 5)
             .attr("id", "expected-intakes-tooltip-label")
             .text("Label");
 
         // Add tooltip sub-label
         let tooltipActual = tooltip.append("text")
             .attr("y", 25)
-            .attr("x", 10)
+            .attr("x", 5)
             .attr("class", "expected-intakes-tooltip-sublabel")
             .text("Sub-label");
 
         let tooltipExpected = tooltip.append("text")
             .attr("y", 35)
-            .attr("x", 10)
+            .attr("x", 5)
             .attr("class", "expected-intakes-tooltip-sublabel")
             .text("Sub-label");
 
@@ -223,16 +257,16 @@ class StackedAreaChartExpectedIntakes {
                 let mousePos = d3.pointer(event)[0];
                 let dateAtMousePos = vis.x.invert(mousePos);
 
-                let bisectDate = d3.bisector(d => d.data.date).left;
+                let bisectDate = d3.bisector(d => d.date).left;
 
-                let closestElementIdx = bisectDate(vis.displayData[0], dateAtMousePos);
+                let closestElementIdx = bisectDate(vis.displayData, dateAtMousePos);
 
-                let d = vis.displayData[0][closestElementIdx];
+                let d = vis.displayData[closestElementIdx];
 
                 // Update tooltip with the population and date from element
-                tooltipLabel.text(d.data.date.toLocaleDateString("en-US"));
-                tooltipActual.text(`${Math.round(d.data.actual + d.data.expected)} actual animals`);
-                tooltipExpected.text(`${Math.round(d.data.expected)} expected animals`);
+                tooltipLabel.text(d.date.toLocaleDateString("en-US"));
+                tooltipActual.text(`${Math.round(d.actual + d.expected)} actual animals`);
+                tooltipExpected.text(`${Math.round(d.expected)} expected animals`);
 
                 tooltip.attr("transform", `translate(${mousePos}, 0)`);
             });
