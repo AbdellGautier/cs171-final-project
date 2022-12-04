@@ -2,6 +2,14 @@
 
 A website that visualizes data for animal shelter intakes and adoptions in Austin.
 
+[Click here to see our website](https://abdellgautier.github.io/cs171-final-project/).
+
+[Click here for our screen-cast](https://drive.google.com/file/d/1vgGlNVm8901YswyzCwIPvs1vzwh69BeW/view?usp=sharing).
+
+## How to run
+
+Open Webstorm. Then open the `index.html` file and click the Chrome icon.
+
 ## Code Structure
 
 Our website is a basic HTML / CSS / JS webpage with the following structure.
@@ -26,7 +34,8 @@ rendering these visualizations using the D3 library.
 
 ## Datasets
 
-We used the following datasets.
+We used the following datasets. See `data/dataset-descriptions.md` for descriptions about the dataset
+fields.
 
 - [Austin Animal Center Intakes](https://data.austintexas.gov/Health-and-Community-Services/Austin-Animal-Center-Intakes/wter-evkm)
   - Data about each animal that is found and taken into the shelter
