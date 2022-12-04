@@ -80,7 +80,6 @@ class AnimalIntakeVisuals {
         vis.x = d3.scaleLinear()
             .range([0, vis.width]);
 
-
         vis.colorScale = d3.scaleLinear()
             .range(vis.colors);
 

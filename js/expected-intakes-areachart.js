@@ -142,20 +142,6 @@ class StackedAreaChartExpectedIntakes {
         vis.expectedPath = vis.svg.append("path")
             .attr("class", "area-expected");
 
-        // // Initialize stack layout
-        // let stack = d3.stack()
-        //     .keys(vis.dataCategories);
-        //
-        // // Stack data
-        // vis.stackedData = stack(vis.data);
-        //
-        // // Stacked area layout
-        // vis.area = d3.area()
-        //     .curve(d3.curveCardinal)
-        //     .x(d => vis.x(d.data.date))
-        //     .y0(d => vis.y(d[0]))
-        //     .y1(d => vis.y(d[1]));
-
         vis.wrangleData();
 
     }
@@ -165,8 +151,6 @@ class StackedAreaChartExpectedIntakes {
      */
     wrangleData(){
         let vis = this;
-
-        // vis.displayData = vis.stackedData;
 
         vis.displayData = vis.data;
 
