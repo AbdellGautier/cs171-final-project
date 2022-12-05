@@ -106,7 +106,7 @@ class PanelInnovative {
                     // Once outcome, remove animal from vis
                     panel.matrix.removeAnimal(d)
 
-                }, ((d.outcomeTime - minIntakeTime) / 3600) * 100);
+                }, ((d.outcomeTime - d.intakeTime) / 3600) * 100);
 
                 // Store timeout
                 panel.timeouts.push(outcomeTimeout);
